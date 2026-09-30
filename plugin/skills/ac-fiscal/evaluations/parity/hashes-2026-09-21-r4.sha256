@@ -1,0 +1,22 @@
+# SHA-256 manifest — Fiscal full forward validation r4
+# source_head: e682cdc20a459732b316d8e9b63d843563f116ea
+# lifecycle_at_historical_execution: validated
+# package_inventory_sha256: b5a57d7a87fe2baf5ab1bc528245b81fad36408535cf55e9c4cada1ee4bb22cd
+# installed_inventory_sha256: b5a57d7a87fe2baf5ab1bc528245b81fad36408535cf55e9c4cada1ee4bb22cd
+# package_regular_files: 23; package_knowledge_files: 10; package_symlinks: 0; package_gitkeep: 0
+# install_regular_files: 23; install_knowledge_files: 10; install_symlinks: 0; install_gitkeep: 0
+# package_install_byte_equality: 23/23
+# This manifest intentionally excludes itself to avoid self-reference.
+81212027a4f2c1793825a97a43ee919435d33dae677c899a0af65729f630ba62  evaluations/parity/local-outputs-2026-09-21-r4/P1.md
+2cb2f7e57ff32c4badf13c1da4420b4a0972338710371614fc13e47fc1f322c3  evaluations/parity/local-outputs-2026-09-21-r4/P2.md
+67056ea48ff90d3189554be5f777ed3cb93f38b0b49a89675f0cc3181378ed93  evaluations/parity/local-outputs-2026-09-21-r4/P3.md
+6fd0dcebdf71d15ad676f5f297b02bb7f13df95fd5d5ec5b68afebf393b31b8f  evaluations/parity/local-outputs-2026-09-21-r4/P4.md
+c386aa06aa0a53ddb494a8b9dbc411936aeb87c2334530dd6fc7762776606854  evaluations/parity/local-outputs-2026-09-21-r4/P5.md
+f5bf97fdd8fa52f946b44254fcb8a3c3a3d2be4e2acae6646fc1e47f8d2ffc05  evaluations/parity/local-outputs-2026-09-21-r4/P6.md
+1fb906a07c04204e439e767d8fcbbd8effd29aaee5acabd7612e31d5c34d9fd1  evaluations/parity/local-results-2026-09-21-r4.md
+9c47ae321444d705ae6bcb6b056367c2b48e6ff291fdaeb634a5805e305a9894  evaluations/parity/gpt-comparison-2026-09-21-r4.md
+03f2161e45bf0c87c87b2c333e530475628ffcf93121e4b50a14882d6a4e44ae  evaluations/parity/scoring-matrix-2026-09-21-r4.yaml
+90460d6bd8378f7c617a9993cd8b255916383156c296207d3895a5ed697eccc9  evaluations/parity/install-validation-2026-09-21-r4.md
+a2b305481ccbf2d58f522005e460e93aaab5bd26380f49672c2da7237d90b134  evaluations/parity/release-validation-2026-09-21.md
+848ac01f1a5905ad870db34e34f4702cc6d057ce1999ea67488dc8270af362d3  README.md
+7e8cc8a4212d70c085e6f8e81af46a858ff097b733b93322c5dd9b88dbe248e4  CHANGELOG.md

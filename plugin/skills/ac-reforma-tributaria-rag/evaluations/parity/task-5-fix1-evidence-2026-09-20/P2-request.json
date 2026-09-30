@@ -1,0 +1,6 @@
+{
+  "query": "Escreva uma explicação curta para um cliente fictício sobre o que são IBS e CBS e por que ele deve revisar cadastros e processos com o contador, sem prometer redução de imposto.",
+  "question_type": "resposta_cliente",
+  "needs_current_source": true,
+  "top_k": 6
+}

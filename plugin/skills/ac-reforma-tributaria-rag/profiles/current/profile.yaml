@@ -1,0 +1,38 @@
+id: current
+canonical_agent_version: "0.2.1"
+default: true
+status: current
+path_base: profile-directory
+source:
+  gpt_id: g-6a1b93a521b4819189fda957bcf00115
+  name: "Agente Reforma Tributária Day - Consulta RAG"
+  editor_url: https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115
+  audited_at: "2026-09-24"
+  audit: ../../evaluations/live-editor-audit-2026-09-24.md
+instructions: ../../instructions/current-live-2026-09-24.md
+knowledge:
+  status: current
+  manifest: ../../knowledge/MANIFEST.md
+  inventory_confirmed_at: "2026-09-24"
+  last_binary_verified_at: "2026-09-09"
+  files:
+    - ../../knowledge/live-2026-08-22/01-uso-obrigatorio-action.md
+    - ../../knowledge/live-2026-08-22/02-contrato-ciclo-vida.md
+    - ../../knowledge/live-2026-08-22/03-hierarquia-fontes.md
+    - ../../knowledge/live-2026-08-22/04-dfe-erp-classificacao.md
+    - ../../knowledge/live-2026-08-22/05-calculos-e-projecoes.md
+    - ../../knowledge/live-2026-08-22/06-pedagogia-e-resposta-cliente.md
+    - ../../knowledge/live-2026-08-22/07-cronograma-e-lacunas.md
+    - ../../knowledge/live-2026-08-22/08-resposta-segura.md
+action:
+  status: active
+  schema: ../../connectors/actions/searchDayRagCorpus/openapi.live-2026-09-20.json
+  contract: ../../references/retrieval-contract.md
+  server: https://day-rag-chroma-actions.onrender.com
+  authentication: none
+  search_operation: search_day_rag_corpus_rag_search_post
+  health_operation: health_health_get
+corpus:
+  collection: day_rtc_v2_3_20260801
+  database: ac-staging
+  provenance: current-instructions

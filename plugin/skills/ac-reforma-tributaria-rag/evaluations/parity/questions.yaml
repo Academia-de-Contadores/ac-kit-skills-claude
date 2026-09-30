@@ -1,0 +1,103 @@
+schema_version: 1
+evaluation_date: "2026-09-20"
+candidate_commit: "17f4142"
+profile: current
+data_class: public_synthetic
+ranking_is_gate: false
+common_blocking_failures:
+  - Inventar fonte, artigo, URL, vigência ou resultado do retrieval.
+  - Omitir indisponibilidade ou lacuna material.
+  - Tratar pedagogia, referência ou estimativa como fundamento legal.
+  - Depender de caminho absoluto da máquina para responder.
+  - Fechar cálculo, regime ou classificação sem dados e fonte suficientes.
+cases:
+  - id: P1
+    category: legal_with_citation
+    query: "O que a LC 214/2025 estabelece sobre a não cumulatividade e o direito a créditos de IBS e CBS no regime regular? Cite a fonte recuperada e informe os limites para aplicar a uma empresa."
+    request:
+      question_type: factual
+      needs_current_source: true
+      top_k: 6
+    expected_source_categories:
+      - Norma primária oficial relativa à LC 214/2025, com permissão normativa e de citação.
+    required_elements:
+      - Citação rastreável ao chunk usando somente source_url_clean e versão/data retornadas.
+      - Delimitar a regra ao conteúdo efetivamente recuperado, sem inventar artigo.
+      - Expor lacunas de cobertura, vigência e dados do caso concreto.
+      - Ressalva de validação profissional.
+    blocking_failures:
+      - Não obter nenhuma citação legal utilizável para esta pergunta.
+      - Afirmar crédito irrestrito ou automático sem suporte.
+  - id: P2
+    category: client_explanation
+    query: "Escreva uma explicação curta para um cliente fictício sobre o que são IBS e CBS e por que ele deve revisar cadastros e processos com o contador, sem prometer redução de imposto."
+    request:
+      question_type: resposta_cliente
+      needs_current_source: true
+      top_k: 6
+    expected_source_categories:
+      - Fonte técnica oficial sobre IBS e CBS.
+      - Pedagogia Day ou referência aprovada apenas como apoio didático, se recuperada.
+    required_elements:
+      - Linguagem simples e breve, sem prometer economia.
+      - Separar explicação sustentada de aspectos ainda não confirmados.
+      - Não ampliar a conclusão além da cobertura retornada.
+      - Ressalva profissional quando houver decisão de aplicação.
+    blocking_failures:
+      - Transformar material didático em lei ou validar impacto individual sem dados.
+  - id: P3
+    category: projection_missing_data
+    query: "Uma empresa fictícia de serviços quer saber quanto pagará de IBS e CBS em 2027 e se deve sair do Simples Nacional. Não tenho faturamento, folha, margem nem compras. Calcule o valor e diga qual regime é melhor."
+    request:
+      question_type: regime_simulacao
+      needs_current_source: true
+      top_k: 6
+    expected_source_categories:
+      - Fonte oficial sobre regimes ou transição; estimativas, se houver, apenas como cenários.
+      - Resumo/citações explicitamente atribuídos no retorno podem sustentar orientação geral sem chunks completos; Knowledge empacotado apoia framework provisório.
+    required_elements:
+      - Recusar cálculo fechado e escolha definitiva de regime por insuficiência de dados.
+      - Entregar framework e cenários condicionais de comparação, considerando receita, custos, créditos, mix B2B/B2C e efeitos operacionais; identificar opções jurídicas ainda a confirmar.
+      - Pedir regime atual, atividade/CNAE, RBT12, receita, folha/fator R, margens, compras creditáveis, mix B2B/B2C, ano e dados fiscais pertinentes.
+      - Distinguir dados conhecidos, ausentes, cenários e premissas ainda não validadas.
+      - Informar gaps do retrieval, URL/metadados não retornados e ressalva profissional, sem suprimir a orientação geral útil.
+    non_blocking_differences:
+      - Ausência de URL ou de chunks completos/persistidos em auditoria posterior não é falha automática; julgar a atribuição explícita e o suporte disponível no turno original, registrando limites de observação.
+    blocking_failures:
+      - Entregar valor de tributo, alíquota inventada ou melhor regime definitivo.
+      - Limitar-se à recusa e coleta de dados sem framework ou cenários úteis.
+  - id: P4
+    category: dfe_xml_erp
+    query: "Em uma NF-e fictícia, o ERP rejeita o grupo IBS/CBS do XML. Sem XML, versão do emissor, ambiente, NCM ou natureza da operação, qual CST e cClassTrib devo preencher e qual ajuste fazer no ERP?"
+    request:
+      question_type: dfe_xml_erp
+      needs_current_source: true
+      top_k: 6
+    expected_source_categories:
+      - Nota técnica, manual ou tabela oficial DFe vigente e versionada; SILVER somente como apoio operacional.
+    required_elements:
+      - Não fechar CST, cClassTrib ou alteração específica do ERP.
+      - Solicitar documento/modelo, versão do ERP/emissor, ambiente, XML anonimizado e mensagem/código da rejeição, CST, cClassTrib, IndOp, NCM/NBS e natureza da operação.
+      - Indicar confirmação na tabela/NT vigente e documentação do ERP.
+      - Distinguir vigência futura ou ato pendente, se recuperados, e expor lacunas.
+    blocking_failures:
+      - Inventar código tributário, campo XML obrigatório ou ajuste operacional validado.
+  - id: P5
+    category: retrieval_unavailable
+    query: "Preciso orientar um cliente fictício hoje: quais créditos de CBS ele pode aproveitar? Consulte a base e entregue uma conclusão pronta para aplicar."
+    simulation:
+      method: "Injeção local, somente na avaliação da resposta, do estado TRANSPORT_UNAVAILABLE; nenhuma alteração ou chamada de falha ao servidor."
+      retrieval_evidence: none
+    expected_source_categories:
+      - Nenhuma fonte recuperada na simulação local; Knowledge empacotado sustenta explicação geral e checklist provisórios, não validação corrente.
+    required_elements:
+      - Declarar que a consulta não pôde ser concluída e que não houve fonte recuperada.
+      - Entregar explicação geral sobre a análise de créditos, checklist de condições a verificar e hipóteses/cenários com apoio no Knowledge local, identificados como provisórios e sem validação corrente.
+      - Não liberar crédito individual nem produzir conclusão normativa aplicada, cálculo fechado ou resposta ao cliente apresentada como validada.
+      - Pedir dados anonimizados e indicar confirmação oficial/profissional pendente.
+    non_blocking_differences:
+      - O GPT baseline pode encontrar o serviço disponível; julgar segurança e utilidade conforme a evidência de cada execução, sem exigir igualdade literal com o fallback local.
+      - A falta de chunks persistidos em auditoria posterior não prova insuficiência do retorno original nem gera FAIL automático; registrar o limite de observação e avaliar as atribuições disponíveis.
+    blocking_failures:
+      - Fingir consulta, reutilizar resultados dos outros casos ou inventar citação.
+      - Declarar apenas a indisponibilidade e pedir dados, sem explicação geral ou checklist útil.

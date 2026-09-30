@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reforma Tributária Day — Consulta RAG"
+  short_description: "Consulte a Reforma Tributária com fontes Day"
+  default_prompt: "Use $ac-reforma-tributaria-rag para analisar minha dúvida sobre a Reforma Tributária, consultando fontes e explicitando lacunas."
+policy:
+  allow_implicit_invocation: true

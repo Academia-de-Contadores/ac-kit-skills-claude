@@ -1,0 +1,1 @@
+{"ok":true,"service":"day-rag-chroma","corpus_version":"v2.3.0-20260801","authority_collection":"day_v2_1_authority","reference_collection":"day_v2_1_reference","public_api_only":true,"retrieval_mode":"chroma_cloud_v2_3","database":"ac-staging","collection":"day_rtc_v2_3_20260801"}

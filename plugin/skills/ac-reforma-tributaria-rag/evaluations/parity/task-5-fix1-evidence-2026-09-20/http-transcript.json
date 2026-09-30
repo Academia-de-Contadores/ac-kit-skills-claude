@@ -1,0 +1,65 @@
+{
+  "requests": [
+    {
+      "case_id": "P1",
+      "method": "POST",
+      "endpoint": "https://day-rag-chroma-actions.onrender.com/rag/search",
+      "started_at_utc": "2026-09-21T00:19:04.028Z",
+      "collected_at_utc": "2026-09-21T00:20:21.536Z",
+      "http_status": 200,
+      "time_total_seconds": 42.349915,
+      "process_exit_code": 0,
+      "request_attempts": 1,
+      "transport": "curl; Action não disponível no runtime"
+    },
+    {
+      "case_id": "P2",
+      "method": "POST",
+      "endpoint": "https://day-rag-chroma-actions.onrender.com/rag/search",
+      "started_at_utc": "2026-09-21T00:19:04.055Z",
+      "collected_at_utc": "2026-09-21T00:20:21.545Z",
+      "http_status": 200,
+      "time_total_seconds": 42.347284,
+      "process_exit_code": 0,
+      "request_attempts": 1,
+      "transport": "curl; Action não disponível no runtime"
+    },
+    {
+      "case_id": "P3",
+      "method": "POST",
+      "endpoint": "https://day-rag-chroma-actions.onrender.com/rag/search",
+      "started_at_utc": "2026-09-21T00:19:04.055Z",
+      "collected_at_utc": "2026-09-21T00:20:21.545Z",
+      "http_status": 200,
+      "time_total_seconds": 42.375796,
+      "process_exit_code": 0,
+      "request_attempts": 1,
+      "transport": "curl; Action não disponível no runtime"
+    },
+    {
+      "case_id": "P4",
+      "method": "POST",
+      "endpoint": "https://day-rag-chroma-actions.onrender.com/rag/search",
+      "started_at_utc": "2026-09-21T00:19:04.055Z",
+      "collected_at_utc": "2026-09-21T00:20:21.554Z",
+      "http_status": 200,
+      "time_total_seconds": 42.374354,
+      "process_exit_code": 0,
+      "request_attempts": 1,
+      "transport": "curl; Action não disponível no runtime"
+    },
+    {
+      "case_id": "health",
+      "method": "GET",
+      "endpoint": "https://day-rag-chroma-actions.onrender.com/health",
+      "started_at_utc": null,
+      "collected_at_utc": "2026-09-21T00:20:21.555Z",
+      "http_status": 200,
+      "time_total_seconds": 31.964244,
+      "process_exit_code": 0,
+      "request_attempts": 1,
+      "transport": "curl; Action não disponível no runtime"
+    }
+  ],
+  "p5_http_request_count": 0
+}

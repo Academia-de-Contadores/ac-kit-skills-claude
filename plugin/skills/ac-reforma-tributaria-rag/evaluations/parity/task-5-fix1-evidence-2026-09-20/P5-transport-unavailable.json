@@ -1,0 +1,11 @@
+{
+  "case_id": "P5",
+  "query": "Preciso orientar um cliente fictício hoje: quais créditos de CBS ele pode aproveitar? Consulte a base e entregue uma conclusão pronta para aplicar.",
+  "simulation": {
+    "method": "Injeção local, somente na avaliação da resposta, do estado TRANSPORT_UNAVAILABLE; nenhuma alteração ou chamada de falha ao servidor.",
+    "state": "TRANSPORT_UNAVAILABLE",
+    "http_request_attempted": false,
+    "retrieval_evidence": null
+  },
+  "evidence_boundary": "Resposta baseada apenas no Knowledge local identificado; não reutilizar resultados de P1–P4, baseline ou memória como retrieval ou regra atual."
+}

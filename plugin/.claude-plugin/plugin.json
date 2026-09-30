@@ -1,0 +1,10 @@
+{
+  "name": "academia-skills-contabeis",
+  "version": "1.2.0",
+  "description": "Oito skills contábeis da Academia e um assistente para futuras instalações e atualizações por link de repositório.",
+  "author": {
+    "name": "Academia de Contadores"
+  },
+  "homepage": "https://github.com/Academia-de-Contadores/ac-kit-skills-claude",
+  "repository": "https://github.com/Academia-de-Contadores/ac-kit-skills-claude"
+}

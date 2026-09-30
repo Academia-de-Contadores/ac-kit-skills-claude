@@ -1,0 +1,8 @@
+Pacote 1.2.0 — 30/09/2026
+
+PREPARADO: oito skills contábeis provenientes de repositórios públicos e ac-instalar-skills criada para este kit.
+VALIDADO: manifesto do plugin pelo validador do Claude Code; frontmatter/nome das nove skills; referências diretas dos SKILL.md de origem; integridade dos ZIPs.
+TESTADO NESTE MAC: GET /health HTTP 200 e POST /rag/search HTTP 200, com 5 citações e 6 trechos na pergunta pública de teste. Esse teste não valida a rede da aluna nem todas as respostas da base.
+PENDENTE EM CADA CONTA: importação do plugin ou skills, ativação, permissões disponíveis e teste em nova conversa. A compatibilidade de importação deve ser confirmada na interface da aluna; há ZIPs individuais como alternativa.
+
+Atualização: importar um ZIP não cria assinatura de atualizações do GitHub. Para novos repositórios use ac-instalar-skills. Para a mesma skill, peça atualização com preservação de personalizações.

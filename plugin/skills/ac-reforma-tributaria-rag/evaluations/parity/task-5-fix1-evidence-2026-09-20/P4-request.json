@@ -1,0 +1,6 @@
+{
+  "query": "Em uma NF-e fictícia, o ERP rejeita o grupo IBS/CBS do XML. Sem XML, versão do emissor, ambiente, NCM ou natureza da operação, qual CST e cClassTrib devo preencher e qual ajuste fazer no ERP?",
+  "question_type": "dfe_xml_erp",
+  "needs_current_source": true,
+  "top_k": 6
+}

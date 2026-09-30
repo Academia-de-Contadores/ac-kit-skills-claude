@@ -1,0 +1,77 @@
+schema_version: 1
+agent:
+  id: ac.reforma-tributaria-rag
+  name: Reforma Tributária Day — Consulta RAG
+  version: 0.2.1
+  lifecycle: validated
+  owners:
+    - Academia-de-Contadores
+catalog:
+  url: https://github.com/Academia-de-Contadores/academia-contadores-agent-catalog
+source_capture:
+  status: accessible
+  captured_at: 2026-09-24
+  source_url: https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115
+  record: evaluations/live-editor-audit-2026-09-24.md
+  instructions: instructions/current-live-2026-09-24.md
+  knowledge_manifest: knowledge/MANIFEST.md
+  action_schema: connectors/actions/searchDayRagCorpus/openapi.live-2026-09-20.json
+objectives:
+  mission: objectives/mission.md
+  metrics: objectives/success-metrics.md
+  non_goals: objectives/non-goals.md
+identity:
+  soul: identity/soul.md
+  definition: identity/identity.md
+instructions:
+  system: instructions/current-live-2026-09-24.md
+  guardrails: instructions/guardrails.md
+skills:
+  - SKILL.md
+connectors:
+  - connectors/rag/README.md
+  - connectors/actions/searchDayRagCorpus/README.md
+actions:
+  - id: search_day_rag_corpus_rag_search_post
+    status: active
+    schema: connectors/actions/searchDayRagCorpus/openapi.live-2026-09-20.json
+    contract: references/retrieval-contract.md
+evaluations:
+  - evaluations/source-capture.md
+  - evaluations/live-editor-audit-2026-08-22.md
+  - evaluations/live-editor-audit-2026-09-20.md
+  - evaluations/live-editor-audit-2026-09-24.md
+  - evaluations/parity/questions.yaml
+  - evaluations/parity/local-results-2026-09-20.md
+  - evaluations/parity/install-validation-2026-09-20.md
+  - evaluations/parity/gpt-comparison-2026-09-20-r2.md
+  - evaluations/parity/original-source-verification-2026-09-20.md
+  - evaluations/parity/cbs-2027-validation-2026-09-24.md
+  - evaluations/parity/task-5-fix1-evidence-2026-09-20/README.md
+  - evaluations/scenarios/T1.md
+  - evaluations/scenarios/T2.md
+  - evaluations/scenarios/T3.md
+  - evaluations/scenarios/T4.md
+  - evaluations/scenarios/T5.md
+  - evaluations/rubrics/behavior.md
+  - evaluations/security/S1.md
+  - evaluations/security/S2.md
+  - evaluations/security/S3.md
+  - evaluations/regression/H1.md
+  - evaluations/regression/H2.md
+  - evaluations/regression/H3.md
+  - evaluations/regression/C1.md
+profiles:
+  - profiles/current/profile.yaml
+  - profiles/legacy/profile.yaml
+data_policy:
+  allowed_classes:
+    - public
+  human_approval_required_for:
+    - external_write
+distribution:
+  canonical_branch: main
+  skill_name: ac-reforma-tributaria-rag
+  skill_root: .
+  default_profile: current
+  adapters: []

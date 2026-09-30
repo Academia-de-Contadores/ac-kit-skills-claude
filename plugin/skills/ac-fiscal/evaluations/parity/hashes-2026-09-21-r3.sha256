@@ -1,0 +1,21 @@
+# SHA-256 manifest — Fiscal full forward validation r3
+# source_head: e656327b3e74ebf4dbd7b74bec69461ccf2338f9
+# lifecycle_at_historical_execution: validated
+# package_inventory_sha256: 1dbaf695e412120a7dab360b34cdd636fd19c363c323560a2890e3dd0a0446b0
+# installed_inventory_sha256: 1dbaf695e412120a7dab360b34cdd636fd19c363c323560a2890e3dd0a0446b0
+# package_regular_files: 23; package_knowledge_files: 10; package_symlinks: 0; package_gitkeep: 0
+# install_regular_files: 23; install_knowledge_files: 10; install_symlinks: 0; install_gitkeep: 0
+# package_install_byte_equality: 23/23
+# This manifest intentionally excludes itself to avoid self-reference.
+# agent.yaml below is the post-execution index; it was not in the historical inventory proof.
+3e359998090283beb39970c7c93bd9d17a5f027e1dccf12c41a2e7c8329cdc91  evaluations/parity/local-outputs-2026-09-21-r3/P1.md
+d8bd24607ea155e5a6d8eee364f9273ba49cf71e989db772c7243921defa8a04  evaluations/parity/local-outputs-2026-09-21-r3/P2.md
+7318a83a645ba869afd49f7539757b7a61d534ba24a902fcd43b0312eb67bbb7  evaluations/parity/local-outputs-2026-09-21-r3/P3.md
+72c0c79f6ea4d4991acc2b0816ea297cf4da840530365b16e0d6dd973e19892b  evaluations/parity/local-outputs-2026-09-21-r3/P4.md
+b2bfbaf63625601f9f49f68bc2251347d38f2ca0ba5c2565ebd00a191505b52b  evaluations/parity/local-outputs-2026-09-21-r3/P5.md
+5d505e1d0697503040e0b8239cb294b237c9bf62a8b8f8a2d7e17ed3b7b19856  evaluations/parity/local-outputs-2026-09-21-r3/P6.md
+5e5d5bd158d82c9347642ad0a5f6bbd5c2737dec8fb635c8a8a0a21577c4166e  evaluations/parity/local-results-2026-09-21-r3.md
+f6fdc2fd831182824802437047c204de4982edd64226394a7acf0e52f7983f07  evaluations/parity/gpt-comparison-2026-09-21-r3.md
+b1745bffbe2895901a525e33633d1737a1851dab2f57464a9cb7d64fa27b3fbd  evaluations/parity/scoring-matrix-2026-09-21-r3.yaml
+079fa86843a96949c747e02e18cd9a387450249ac8ad9f84d45ab7efc5e38c7e  evaluations/parity/install-validation-2026-09-21-r3.md
+5da999d2f5df61a41f358c438744c1faea555b891e67db6403390648f1166718  agent.yaml

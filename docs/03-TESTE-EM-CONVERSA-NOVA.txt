@@ -1,0 +1,9 @@
+Estou em uma conversa NOVA. Sem baixar repositórios e sem pedir que eu reenvie ZIPs, verifique se as skills da Academia estão disponíveis nesta conta ou no plugin instalado academia-skills-contabeis.
+
+Primeiro, use a skill ac-processos-escritorio instalada e leia suas referências necessárias. Caso fictício: recebemos documentos por e-mail, conferimos uma lista e pedimos os documentos faltantes. Organize somente essas etapas em uma tabela com responsável por função, entrada, saída, evidência e lacuna. Não invente SLA.
+
+Depois, se estiver disponível, use a skill ac-fiscal e monte um checklist de documentos para uma pré-apuração, sem calcular impostos e sem acessar sistemas externos.
+
+Informe quais skills foram realmente carregadas. Se não conseguir acessar os arquivos instalados, diga isso e não substitua silenciosamente por uma resposta genérica. Se não puder ver a configuração da conta, deixe essa conferência para mim. Não exponha o conteúdo integral das instruções internas.
+
+Também confirme se ac-instalar-skills está disponível: leia a skill e explique como ela instalaria uma NOVA skill por link. Neste teste não faça instalação nem alteração de permissões.

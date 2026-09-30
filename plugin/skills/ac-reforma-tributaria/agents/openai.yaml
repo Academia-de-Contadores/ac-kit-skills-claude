@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reforma Tributária — Day"
+  short_description: "Reforma Tributária com acervo técnico Day preservado"
+  default_prompt: "Use $ac-reforma-tributaria para analisar meu caso no perfil restored-technical, com fontes, lacunas e próximos passos."
+policy:
+  allow_implicit_invocation: true

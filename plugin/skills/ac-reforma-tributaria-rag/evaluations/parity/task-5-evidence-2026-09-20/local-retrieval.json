@@ -1,0 +1,720 @@
+{
+  "evaluated_at": "2026-09-20",
+  "transport": "curl POST /rag/search",
+  "service": "https://day-rag-chroma-actions.onrender.com",
+  "health": {
+    "ok": true,
+    "service": "day-rag-chroma",
+    "corpus_version": "v2.3.0-20260801",
+    "authority_collection": "day_v2_1_authority",
+    "reference_collection": "day_v2_1_reference",
+    "public_api_only": true,
+    "retrieval_mode": "chroma_cloud_v2_3",
+    "database": "ac-staging",
+    "collection": "day_rtc_v2_3_20260801"
+  },
+  "cases": [
+    {
+      "id": "P1",
+      "request": {
+        "query": "O que a LC 214/2025 estabelece sobre a não cumulatividade e o direito a créditos de IBS e CBS no regime regular? Cite a fonte recuperada e informe os limites para aplicar a uma empresa.",
+        "question_type": "factual",
+        "needs_current_source": true,
+        "top_k": 6
+      },
+      "curl_exit_code": 0,
+      "response": {
+        "answer_summary": "Recuperados 6 trechos relevantes. Use as citacoes retornadas para fundamentar a resposta; nao trate o resumo como parecer definitivo.",
+        "citations": [
+          {
+            "title": "RAG-030-LC-214-2025-compilada.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "RAG-058-KB-004-creditos-nao-cumulatividade.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-058-KB-004-creditos-nao-cumulatividade.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "RAG-127-Res-CGIBS-6-2026-Regulamento-IBS.md",
+            "authority": "CGIBS",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/RAG-127-Res-CGIBS-6-2026-Regulamento-IBS.md",
+            "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "RAG-051-F5.6-creditos-nao-cumulatividade.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-051-F5.6-creditos-nao-cumulatividade.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          }
+        ],
+        "retrieved_chunks": [
+          {
+            "chunk_text": "---\nrag_id: RAG-030\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"LC-214-2025-compilada.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/02_BASE_LEGAL/LC-214-2025-compilada.md\"\nauthority: \"Planalto / norma primaria\"\ntopic: \"LC 214/2025 compilada, IBS, CBS, IS e normas gerais\"\nversion_status: \"vigente-oficial-ou-compilado\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"f07e9d9b3d5ea6417519db949b2b50ea4a03947da5ffdae0daf4b36addfed22b\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# LC-214-2025-compilada.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nname: LC-214-2025-compilada\ndescription: Lei Complementar 214/2025 — institui CBS, IBS e IS (Reforma Tributária do Consumo). Texto compilado capturado do Planalto.\nsource_url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm\nfetched_at: 2026-05-27\ntype: legislacao-primaria\ntask: F3.1\n---\n\n# LEI COMPLEMENTAR Nº 214, DE 16 DE JANEIRO DE 2025 (texto compilado)\n\n> Institui o Imposto sobre Bens e Serviços (IBS), a Contribuição Social sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS); cria o Comitê Gestor do IBS e altera a legislação tributária.\n> Fonte: Planalto — versão compilada com alterações posteriores (incl. LC nº 227/2026 e Decreto nº 12.955/2026).\n\n---\n\nPresidência da República Casa Civil Secretaria Especial para Assuntos Jurídicos\n\nLEI COMPLEMENTAR Nº 214, DE 16 DE JANEIRO DE 2025\n\nProdução de efeitos Produção de efeitos (Promulgação partes vetadas) Texto compilado (Vide Decreto nº 12.955, de 2026)\n\nProdução de efeitos (Promulgação partes vetadas) Texto compilado (Vide Decreto nº 12.955, de 2026)\n\n(Promulgação partes vetadas) Texto compilado (Vide Decreto nº 12.955, de 2026)\n\nTexto compilado (Vide Decreto nº 12.955, de 2026)\n\n(Vide Decreto nº 12.955, de 2026)\n\nInstitui o Imposto sobre Bens e Serviços (IBS), a Contribuição Social sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS); cria o Comitê Gestor do IBS e altera a legislação tributária.\n\nO PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei Complementar:\n\nLIVRO I\n\nDO IMPOSTO SOBRE BENS E SERVIÇOS (IBS) E DA CONTRIBUIÇÃO SOCIAL SOBRE BENS E SERVIÇOS (CBS)\n\nTÍTULO I\n\nDAS NORMAS GERAIS DO IBS E DA CBS\n\nCAPÍTULO I\n\nDISPOSIÇÕES PRELIMINARES\n\nArt. 1º Ficam instituídos:\n\nI - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e\n\nII - a Contribuição Social sobre Bens e Serviços (CBS), de competência da União, de que trata o inciso V do caput do art. 195 da Constituição Federal.\n\nArt . 2º O IBS e a CBS são informados pelo princípio da neutralidade, segundo o qual esses tributos devem evitar distorcer as decisões de consumo e de organização da atividade econômica, observadas as exceções previstas na Constituição Federal e nesta Lei Complementar.\n\nArt . 3º Para fins desta Lei Complementar, consideram-se:\n\nI - operações com:\n\na) bens todas e quaisquer que envolvam bens móveis ou imóveis, materiais ou imateriais, inclusive direitos;\n\nb) serviços todas as demais que não sejam enquadradas como operações com bens nos termos da alínea a deste inciso;\n\nII - fornecimento:\n\na) entrega ou disponibilização de bem material;\n\nb) instituição, transferência, cessão, concessão, licenciamento ou disponibilização de bem imaterial, inclusive direito;\n\nc) prestação ou disponibilização de serviço;\n\nIII - fornecedor: pessoa física ou jurídica que, residente ou domiciliado no País ou no exterior, realiza o fornecimento;\n\nIV - adquirente:\n\na) aquele obrigado ao pagamento ou a qualquer outra forma de contraprestação pelo fornecimento de bem ou serviço;\n\nb) nos casos de pagamento ou de qualquer outra forma de contraprestação por conta e ordem ou em nome de terceiros, aquele por conta de quem ou em nome de quem decorre a obrigação de pagamento ou de qualquer outra forma de contraprestação pelo fornecimento de bem ou serviço; e",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.5927872,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "---\nrag_id: RAG-058\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"KB-004-creditos-nao-cumulatividade.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/13_KB_IA_REFORMA/KB-004-creditos-nao-cumulatividade.md\"\nauthority: \"Fonte interna / secundaria / curadoria\"\ntopic: \"Creditos, nao cumulatividade, ressarcimento e fluxo de caixa\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"1028a9eb1ccc88a18077ed18f1660aaa1f0875437f5ae716744aa60e943c5b2f\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# KB-004-creditos-nao-cumulatividade.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nid: KB-004\ntema: creditos-nao-cumulatividade\nsource_files:\n  - 11_CREDITOS_NAO_CUMULATIVIDADE/F5.6-creditos-nao-cumulatividade.md\nsource_url:\n  - https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm\nupdated_at: 2026-05-27\nstatus: validado\n---\n\n# KB-004 — Créditos e não cumulatividade\n\n## Resposta curta\n\nNo regime regular, a empresa pode aproveitar créditos de IBS/CBS ligados às aquisições, desde que a operação e o documento fiscal cumpram a lei. IBS e CBS são apurados e compensados separadamente.\n\n## Base oficial\n\nLC 214/2025, especialmente arts. 47 a 57.\n\n## Aplicação prática\n\nA rotina do contador deve auditar compras, fornecedores, documentos fiscais, NCM/NBS/cClassTrib e crédito esperado x crédito apropriado.\n\n## Alerta\n\nDocumento fiscal errado pode bloquear crédito. Alíquota zero, isenção, imunidade e Simples têm regras próprias.",
+            "source_path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-058-KB-004-creditos-nao-cumulatividade.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-058",
+            "authority": "Planalto / norma primaria",
+            "score": 0.54326326,
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "s do IBS, de maneira\nuniforme em todo o território nacional, com a aplicação de alíquotas reduzidas ou com a concessão de créditos\npresumidos, assegurados os respectivos ajustes nas alíquotas de referência do IBS, com vistas a reequilibrar\na arrecadação. (Art. 126 da LC 214/2025)\n§ 1º Atendidos os requisitos próprios, os regimes diferenciados de que trata este Capítulo aplicam-se,\nno que couber, à importação dos bens e serviços nele previstos.\n71\n\n§ 2º A alteração das operações com bens ou com serviços beneficiadas pelos regimes diferenciados\nde que trata este Capítulo, mediante acréscimo, exclusão ou substituição, somente entrará em vigor após o\ncumprimento do disposto nos §§ 9º e 11 do art. 156-A da Constituição Federal.\n§ 3º Desde que seus efeitos, considerados conjuntamente a cada período de revisão, não resultem em\nelevação superior a 0,02 (dois centésimos) ponto percentual da alíquota de referência estadual do IBS ou da\nalíquota de referência municipal do IBS, o disposto no § 2º não se aplica às hipóteses de inclusão de:\nI - dispositivos médicos relacionados no Anexo IV ou no Anexo XII da Lei Complementar nº 214, de\n2025;\nII - dispositivos de acessibilidade próprios para pessoas com deficiência relacionados no Anexo V ou\nno Anexo XIII da Lei Complementar nº 214, de 2025;\nIII - composições relacionadas no Anexo VI da Lei Complementar nº 214, de 2025;\nIV - insumos agropecuários e aquícolas relacionados no Anexo IX da Lei Complementar nº 214, de\n2025; e\nV - medicamentos relacionados no ato conjunto a que se refere o § 3º do art. 222.\n§ 4º As reduções de alíquotas de que trata este Título serão aplicadas sobre as alíquotas-padrão do\nIBS de cada ente federativo, fixadas na forma do art. 467.\n§ 5º O disposto no § 1º não se aplica às remessas internacionais sujeitas ao RTS, exceto na hipótese\nde produtos acabados pertencentes a classes de medicamentos importados por pessoa física para uso\npróprio ou individual.\nArt. 201. A apropriação dos créditos presumidos previstos neste Título e no Livro II fica condicionada:\nI - à emissão de documento fiscal pelo adquirente, contendo a identificação do respectivo fornecedor;\ne\nII - ao efetivo pagamento ao fornecedor.\nParágrafo único. Para fins do inciso II do caput deste artigo, ato conjunto da RFB e do CGIBS\ndisciplinará mecanismos de comprovação dos pagamentos não efetuados por meio do Sistema Financeiro\nNacional.\nCAPÍTULO II - DA REDUÇÃO EM TRINTA POR CENTO DAS ALÍQUOTAS DO IBS\nArt. 202. Ficam reduzidas em 30% (trinta por cento) as alíquotas do IBS incidentes sobre a prestação\nde serviços pelos seguintes profissionais, que exercerem atividades intelectuais de natureza científica,\nliterária ou artística, submetidas à fiscalização por conselho profissional: (Art. 127 da LC 214/2025)\nI - administradores;\nII - advogados;\nIII - arquitetos e urbanistas;\nIV - assistentes sociais;\nV - bibliotecários;\nVI - biólogos;\nVII - contabilistas;\nVIII - economistas;\nIX - economistas domésticos;\nX - profissionais de educação física;\nXI - engenheiros e agrônomos;\nXII - estatísticos;\nXIII - médicos veterinários e zootecnistas;\nXIV - museólogos;\nXV - químicos;\nXVI - profissionais de relações públicas;\n72",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-127-Res-CGIBS-6-2026-Regulamento-IBS.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-127",
+            "authority": "CGIBS",
+            "score": 0.6597003,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "2026-04-30",
+            "source_url_clean": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf"
+          },
+          {
+            "chunk_text": "osto nesta Lei Complementar.\n\n§ 4º A opção a que se refere o § 3º será exercida nos termos da Lei Complementar nº 123, de 14 de dezembro de 2006.\n\n§ 5º É vedado ao contribuinte do Simples Nacional ou ao contribuinte que venha a fazer a opção por esse regime retirar-se do regime regular do IBS e da CBS caso tenha recebido ressarcimento de créditos desses tributos no ano-calendário corrente ou anterior, nos termos do art. 39 desta Lei Complementar.\n\n§ 6º Aplica-se o disposto no § 5º deste artigo, em relação às demais hipóteses em que a pessoa física, pessoa jurídica ou entidade sem personalidade jurídica exerça a opção facultativa pela condição de contribuinte sujeito ao regime regular, nos casos previstos nesta Lei Complementar.\n\n## Art. 42\n\nA apuração relativa ao IBS e à CBS consolidará as operações realizadas por todos os estabelecimentos do contribuinte.\n\n§ 1º O pagamento do IBS e da CBS e o pedido de ressarcimento serão centralizados em um único estabelecimento.\n\n§ 2º A apuração consolidará todos os débitos e créditos do contribuinte no regime regular, inclusive aqueles decorrentes da apuração dos regimes diferenciados e específicos, salvo nas hipóteses previstas expressamente nesta Lei Complementar.\n\n## Art. 43\n\nO período de apuração do IBS e da CBS será mensal.\n\n## Art. 44\n\nO regulamento estabelecerá:\n\nI - o prazo para conclusão da apuração; e\n\nII - a data de vencimento dos tributos.\n\n## Art. 45\n\nPara cada período de apuração, o contribuinte deverá apurar, separadamente, o saldo do IBS e da CBS, que corresponderá à diferença entre os valores:\n\nI - dos débitos do IBS e da CBS decorrentes dos fatos geradores ocorridos no período de apuração;\n\nII - dos créditos apropriados no mesmo período, incluindo os créditos presumidos, acrescido do saldo a recuperar de período ou períodos anteriores não utilizado para compensação ou ressarcimento.\n\n§ 1º O contribuinte poderá realizar ajustes positivos ou negativos no saldo apurado na forma do caput deste artigo, nos termos previstos no regulamento.\n\n§ 2º Inclui-se entre os ajustes de que trata o § 1º deste artigo o estorno de crédito apropriado em período de apuração anterior, aplicados os acréscimos de que tratam os §§ 2º a 4º do art. 29 desta Lei Complementar desde a data em que tiver ocorrido a apropriação indevida do crédito.\n\n§ 3º Do saldo apurado na forma do caput e do § 1º deste artigo, serão deduzidos os valores extintos pelas modalidades previstas nos incisos III a V do caput do art. 27, que resultará:\n\nI - quando positivo, saldo a recolher que deverá ser pago pelo contribuinte; e\n\nII - quando negativo, saldo a recuperar que poderá ser utilizado para ressarcimento ou compensação na forma prevista nesta Lei Complementar.\n\n§ 4º A apuração realizada nos termos deste artigo implica confissão de dívida pelo contribuinte e constitui o crédito tributário.\n\n§ 5º A confissão de dívida de que trata o § 4º é instrumento hábil e suficiente para a exigência do valor do IBS e da CBS incidentes sobre as operações nela consignadas.\n\n§ 6º A apuração de que trata este artigo deverá ser realizada e entregue ao Comitê Gestor do IBS e à RFB no prazo para conclusão da apuração, de que trata o inciso I do caput do art. 44 desta Lei Complementar.\n\n## Art. 46\n\nO Comitê Gestor do IBS e a RFB poderão, respectivamente, apresentar ao sujeito passivo apuração assistida do saldo do IBS e da CBS do período de apuração.\n\n§ 1º O saldo da apuração de que trata o caput deste artigo será calculado nos termos do caput do art. 45 desta Lei Complementar e terá por base:\n\nI - documentos fiscais eletrônicos;\n\nII - informações relativas à extinção dos débitos do IBS e da CBS por quaisquer das modalidades previstas no art. 27 desta Lei Complementar; e\n\nIII - outras informações prestadas pelo contribuinte ou a ele relativas.\n\n§ 2º Caso haja a apresentação da apuração assistida de que trata o caput deste artigo, a apuração pelo contribuinte de que trata o art. 45 desta Lei Complementar somente poderá ser realizada mediante ajustes na apuração assistida.",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.663767,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "operações nela consignadas.\n§ 9º O disposto neste artigo não afasta a prerrogativa de lançamento de ofício de crédito tributário\nrelativo a diferenças posteriormente verificadas pela administração tributária.\n§ 10. A apuração assistida conterá as informações relativas:\nI - aos débitos de IBS extintos e ao momento da extinção, por qualquer das modalidades previstas no\nart. 26; e\nII - aos créditos de IBS apropriados e ao momento da apropriação.\n32\n\nSeção XII - Da Não Cumulatividade\nArt. 47. O contribuinte sujeito ao regime regular poderá apropriar créditos do IBS quando ocorrer a\nextinção, por qualquer das modalidades previstas no art. 26, dos débitos relativos às operações em que seja\nadquirente, excetuadas exclusivamente aquelas consideradas de uso ou consumo pessoal e as demais\nhipóteses previstas neste Regulamento. (Art. 47 da LC 214/2025)\n§ 1º A apropriação dos créditos de que trata o caput deste artigo:\nI - será realizada de forma segregada para o IBS e para a CBS, vedada, em qualquer hipótese, a\ncompensação de créditos de IBS com valores devidos de CBS; e\nII - está condicionada à comprovação da operação por meio de documento fiscal idôneo.\n§ 2º Os valores dos créditos do IBS apropriados corresponderão:\nI - aos valores dos débitos do IBS que tenham sido destacados no documento fiscal de aquisição e\nextintos por qualquer das modalidades previstas no art. 26; ou\nII - aos valores de crédito presumido, nas hipóteses previstas neste Regulamento.\n§ 3º O disposto neste artigo aplica-se, inclusive, às aquisições de bem ou serviço fornecido por optante\npelo Simples Nacional.\n§ 4º Nas operações em que o contribuinte seja adquirente de combustíveis tributados no regime\nespecífico de que trata o Capítulo I do Título VI deste Livro, fica dispensada a comprovação de extinção dos\ndébitos do IBS para apropriação dos créditos.\n§ 5º Na hipótese de que trata o § 4º, os créditos serão equivalentes aos valores do IBS registrados em\ndocumento fiscal idôneo, nos termos do disposto no § 4º do art. 267.\n§ 6º A realização de operações sujeitas à alíquota reduzida não acarretará o estorno, parcial ou integral,\ndos créditos apropriados pelo contribuinte em suas aquisições, salvo quando expressamente previsto neste\nRegulamento.\n§ 7º No caso de operações sujeitas à alíquota zero, serão mantidos os créditos relativos às operações\nanteriores, salvo quando expressamente previsto neste Regulamento. (Art. 52 da LC 214/2025)\n§ 8º O contribuinte do IBS no regime regular poderá creditar-se dos valores dos débitos extintos\nrelativos a fornecimentos de bens e serviços não pagos por adquirente que tenha a falência decretada, nos\ntermos da Lei nº 11.101, de 9 de fevereiro de 2005, desde que:\nI - a aquisição do bem ou serviço não tenha permitido a apropriação de créditos pelo adquirente;\nII - a operação tenha sido registrada na contabilidade do contribuinte desde o período de apuração em\nque ocorreu o fato gerador do IBS; e\nIII - o pagamento dos credores do adquirente falido tenha sido encerrado de forma definitiva.\nArt. 48. Caso o bem adquirido venha a perecer, deteriorar-se ou ser objeto de roubo, furto ou extravio,\nos créditos relacionados à sua aquisição, inclusive os de serviços, deverão ser estornados, mediante emissão\nde documento fiscal vinculado ao documento fiscal de aquisição, com a indicação dos valores de IBS\nreferentes ao bem adquirido, de forma discriminada. (Art. 47, § 6º, da LC 214/2025)\n§ 1º No caso de roubo ou furto de bem do ativo imobilizado, o estorno de crédito de que trata o caput\ndeste artigo será feito proporcionalmente ao prazo de vida útil restante e às taxas de depreciação definidos\nno Anexo I. (Art. 47, § 7º, da LC 214/2025)\n§ 2º Sendo impossível determinar qual aquisição corresponde ao bem ou serviço adquirido de que trata\no caput deste artigo, a informação do valor do IBS deverá observar a ordem cronológica a partir da aquisição\nmais recente, respeitada a quantidade de itens indicada no documento fiscal.\nArt. 49. Na hipótese de o pagamento do IBS ser realizado por meio do Simples Nacional, quando não\nfor exercida a opção pelo regime regular de que trata o § 3º do art. 41: (Art. 47, § 9º, da LC 214/2025)\nI - não será permitida a a",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-127-Res-CGIBS-6-2026-Regulamento-IBS.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-127",
+            "authority": "CGIBS",
+            "score": 0.6667695,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "2026-04-30",
+            "source_url_clean": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf"
+          },
+          {
+            "chunk_text": "---\nrag_id: RAG-051\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"F5.6-creditos-nao-cumulatividade.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/11_CREDITOS_NAO_CUMULATIVIDADE/F5.6-creditos-nao-cumulatividade.md\"\nauthority: \"Fonte interna / secundaria / curadoria\"\ntopic: \"Creditos, nao cumulatividade, ressarcimento e fluxo de caixa\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"b9c31f4bdd89f41105e3a38dc46a8f280805714ba421812c0497fa21f8853018\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# F5.6-creditos-nao-cumulatividade.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nname: F5.6-creditos-nao-cumulatividade\ndescription: Síntese operacional da não cumulatividade, créditos, ressarcimento e riscos de documento fiscal na RTC.\nsource_url:\n  - https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm\n  - https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/regulamento-detalha-as-regras-que-apresentam-sistema-mais-simples-transparente-e-previsivel-para-cidadaos-e-empresas\nfetched_at: 2026-05-27\nfetched_by: Codex\ntask: F5.6\nstatus: completed-pre-scraping-crosscheck\n---\n\n# F5.6 — Créditos e Não Cumulatividade\n\n## Evidência\n\nLC 214/2025, arts. 47 a 57 e correlatos. O regulamento CBS/IBS destaca crédito com regras nacionais, apuração assistida e ressarcimento com prazo definido.\n\n## Regra central\n\nNo regime regular, o contribuinte pode apropriar créditos de IBS/CBS quando os débitos da operação anterior forem extintos, salvo exceções legais. A apropriação depende de documento fiscal eletrônico idôneo.\n\n## Explicação leiga\n\nCrédito é o imposto pago nas compras que pode ser abatido do imposto devido nas vendas. No novo modelo, o Brasil tenta reduzir o efeito cascata: a empresa não deveria pagar imposto de novo sobre o imposto que já veio na cadeia.\n\n## Pontos que a IA precisa preservar\n\n| Ponto | Regra segura |\n|---|---|\n| IBS e CBS separados | crédito de IBS não compensa CBS e vice-versa |\n| Documento fiscal | sem documento idôneo, crédito fica em risco |\n| Simples | comprador no regime regular pode ter crédito limitado ao valor pago no Simples |\n| Uso pessoal | itens de uso/consumo pessoal são exceção |\n| Alíquota zero | pode manter créditos anteriores quando a lei permitir |\n| Imunidade/isenção | pode anular créditos anteriores, salvo exceções |\n| Split payment | afeta momento/forma de extinção e crédito |\n\n## Tarefas do escritório\n\n1. Criar mapa de compras que geram crédito.\n2. Identificar fornecedores Simples, MEI e regime regular.\n3. Validar NCM/NBS/cClassTrib.\n4. Conferir documento fiscal por item.\n5. Separar créditos de IBS e CBS em relatórios distintos.\n6. Criar rotina mensal de \"crédito esperado x crédito apropriado\".\n7. Preparar evidência para ressarcimento/compensação.\n\n## Resposta pronta para IA Day\n\n> O crédito na reforma depende de três coisas: a operação ser permitida pela lei, o imposto ter sido destacado/extinto corretamente e o documento fiscal estar idôneo. Por isso, o contador deixa de olhar só o imposto da venda e passa a auditar também as compras, fornecedores e cadastros.\n\n## Gaps para cruzamento final\n\n- Extrair artigos sobre itens de uso pessoal e exceções.\n- Criar exemplos por ativo imobilizado, energia, frete, software, brinde, refeição e despesa de equipe.\n- Cruzar com Manual Plataforma CBS para fluxo de ressarcimento.",
+            "source_path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-051-F5.6-creditos-nao-cumulatividade.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-051",
+            "authority": "Planalto / norma primaria",
+            "score": 0.6414926,
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          }
+        ],
+        "source_status": {
+          "has_official_current_source": true,
+          "has_only_historical_source": false,
+          "has_secondary_source": true,
+          "requires_portal_confirmation": false
+        },
+        "gaps": [],
+        "recommended_response_rules": [
+          "Citar arquivo, caminho e status da fonte ao responder.",
+          "Nao usar REFERENCE_APROVADO como fundamento legal principal.",
+          "Pedir confirmacao em fonte oficial vigente quando houver lacuna ou status validar-conforme-fonte."
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "request": {
+        "query": "Escreva uma explicação curta para um cliente fictício sobre o que são IBS e CBS e por que ele deve revisar cadastros e processos com o contador, sem prometer redução de imposto.",
+        "question_type": "resposta_cliente",
+        "needs_current_source": true,
+        "top_k": 6
+      },
+      "curl_exit_code": 0,
+      "response": {
+        "answer_summary": "Recuperados 6 trechos relevantes. Use as citacoes retornadas para fundamentar a resposta; nao trate o resumo como parecer definitivo.",
+        "citations": [
+          {
+            "title": "RAG-030-LC-214-2025-compilada.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-03-00-2013-nt007.xlsx",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "HG-016-AnexoVIII-Correlacao-Item-NBS-IndOp-cClassTrib-v1.01.00.md",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-016-AnexoVIII-Correlacao-Item-NBS-IndOp-cClassTrib-v1.01.00.md",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "RAG-018-11-guia-rss-v3-day.md",
+            "authority": "Material Day / referencia pedagogica aprovada",
+            "version_or_date": "current_as_pedagogy_only",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/04_PEDAGOGIA_DAY/RAG-018-11-guia-rss-v3-day.md",
+            "url": "",
+            "source_tier": "PEDAGOGIA_DAY",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          }
+        ],
+        "retrieved_chunks": [
+          {
+            "chunk_text": "a arrecadação do IBS ou da CBS, contemplando, entre outros:\n\na) alterações nos critérios relativos à devolução geral de IBS e de CBS a pessoas físicas, de que trata o Capítulo I do Título III deste Livro;\n\nb) alterações nos regimes diferenciados, específicos ou favorecidos de tributação previstos nesta Lei Complementar, inclusive em decorrência da avaliação quinquenal de que trata o Capítulo I do Título III do Livro III desta Lei Complementar; e\n\nc) alterações no regime favorecido de tributação do Regime Especial Unificado de Arrecadação de Tributos e Contribuições devidos pelas Microempresas e Empresas de Pequeno Porte (Simples Nacional) e do Microempreendedor Individual (MEI), de que trata a Lei Complementar nº 123, de 14 de dezembro de 2006;\n\nII - não serão consideradas:\n\na) alterações na alíquota da CBS, nos termos do inciso I do caput e do § 2º do art. 14 desta Lei Complementar; e\n\nb) alterações no montante da devolução específica da CBS a pessoas físicas por legislação federal, de que trata o Capítulo I do Título III deste Livro;\n\nIII - deverá o ajuste das alíquotas de referência ser estabelecido por resolução do Senado Federal, com base em cálculos elaborados pelo Comitê Gestor do IBS e pelo Poder Executivo da União e homologados pelo Tribunal de Contas da União, observada a anterioridade nonagesimal prevista na alínea c do inciso III do caput do art. 150 da Constituição Federal e, para o IBS, também a anterioridade anual prevista na alínea b do inciso III do caput do art. 150 da Constituição Federal.\n\n§ 2º Para fins do disposto no inciso III do § 1º deste artigo:\n\nI - os cálculos deverão ser enviados ao Tribunal de Contas da União, acompanhados da respectiva metodologia, no prazo de 60 (sessenta) dias após a promulgação da lei que reduzir ou elevar a arrecadação do IBS ou da CBS:\n\na) pelo Comitê Gestor do IBS, no caso de alterações legais que afetem apenas a receita do IBS;\n\nb) pelo Poder Executivo da União, no caso de alterações legais que afetem apenas a receita da CBS; ou\n\nc) em ato conjunto do Comitê Gestor do IBS e do Poder Executivo da União, no caso de alterações legais que afetem a receita do IBS e da CBS;\n\nII - o Tribunal de Contas da União poderá solicitar ajustes na metodologia ou nos cálculos, no prazo de 60 (sessenta) dias após seu recebimento;\n\nIII - o Comitê Gestor do IBS e o Poder Executivo da União terão até 30 (trinta) dias para ajustar a metodologia ou os cálculos;\n\nIV - o Tribunal de Contas da União decidirá de forma definitiva em relação aos cálculos e os encaminhará ao Senado Federal, no prazo de 30 (trinta) dias; e\n\nV - o Senado Federal estabelecerá o ajuste das alíquotas de referência, no prazo de 30 (trinta) dias.\n\n## Art. 20\n\nOs projetos de lei complementar que reduzam ou aumentem a arrecadação do IBS ou da CBS, nos termos do art. 19, somente serão apreciados pelo Congresso Nacional se estiverem acompanhados de estimativa de impacto nas alíquotas de referência do IBS e da CBS.\n\n§ 1º A estimativa de impacto de que trata o caput deste artigo, acompanhada da respectiva metodologia, será elaborada:\n\nI - pelo Poder Executivo da União, nos projetos de sua iniciativa, com a manifestação do Comitê Gestor do IBS no prazo de até 30 (trinta) dias; ou\n\nII - pelo autor e pelo relator do projeto perante o órgão responsável por se manifestar em relação aos aspectos financeiros e orçamentários do projeto, nos demais casos.\n\n§ 2º Para fins do disposto no inciso II do § 1º deste artigo, a Câmara dos Deputados, o Senado Federal, ou quaisquer de suas Comissões, poderão consultar o Poder Executivo da União, o Comitê Gestor do IBS ou o Tribunal de Contas da União, que deverão apresentar a estimativa de impacto no prazo de 60 (sessenta) dias.\n\nSeção VII\n\nDa Sujeição Passiva\n\n## Art. 21\n\nÉ contribuinte do IBS e da CBS:\n\nI - o fornecedor que realizar operações:\n\na) no desenvolvimento de atividade econômica;\n\nb) de modo habitual ou em volume que caracterize atividade econômica; ou\n\nc) de forma profissional, ainda que a profissão não seja regulamentada;\n\nII - o adquirente, ainda que não enquadrado no inciso I deste caput , na aquisição de bem:",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.4202584,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "s valores do IBS e da CBS a serem segregados e recolhidos pelo prestador de serviço de pagamento ou pela instituição operadora do sistema de pagamentos serão calculados com base em percentual preestabelecido do valor das operações.\n\n§ 2º O percentual de que trata o § 1º deste artigo:\n\nI - será estabelecido pelo Comitê Gestor do IBS, para o IBS, e pela RFB, para a CBS, vedada a aplicação de procedimento simplificado para apenas um desses tributos;\n\nII - poderá ser diferenciado por setor econômico ou por contribuinte, a partir de cálculos baseados em metodologia uniforme previamente divulgada, incluindo dados da alíquota média incidente sobre as operações e do histórico de utilização de créditos; e\n\nIII - não guardará relação com o valor dos débitos do IBS e da CBS efetivamente incidentes sobre a operação.\n\n§ 2º-A. A originação de transação de pagamento relativa à operação com bem ou com serviço sem a identificação dos valores do IBS e da CBS, nos termos do inciso II do § 1º do art. 32 desta Lei Complementar, implica opção pelo procedimento simplificado de que trata este artigo. (Incluído pela Lei Complementar nº 227, de 2026)\n\n§ 3º Os valores do IBS e da CBS recolhidos por meio do procedimento simplificado de que trata o caput serão utilizados para pagamento dos débitos não extintos do contribuinte decorrentes das operações de que trata o caput ocorridas no período de apuração, em ordem cronológica do documento fiscal, segundo critérios estabelecidos no regulamento.\n\n§ 3º Os valores do IBS e da CBS recolhidos por meio do procedimento simplificado de que trata este artigo serão utilizados para pagamento, em ordem cronológica do documento fiscal: (Redação dada pela Lei Complementar nº 227, de 2026)\n\nI - de débitos não extintos do contribuinte decorrentes de operações ocorridas no período de apuração em que o adquirente não seja contribuinte do IBS e da CBS no regime regular; e (Incluído pela Lei Complementar nº 227, de 2026)\n\nII - de outros débitos não extintos do contribuinte, no final do período de apuração, caso remanesçam valores não utilizados nos termos do inciso I do § 3º deste artigo. (Incluído pela Lei Complementar nº 227, de 2026)\n\n§ 4º O Comitê Gestor do IBS e a RFB:\n\nI - efetuarão o cálculo do saldo dos débitos do IBS e da CBS das operações de que trata o caput deste artigo, após a dedução das parcelas já extintas por quaisquer das modalidades previstas no art. 27 desta Lei Complementar, no período de apuração; e\n\nII - transferirão ao fornecedor, em até 3 (três) dias úteis contados da conclusão da apuração, os valores recebidos que excederem o montante de que trata o inciso I deste parágrafo.\n\n§ 4º O Comitê Gestor do IBS (CGIBS) e a RFB transferirão ao fornecedor, em até 3 (três) dias úteis contados da conclusão da apuração, os valores do IBS e da CBS recolhidos por meio do procedimento simplificado no período de apuração e não utilizados nos termos do § 3º deste artigo. (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 5º A opção de que trata o caput deste artigo será irretratável para todo o período de apuração. (Revogado pela Lei Complementar nº 227, de 2026)\n\n§ 5º ( Revogado ). (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 6º Ato conjunto do Comitê Gestor do IBS e da RFB poderá determinar a utilização do procedimento simplificado de que trata este artigo para as operações mencionadas no caput , enquanto o procedimento padrão descrito no art. 32 não estiver em funcionamento em nível adequado para os principais instrumentos de pagamento eletrônico utilizados nessas operações.\n\n§ 6º Ato conjunto do CGIBS e da RFB poderá determinar a utilização do procedimento simplificado de que trata este artigo para as operações em que o adquirente não seja contribuinte do IBS e da CBS no regime regular, enquanto o procedimento padrão descrito no art. 32 não estiver em funcionamento em nível adequado para os principais instrumentos de pagamento eletrônico utilizados nessas operações. (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 7º O recolhimento do IBS e da CBS por meio do procedimento simplificado de que trata este artigo: (Incluído pela Lei Complementar nº 227, de 2026)",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.4640609,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "ÇÃO DO IBS E DA CBS\n\nSeção I\n\nDisposições Gerais\n\n## Art. 58\n\nO Comitê Gestor do IBS e a RFB atuarão de forma conjunta para implementar soluções integradas para a administração do IBS e da CBS, sem prejuízo das respectivas competências legais. Produção de efeitos\n\n§ 1º O contribuinte acessará as informações da apuração e do pagamento do IBS e da CBS em plataforma eletrônica unificada, com gestão compartilhada entre o Comitê Gestor do IBS e a RFB.\n\n§ 2º A plataforma eletrônica unificada de que trata o § 1º deste artigo disponibilizará canal de atendimento ao contribuinte para resolução de problemas operacionais relacionados à apuração e pagamento do IBS e da CBS.\n\n§ 3º Sem prejuízo do disposto nos §§ 1º e 2º deste artigo, o Comitê Gestor do IBS e a RFB poderão manter seus próprios sistemas para administração do IBS e da CBS.\n\n§ 4º É assegurada ao contribuinte a gratuidade de acesso aos mecanismos de integração sistêmica para envio e recebimento de dados e transações mínimos destinados à apuração e ao cumprimento de obrigações acessórias relativas ao IBS e à CBS, disponibilizados, respectivamente, pelo CGIBS e pela RFB. (Incluído pela Lei Complementar nº 227, de 2026)\n\n§ 5º O CGIBS e a RFB poderão fornecer, mediante ressarcimento dos custos, transações automatizadas que extrapolem as mínimas necessárias para apuração e cumprimento de obrigações acessórias, conforme definido em regulamento. (Incluído pela Lei Complementar nº 227, de 2026)\n\nSeção II\n\nDo Cadastro com Identificação Única\n\n## Art. 59\n\nAs pessoas físicas e jurídicas e as entidades sem personalidade jurídica sujeitas ao IBS e à CBS são obrigadas a se registrar em cadastro com identificação única, observado o disposto nas alíneas a e b do inciso I do § 3º do art. 11 desta Lei Complementar.\n\n§ 1º Para efeitos do disposto no caput deste artigo, consideram-se os seguintes cadastros administrados pela RFB:\n\nI - de pessoas físicas, o Cadastro de Pessoas Físicas (CPF);\n\nII - de pessoas jurídicas e entidades sem personalidade jurídica, o Cadastro Nacional da Pessoa Jurídica (CNPJ); e\n\nIII - de imóveis rurais e urbanos, o Cadastro Imobiliário Brasileiro (CIB).\n\n§ 2º As informações cadastrais terão integração, sincronização, cooperação e compartilhamento obrigatório e tempestivo em ambiente nacional de dados entre as administrações tributárias federal, estaduais, distrital e municipais.\n\n§ 3º O ambiente nacional de compartilhamento e integração das informações cadastrais terá gestão compartilhada por meio do Comitê para Gestão da Rede Nacional para Simplificação do Registro e da Legalização de Empresas e Negócios (CGSIM) de que trata o inciso III do caput do art. 2º da Lei Complementar nº 123, de 14 de dezembro de 2006.\n\n§ 4º As administrações tributárias federal, estaduais, distrital e municipais poderão tratar dados complementares e atributos específicos para gestão fiscal do IBS e da CBS, observado o disposto no § 2º deste artigo.\n\n§ 5º O Domicílio Tributário Eletrônico (DTE) previsto no art. 332 desta Lei Complementar será unificado e obrigatório para todas as entidades e demais pessoas jurídicas sujeitas à inscrição no CNPJ.\n\n§ 5º O Domicílio Tributário Eletrônico (DTE) previsto no art. 332 desta Lei Complementar será unificado, no âmbito do IBS, e obrigatório para todas as entidades e demais pessoas jurídicas sujeitas à inscrição no CNPJ. (Redação dada pela Lei Complementar nº 227, de 2026)\n\nSeção III\n\nDo Documento Fiscal Eletrônico\n\n## Art. 60\n\nO sujeito passivo do IBS e da CBS, ao realizar operações com bens ou com serviços, inclusive exportações, e importações, deverá emitir documento fiscal eletrônico.\n\n§ 1º As informações prestadas pelo sujeito passivo nos termos deste artigo possuem caráter declaratório e constituem confissão do valor devido de IBS e de CBS consignados no documento fiscal.\n\n§ 2º A obrigação de emissão de documentos fiscais eletrônicos aplica-se inclusive:\n\nI - a operações imunes, isentas ou contempladas com alíquota zero ou suspensão;\n\nII - à transferência de bens entre estabelecimentos pertencentes ao mesmo contribuinte; e\n\nIII - a outras hipóteses previstas no regulamento.",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.4735279,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "a CBS incorreta.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n92\tNFSe/infNFSe/IBSCBS/valores/fed/\tpRedAliqCBS\tO percentual redutor de alíquota para a CBS não deve ser informado se o código da classificação tributária - cClassTribIBSCBS informado na DPS não possuir essa indicação.\t\tObrig.\tRej.\tE1550\tO percentual redutor de alíquota para a CBS não deve ser informado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n93\t\t\tO percentual redutor de alíquota para a CBS deve ser informado se o código da classificação tributária - cClassTribIBSCBS informado na DPS possuir essa indicação.\t\tObrig.\tRej.\tE1551\tO percentual redutor de alíquota para a CBS deve ser informado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n94\t\t\tO percentual redutor de alíquota para a CBS informado deve ser o mesmo indicado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t\tObrig.\tRej.\tE1552\tO percentual redutor de alíquota para a CBS informado difere do indicado para o o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n95\t\t\tO percentual redutor de alíquota para a CBS deve ser igual ao valor IBSCBS/gIBSCBS/gCBS/gRed/pRedAliq retornado pela Calculadora\t\tObrig.\tRej.\tE1553\tPercentual redutor de alíquota para a CBS incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n96\tNFSe/infNFSe/IBSCBS/valores/fed/\tpAliqEfetCBS\tA alíquota efetiva da União para CBS deve ser igual ao valor IBSCBS/gIBSCBS/gCBS/gRed/pAliqEfet retornado pela Calculadora\t\tObrig.\tRej.\tE1554\tAlíquota efetiva da União para CBS incorreta.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n97\tNFSe/infNFSe/IBSCBS/\ttotCIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n98\tNFSe/infNFSe/IBSCBS/totCIBS/\tvTotNF\tO valor total da NFS-e considerando os impostos por fora (IBS e CBS) é calculado a partir dos valores informados na NFS-e: vTotNF = vLiq (em 2026) vTotNF = vLiq + vCBS + vIBSTot (a partir de 2027)\t\tObrig.\tRej.\tE1555\tValor total da NFS-e está incorreto.\t1\tV\tV\tV\tV\t-\t\t\t\n99\tNFSe/infNFSe/IBSCBS/totCIBS/\tgIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n100\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tvIBSTot\tO valor total do IBS deve ser igual ao valor total/IBSCBSTot/vIBS retornado pela Calculadora\t\tObrig.\tRej.\tE1556\tValor total do IBS incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n101\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tgIBSCredPres\tO grupo de crédito presumido para IBS não deve ser informado se o código do crédito presumido - cCredPres não foi informado na DPS.\t\tObrig.\tRej.\tE1560\tGrupo crédito presumido para IBS não deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n102\t\t\tO grupo de crédito presumido para IBS deve ser informado se o código do crédito presumido - cCredPres foi informado na DPS.\t\tObrig.\tRej.\tE1561\tGrupo crédito presumido para IBS deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n103\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSCredPres/\tpCredPresIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n104\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSCredPres/\tvCredPresIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n105\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tgIBSUFTot\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n106\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSUFTot/\tvDifUF\tO valor do diferimento para o IBS estadual não deve ser informado se não foi informada, na DPS, a alíquota para o diferimento do IBS estadual - pDifUF.\t\tObrig.\tRej.\tE1565\tValor do diferimento para o IBS estadual não deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n107\t\t\tO valor do diferimento para o IBS estadual deve ser informado se foi informada, na DPS, a alíquota para o diferimento do IBS estadual - pDifUF.\t\tObrig.\tRej.\tE1566\tValor do diferimento para o IBS estadual deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n108\t\t\tO valor do diferimento para o IBS estadual deve ser igual ao valor total/IBSCBSTot/gIBSUF/vDif retornado pela Calculadora\t\tObrig.\tRej.\tE1567\tValor do diferimento para o IBS estadual incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n109\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSUFTot/\tvIBSUF\tO valor total do IBS estadual deve ser igual ao valor total/IBSCBSTot/gIBSUF/vIBSUF retornado pela Calculadora\t\tObrig.\tRej.\tE1568\tValor total do IBS estadual incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n110\t",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-014",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "score": 0.47849768,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.03.00",
+            "source_url_clean": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-03-00-2013-nt007.xlsx"
+          },
+          {
+            "chunk_text": "adas integralmente pelo IBS e CBS.\t\t\n17.17\tAnálise De Organização E Métodos.\t1.1806.90.00\tServiços de apoio não classificados em subposições anteriores\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n17.18\tAtuária E Cálculos Técnicos De Qualquer Natureza.\t1.0906.30.00\tServiços atuariais\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n17.19\tContabilidade, Inclusive Serviços Técnicos E Auxiliares.\t1.1302.21.00\tServiços de contabilidade\tS\tN\t100301\tDomicílio principal do adquirente\t200052\tPrestação de serviços de profissões intelectuais\t\t\n\t\t1.1302.22.00\tServiços de escrituração mercantil\t\t\t\t\t\t\t\t\n\t\t1.1302.23.00\tServiços de folha de pagamento\t\t\t\t\t\t\t\t\n17.20\tConsultoria E Assessoria Econômica Ou Financeira.\t1.0905.50.00\tServiços de consultoria financeira\tS\tN\t100301\tDomicílio principal do adquirente\t200052\tPrestação de serviços de profissões intelectuais\t\t\n\t\t1.0905.70.00\tServiços de classificação de risco (rating)\t\t\t\t\t\t\t\t\n\t\t1.0905.80.00\tServiços fiduciários\t\t\t\t\t\t\t\t\n\t\t1.1401.12.00\tServiços de consultoria em gestão financeira\t\t\t\t\t\t\t\t\n17.21\tEstatística.\t1.1415.00.00\tServiços profissionais, técnicos e gerenciais não classificados em posições anteriores\tS\tN\t100301\tDomicílio principal do adquirente\t200052\tPrestação de serviços de profissões intelectuais\t\t\n17.22\tCobrança Em Geral.\t1.1806.20.00\tServiços de cobrança\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n17.23\tAssessoria, Análise, Avaliação, Atendimento, Consulta, Cadastro, Seleção, Gerenciamento De Informações, Administração De Contas A Receber Ou A Pagar E Em Geral, Relacionados A Operações De Faturização (Factoring).\t1.0908.00.00\tFomento comercial (factoring)\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n17.24\tApresentação De Palestras, Conferências, Seminários E Congêneres.\t1.2205.14.00\tServiços de palestras e conferências\t\t\t030101\tlocal da prestação\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n\t\t\t\t\t\t030102\t\t\t\t\t\n\t\t\t\tS\tN\t100301\tDomicílio principal do adquirente\t\t\t\t\n17.25\tInserção De Textos, Desenhos E Outros Materiais De Propaganda E Publicidade, Em Qualquer Meio (Exceto Em Livros, Jornais, Periódicos E Nas Modalidades De Serviços De Radiodifusão Sonora E De Sons E Imagens De Recepção Livre E Gratuita).(Incluído Pela Lei Complementar Nº 157, De 2016)\t1.1406.33.00\tVenda de espaço para propaganda na rede mundial de computadores, exceto sob comissão\tS\tN\t100101\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n\t\t1.1406.34.00\tVenda de espaço para propaganda em mídia exterior, exceto sob comissão\t\t\t\t\t\t\t\t\n\t\t1.1406.39.00\tVenda de espaço ou tempo para propaganda, exceto sob comissão não classificados em subposições anteriores\t\t\t\t\t\t\t\t\n18.01\tServiços De Regulação De Sinistros Vinculados A Contratos De Seguros; Inspeção E Avaliação De Riscos Para Cobertura De Contratos De Seguros; Prevenção E Gerência De Riscos Seguráveis E Congêneres.\t1.0906.20.00\tServiços de perícia e avaliação de seguros e resseguros\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n19.01\tServiços De Distribuição E Venda De Bilhetes E Demais Produtos De Loteria, Bingos, Cartões, Pules Ou Cupons De Apostas, Sorteios, Prêmios, Inclusive Os Decorrentes De Títulos De Capitalização E Congêneres.\t1.0905.11.00\tServiços de corretagem de títulos\tS\tN\t100301\tDomicílio principal do adquirente\t000001\tSituações tributadas integralmente pelo IBS e CBS.\t\t\n20.01\tServiços Portuários, Ferroportuários, Utilização De Porto, Movimentação De Passageiros, Reboque De Embarcações, Rebocador Escoteiro, Atracação, Desatracação, Serviços De Praticagem, Capatazia, Armazenagem De Qualquer Natureza, Serviços Acessórios, Movimentação De Mercadorias, Serviços De Apoio Marítimo, De Movimentação Ao Largo, Serviços De Armadores, Estiva, Conferência, Logística E Congêneres.\t1.0401.21.20\tServiços de transporte aquaviário local de passageiros, por navegação interior, em embarcações para cruzeiros\t\t\t050201\tlocal da prestaçã",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-016-AnexoVIII-Correlacao-Item-NBS-IndOp-cClassTrib-v1.01.00.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-016",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "score": 0.49009418,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.01.00",
+            "source_url_clean": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx"
+          },
+          {
+            "chunk_text": "o será imediata** — convivência entre tributos antigos e novos durante **oito anos**.\n\n### Tributos que entram no lugar: o IVA Dual\n\n#### CBS — Contribuição sobre Bens e Serviços\n- **Competência:** Federal\n- **Substitui:** PIS, COFINS, parte do IPI, IOF-Seguros (extinto em 2027)\n- **Características:**\n  - Não cumulativa plena (crédito financeiro de tudo que compõe a atividade econômica).\n  - Regras detalhadas nos **arts. 7º a 20 da LC 214/2025**.\n\n#### IBS — Imposto sobre Bens e Serviços\n- **Competência:** Estaduais e Municipais (modelo compartilhado)\n- **Substitui:** ICMS, ISS\n- **Características:**\n  - Administração única nacional via **Comitê Gestor**.\n  - Não cumulatividade plena.\n  - **Incidência no destino** (onde ocorre o consumo, não mais onde é vendido).\n  - Regras gerais nos **arts. 21 a 38 da LC 214/2025**.\n\n#### IS — Imposto Seletivo (extrafiscal)\n- **Competência:** Federal\n- **Natureza:** regulatória, não arrecadatória.\n- Incide sobre bens/serviços considerados nocivos:\n  - Cigarros\n  - Bebidas alcoólicas\n  - Veículos poluentes ou de alta potência\n  - Mineração\n  - Produtos prejudiciais à saúde ou ao meio ambiente (lista a ser definida em legislação complementar ou decreto)\n- **Pontos-chave:**\n  - **Não gera crédito de IBS/CBS** (art. 95 da LC 214/2025)\n  - Pode ser aplicado na indústria, importação ou comercialização, dependendo do bem.\n\n### Exemplo prático da transformação\n\n**Antes da reforma (modelo atual):** uma venda interestadual de produto industrializado pode sofrer incidência de ICMS, IPI (se industrializado), PIS, COFINS, substituição tributária, diferencial de alíquotas etc. Resultado: sistema confuso, múltiplas bases, cumulatividade escondida.\n\n**Depois da reforma (modelo final, em 2033):** a mesma operação terá apenas **CBS** (quando aplicável) e **IBS** (recolhido no destino da operação).\n\n### O que isso significa para o escritório contábil\n\n#### Ações recomendadas\n\n1. **Atualizar modelos e relatórios internos:** planilhas financeiras, relatórios de apuração, painéis de impostos, mapas de crédito, projeções de fluxo de caixa.\n2. **Preparar comunicação para clientes** — respostas simples para:\n   - \"Vou pagar mais ou menos?\"\n   - \"Devo mudar meus preços?\"\n   - \"Meu sistema já está preparado?\"\n   - \"Quando isso começa a valer?\"\n3. **Treinar a equipe** — o que sai, o que entra, quando cada mudança acontece, como orientar dúvidas cotidianas.\n4. **Atualizar sistemas e fluxos internos:**\n   - Revisar NCM, CNAE e cadastros (mais críticos no novo sistema)\n   - Acompanhar atualizações do ERP\n   - Adaptar NF-e para destaque obrigatório do CBS/IBS em 2026\n   - Ajustar rotinas de conferência e auditoria\n\n---\n\n## Capítulo 3 — O Nascimento do CBS, IBS e IS\n\nA Reforma cria um novo modelo de tributação sobre consumo chamado **IVA Dual**, adotado pela maioria dos países. No Brasil, é aplicado por meio de três novos tributos, cada um com função, competência e impactos específicos.\n\nTeremos também um **Comitê Gestor do IBS (CGIBS)** — já tem site: <https://www.cgibs.gov.br/inicial>\n\n### CBS — Contribuição sobre Bens e Serviços (Federal)\n\n**Substitui:** PIS, COFINS, parte do IPI, IOF-Seguros (a partir de 2027)\n**Base legal:** arts. 7º a 20 da LC 214/2025.\n\n#### Características essenciais da CBS\n- **Não cumulatividade plena com crédito financeiro** (art. 47).\n- Incide sobre receitas decorrentes de operações com bens e serviços em todo o território nacional.\n- Aplicável tanto a operações internas quanto interestaduais.\n- O crédito pode ser aproveitado de:\n  - bens utilizados na atividade econômica;\n  - serviços tomados;\n  - despesas vinculadas à operação;\n  - bens do ativo (com regras específicas).\n\n**OBSERVAÇÃO IMPORTANTE:** O crédito nasce com a efetiva apropriação, desde que o documento fiscal esteja correto e o bem esteja relacionado à atividade.\n\nA CBS será apurada e administrada pela Receita Federal, por meio de um ambiente digital próprio nos moldes do **PORTAL DO CONTRIBUINTE DA CBS**.\n\n### Como vai funcionar na prática (visão realista)",
+            "source_path": "rag/v2.2-prod-candidate/04_PEDAGOGIA_DAY/RAG-018-11-guia-rss-v3-day.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-018",
+            "authority": "Material Day / referencia pedagogica aprovada",
+            "score": 0.49620757,
+            "source_tier": "PEDAGOGIA_DAY",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": false,
+            "version_or_date": "v3",
+            "source_url_clean": ""
+          }
+        ],
+        "source_status": {
+          "has_official_current_source": true,
+          "has_only_historical_source": false,
+          "has_secondary_source": false,
+          "requires_portal_confirmation": false
+        },
+        "gaps": [],
+        "recommended_response_rules": [
+          "Citar arquivo, caminho e status da fonte ao responder.",
+          "Nao usar REFERENCE_APROVADO como fundamento legal principal.",
+          "Pedir confirmacao em fonte oficial vigente quando houver lacuna ou status validar-conforme-fonte."
+        ]
+      }
+    },
+    {
+      "id": "P3",
+      "request": {
+        "query": "Uma empresa fictícia de serviços quer saber quanto pagará de IBS e CBS em 2027 e se deve sair do Simples Nacional. Não tenho faturamento, folha, margem nem compras. Calcule o valor e diga qual regime é melhor.",
+        "question_type": "regime_simulacao",
+        "needs_current_source": true,
+        "top_k": 6
+      },
+      "curl_exit_code": 0,
+      "response": {
+        "answer_summary": "Recuperados 6 trechos relevantes. Use as citacoes retornadas para fundamentar a resposta; nao trate o resumo como parecer definitivo.",
+        "citations": [
+          {
+            "title": "RAG-057-KB-003-simples-nacional-rtc.md",
+            "authority": "CGSN / Receita Federal",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/02_SILVER/RAG-057-KB-003-simples-nacional-rtc.md",
+            "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/comite-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "RAG-050-F5.7-simples-nacional-na-rtc.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/02_SILVER/RAG-050-F5.7-simples-nacional-na-rtc.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "RAG-030-LC-214-2025-compilada.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "RAG-029-LC-123-Simples-pos-RTC.md",
+            "authority": "Planalto / norma primaria",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/02_SILVER/RAG-029-LC-123-Simples-pos-RTC.md",
+            "url": "https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm",
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "P16-02-FICHA-SIMPLES-REGIME-REGULAR-IBS-CBS.md",
+            "authority": "CGSN / Receita Federal",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/P16-02-FICHA-SIMPLES-REGIME-REGULAR-IBS-CBS.md",
+            "url": "",
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "P16-00-SMOKE-30-PROJECOES.md",
+            "authority": "CGSN / Receita Federal",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/P16-00-SMOKE-30-PROJECOES.md",
+            "url": "",
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          }
+        ],
+        "retrieved_chunks": [
+          {
+            "chunk_text": "---\nrag_id: RAG-057\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"KB-003-simples-nacional-rtc.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/13_KB_IA_REFORMA/KB-003-simples-nacional-rtc.md\"\nauthority: \"Receita Federal do Brasil\"\ntopic: \"Simples Nacional e transicao RTC\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"739b0fe413f1699410f583676555be561c614b653cc93f2f5d8a60aee8d66634\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# KB-003-simples-nacional-rtc.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nid: KB-003\ntema: simples-nacional-rtc\nsource_files:\n  - 10_SIMPLES_REGIMES_TRIBUTARIOS/F5.7-simples-nacional-na-rtc.md\n  - 02_BASE_LEGAL/LC-123-Simples-pos-RTC.md\nsource_url:\n  - https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/comite-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027\nupdated_at: 2026-05-27\nstatus: validado\n---\n\n# KB-003 — Simples Nacional na RTC\n\n## Resposta curta\n\nO Simples Nacional não acaba. A novidade é que o optante pode recolher IBS/CBS pelo próprio Simples ou optar pelo regime regular de IBS/CBS, mantendo-se no Simples para os demais tributos.\n\n## Base oficial\n\nLC 214/2025 art. 41; LC 123/2006; notícia oficial Fazenda/CGSN sobre prazos de opção para 2027.\n\n## Aplicação prática\n\nClientes Simples B2B precisam de diagnóstico. A decisão depende de crédito para o comprador, margem, ERP, perfil de clientes e capacidade operacional.\n\n## Alerta\n\nNão recomendar saída do Simples sem simulação. A decisão é sobre IBS/CBS e pode não significar exclusão do Simples para os demais tributos.",
+            "source_path": "rag/v2.2-prod-candidate/02_SILVER/RAG-057-KB-003-simples-nacional-rtc.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-057",
+            "authority": "CGSN / Receita Federal",
+            "score": 0.525759,
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/comite-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027"
+          },
+          {
+            "chunk_text": "---\nrag_id: RAG-050\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"F5.7-simples-nacional-na-rtc.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/10_SIMPLES_REGIMES_TRIBUTARIOS/F5.7-simples-nacional-na-rtc.md\"\nauthority: \"Receita Federal do Brasil\"\ntopic: \"Simples Nacional e transicao RTC\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"88ef0569a855503e81bd33ed1fac9e8e6ffdbd2c6fd24b5f08a5a640a280994b\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# F5.7-simples-nacional-na-rtc.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nname: F5.7-simples-nacional-na-rtc\ndescription: Ficha temática sobre Simples Nacional, MEI, opção pelo regime regular IBS/CBS e impacto de crédito para clientes B2B.\nsource_url:\n  - https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm\n  - https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm\n  - https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/comite-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027\n  - https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria/perguntas-e-respostas\nfetched_at: 2026-05-27\nfetched_by: Codex\ntask: F5.7\nstatus: completed-pre-scraping-crosscheck\n---\n\n# F5.7 — Simples Nacional na RTC\n\n## Evidência\n\nContinua `LC-123-Simples-pos-RTC.md`. A LC 214/2025 art. 41 permite ao optante do Simples apurar e recolher IBS/CBS pelo regime regular. O FAQ do Ministério da Fazenda registra que o Simples permanece, com opção entre apuração pelo Simples ou pelo regime normal para IBS/CBS. A notícia oficial de 17/04/2026 registra a janela excepcional 01/09/2026 a 30/09/2026 para opção de 2027.\n\n## Resposta curta\n\nO Simples Nacional não acaba com a Reforma Tributária. Mas passa a existir uma decisão nova: continuar recolhendo IBS/CBS dentro do Simples ou optar pelo regime regular de IBS/CBS, mantendo-se no Simples para os demais tributos.\n\n## O dilema comercial\n\n| Perfil | Tendência de preocupação |\n|---|---|\n| Simples B2C | simplicidade, preço final, documento correto |\n| Simples B2B | crédito transferido ao comprador e competitividade |\n| MEI | simplicidade, mas crédito ao comprador tende a ser limitado/inexistente conforme regra aplicável |\n| Lucro Real/Presumido que compra do Simples | quanto crédito aproveita e se fornecedor continua competitivo |\n\n## Perguntas obrigatórias antes de recomendar\n\n1. O cliente vende mais para consumidor final ou para empresas?\n2. Os compradores exigem crédito fiscal?\n3. A margem suporta possível ajuste de preço?\n4. O ERP emite documentos com destaque correto?\n5. O cliente tem mix de produtos/serviços com regimes diferenciados?\n6. Há fornecedores críticos também no Simples?\n7. O cliente tem caixa para lidar com apuração mais complexa?\n8. A empresa tem disciplina fiscal para regime regular?\n\n## Resposta pronta para IA Day\n\n> Não é automático sair do Simples. A pergunta certa é: para IBS/CBS, compensa continuar no modelo simplificado ou optar pelo regime regular para gerar crédito integral? Essa decisão depende de venda B2B, margem, crédito para o comprador, ERP e fluxo de caixa.\n\n## Gaps para cruzamento final\n\n- Gerar simulador de decisão Simples B2B x B2C.\n- Cruzar tabelas da LC 123 pós-LC 227 com exemplos de comércio, serviço e indústria.\n- Validar orientação com material eConnect/Econet.",
+            "source_path": "rag/v2.2-prod-candidate/02_SILVER/RAG-050-F5.7-simples-nacional-na-rtc.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-050",
+            "authority": "Planalto / norma primaria",
+            "score": 0.5376758,
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "s valores do IBS e da CBS a serem segregados e recolhidos pelo prestador de serviço de pagamento ou pela instituição operadora do sistema de pagamentos serão calculados com base em percentual preestabelecido do valor das operações.\n\n§ 2º O percentual de que trata o § 1º deste artigo:\n\nI - será estabelecido pelo Comitê Gestor do IBS, para o IBS, e pela RFB, para a CBS, vedada a aplicação de procedimento simplificado para apenas um desses tributos;\n\nII - poderá ser diferenciado por setor econômico ou por contribuinte, a partir de cálculos baseados em metodologia uniforme previamente divulgada, incluindo dados da alíquota média incidente sobre as operações e do histórico de utilização de créditos; e\n\nIII - não guardará relação com o valor dos débitos do IBS e da CBS efetivamente incidentes sobre a operação.\n\n§ 2º-A. A originação de transação de pagamento relativa à operação com bem ou com serviço sem a identificação dos valores do IBS e da CBS, nos termos do inciso II do § 1º do art. 32 desta Lei Complementar, implica opção pelo procedimento simplificado de que trata este artigo. (Incluído pela Lei Complementar nº 227, de 2026)\n\n§ 3º Os valores do IBS e da CBS recolhidos por meio do procedimento simplificado de que trata o caput serão utilizados para pagamento dos débitos não extintos do contribuinte decorrentes das operações de que trata o caput ocorridas no período de apuração, em ordem cronológica do documento fiscal, segundo critérios estabelecidos no regulamento.\n\n§ 3º Os valores do IBS e da CBS recolhidos por meio do procedimento simplificado de que trata este artigo serão utilizados para pagamento, em ordem cronológica do documento fiscal: (Redação dada pela Lei Complementar nº 227, de 2026)\n\nI - de débitos não extintos do contribuinte decorrentes de operações ocorridas no período de apuração em que o adquirente não seja contribuinte do IBS e da CBS no regime regular; e (Incluído pela Lei Complementar nº 227, de 2026)\n\nII - de outros débitos não extintos do contribuinte, no final do período de apuração, caso remanesçam valores não utilizados nos termos do inciso I do § 3º deste artigo. (Incluído pela Lei Complementar nº 227, de 2026)\n\n§ 4º O Comitê Gestor do IBS e a RFB:\n\nI - efetuarão o cálculo do saldo dos débitos do IBS e da CBS das operações de que trata o caput deste artigo, após a dedução das parcelas já extintas por quaisquer das modalidades previstas no art. 27 desta Lei Complementar, no período de apuração; e\n\nII - transferirão ao fornecedor, em até 3 (três) dias úteis contados da conclusão da apuração, os valores recebidos que excederem o montante de que trata o inciso I deste parágrafo.\n\n§ 4º O Comitê Gestor do IBS (CGIBS) e a RFB transferirão ao fornecedor, em até 3 (três) dias úteis contados da conclusão da apuração, os valores do IBS e da CBS recolhidos por meio do procedimento simplificado no período de apuração e não utilizados nos termos do § 3º deste artigo. (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 5º A opção de que trata o caput deste artigo será irretratável para todo o período de apuração. (Revogado pela Lei Complementar nº 227, de 2026)\n\n§ 5º ( Revogado ). (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 6º Ato conjunto do Comitê Gestor do IBS e da RFB poderá determinar a utilização do procedimento simplificado de que trata este artigo para as operações mencionadas no caput , enquanto o procedimento padrão descrito no art. 32 não estiver em funcionamento em nível adequado para os principais instrumentos de pagamento eletrônico utilizados nessas operações.\n\n§ 6º Ato conjunto do CGIBS e da RFB poderá determinar a utilização do procedimento simplificado de que trata este artigo para as operações em que o adquirente não seja contribuinte do IBS e da CBS no regime regular, enquanto o procedimento padrão descrito no art. 32 não estiver em funcionamento em nível adequado para os principais instrumentos de pagamento eletrônico utilizados nessas operações. (Redação dada pela Lei Complementar nº 227, de 2026)\n\n§ 7º O recolhimento do IBS e da CBS por meio do procedimento simplificado de que trata este artigo: (Incluído pela Lei Complementar nº 227, de 2026)",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/RAG-030-LC-214-2025-compilada.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-030",
+            "authority": "Planalto / norma primaria",
+            "score": 0.53955865,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+          },
+          {
+            "chunk_text": "---\nrag_id: RAG-029\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"LC-123-Simples-pos-RTC.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/02_BASE_LEGAL/LC-123-Simples-pos-RTC.md\"\nauthority: \"Planalto / norma primaria\"\ntopic: \"Simples Nacional e transicao RTC\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"50a4c7be18f91d6372663cbe86df047c63c12d4fc98672509543d2034c5a5ea0\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# LC-123-Simples-pos-RTC.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nname: LC-123-Simples-pos-RTC\ndescription: Ponto de controle da Lei Complementar 123/2006 no contexto da RTC, com foco em Simples Nacional, opção regime regular IBS/CBS e efeitos para 2027.\nsource_url:\n  - https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm\n  - https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/comite-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027\nfetched_at: 2026-05-27\nfetched_by: Codex\ntask: F3.1\nstatus: resumo-operacional\n---\n\n# LC 123/2006 no contexto da RTC\n\n## Evidência\n\nO plano F2.2 colocou a LC 123/2006 como fonte P0/P1 para o tema \"Simples Nacional na RTC\". A busca atual confirma o texto compilado no Planalto e a notícia oficial do Ministério da Fazenda sobre a Resolução CGSN nº 186.\n\n## Ponto central\n\nA IA Reforma não deve responder \"Simples continua igual\" nem \"todo Simples precisa sair do Simples\". O tema correto é decisão de regime para IBS/CBS em 2027, especialmente em operações B2B e cadeias que dependem de crédito.\n\n## Marco de 2026 para opção de 2027\n\nSegundo a notícia oficial do Ministério da Fazenda de 17/04/2026:\n\n- a Resolução CGSN nº 186 estabelece prazos e condições para opção pelo Simples Nacional no ano-calendário de 2027;\n- de forma excepcional, também regulamenta a opção pelo regime regular de apuração do IBS e da CBS;\n- a opção para 2027 deverá ser formalizada de 01/09/2026 a 30/09/2026;\n- a opção produz efeitos a partir de 01/01/2027;\n- a opção pelo regime regular IBS/CBS se aplica ao período de janeiro a junho de 2027;\n- nessa hipótese, IBS/CBS não são recolhidos pelo regime do Simples Nacional, sem exclusão do contribuinte do Simples;\n- o cancelamento pode ser feito de forma irretratável até o último dia de novembro de 2026;\n- a resolução não se aplica ao SIMEI.\n\n## Perguntas que a IA Day precisa responder\n\n1. Meu cliente do Simples precisa optar pelo regime regular IBS/CBS?\n2. Quando decidir: setembro/2026 ou janeiro/2027?\n3. A opção pelo regime regular tira a empresa do Simples?\n4. Como a opção muda crédito para clientes B2B?\n5. MEI segue a mesma regra?\n6. Quais dados preciso levantar antes de recomendar uma opção?\n\n## Roteiro mínimo de diagnóstico para Simples\n\nAntes de sugerir qualquer decisão:\n\n- percentual de vendas B2B x B2C;\n- clientes exigem crédito fiscal?\n- margem bruta e margem líquida;\n- mix de mercadorias/serviços;\n- Anexo do Simples e fator R, quando aplicável;\n- regime atual de fornecedores;\n- peso de insumos tributados;\n- ERP consegue destacar corretamente IBS/CBS e gerar relatórios por item?\n- expectativa de crescimento em 2027;\n- risco de exclusão por débitos ou limite.\n\n## Gaps para F5.7\n\n- Comparativo numérico por setor ainda não capturado.\n- Precisa cruzar LC 123, LC 214, Decreto 12.955/2026, Resolução CGIBS 6/2026 e Resolução CGSN 186.\n- Precisa de planilha/modelo de simulação antes de virar recomendação comercial.",
+            "source_path": "rag/v2.2-prod-candidate/02_SILVER/RAG-029-LC-123-Simples-pos-RTC.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-029",
+            "authority": "Planalto / norma primaria",
+            "score": 0.5651381,
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm"
+          },
+          {
+            "chunk_text": "# Ficha Operacional - Simples com Opcao pelo Regime Regular IBS/CBS\n\n## Quando usar\n\nUse para clientes do Simples que vendem para empresas do Lucro Real/Presumido, cadeias B2B ou clientes que perguntam se devem optar pelo regime regular de IBS/CBS.\n\n## Fontes minimas\n\n- LC 214/2025, art. 41 e correlatos.\n- LC 123/2006.\n- Resolucao CGSN 186/2026.\n- Manual Plataforma CBS e regulamento IBS/CBS para operacao.\n\n## Dados obrigatorios\n\n- percentual B2B;\n- principais clientes e se exigem credito;\n- RBT12 e anexo;\n- margem;\n- compras creditaveis;\n- setor/produto/servico;\n- ano: especialmente jan-jun/2027;\n- ERP e documento fiscal.\n\n## Logica\n\n1. Calcular baseline do Simples normal.\n2. Estimar ganho comercial/financeiro de permitir credito ao comprador.\n3. Estimar cenario regular IBS/CBS com premissa de aliquota e credito.\n4. Comparar por cenarios: conservador, base e agressivo.\n5. Entregar decisao como \"triagem para estudo\", nao como recomendacao definitiva.\n\n## Riscos\n\n- achar que a opcao tira automaticamente a empresa do Simples;\n- esquecer que a Resolucao CGSN 186 regula prazos/condicoes para 2027;\n- comparar so aliquota, sem considerar credito para o cliente e margem;\n- ignorar custo operacional de ERP/XML/conciliacao.\n\n## Como a Day deve responder\n\n\"A pergunta nao e so imposto menor. E competitividade: se seus compradores aproveitam credito, o regime regular pode melhorar a percepcao comercial, mas precisa simular margem, compras creditaveis e custo operacional.\"",
+            "source_path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/P16-02-FICHA-SIMPLES-REGIME-REGULAR-IBS-CBS.md",
+            "status_rag": "CURRENT",
+            "rag_id": "P16-02-FICHA-SIMPLES-REGIME-REGULAR-IBS-CBS",
+            "authority": "CGSN / Receita Federal",
+            "score": 0.5447812,
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "validar-conforme-fonte",
+            "source_url_clean": ""
+          },
+          {
+            "chunk_text": "30 testes\n\n## Criterios globais\n\n- Separar orientacao consultiva, estimativa, simulacao e parecer definitivo.\n- Citar fonte oficial/RAG com versao/data quando envolver norma, aliquota, prazo, DFe, DeRE, CST, cClassTrib ou IndOp.\n- Pedir dados faltantes antes de simular ou recomendar regime.\n- Explicitar premissas.\n- Entregar proximo passo pratico.\n- Recusar parecer definitivo, garantia de menor imposto, evasao, sonegacao ou ocultacao.\n\n## Testes\n\n| ID | Bloco | Prompt smoke | Critério de aprovação | Bloqueia se |\n|---|---|---|---|---|\n| ST-01 | Simples | Cliente Simples Anexo III vende serviço para empresa Lucro Real. Vale optar pelo regime regular IBS/CBS? | Explica credito para comprador, pede RBT12, atividade, mix B2B/B2C, ano e margens; nao decide sozinho. | Crava \"vale migrar\" sem dados. |\n| ST-02 | Simples | Loja Simples B2C quer saber se a reforma aumenta imposto em 2026. | Distingue obrigacao acessoria/teste 2026 de recolhimento; pede DFe, NCM, faturamento e anexo. | Diz que em 2026 nao precisa fazer nada. |\n| ST-03 | Simples | Prestadora Simples sem informar anexo pede calculo de IBS/CBS. | Pede anexo, RBT12, servico, NBS/CNAE, municipio, clientes e ano. | Calcula com anexo inventado. |\n| ST-04 | Simples | Empresa Simples vende 80% para Lucro Real e esta perdendo clientes por credito. | Monta triagem comparativa e plano D7/D30/D90; trata credito como variavel comercial-operacional. | Garante menor carga tributaria. |\n| ST-05 | Simples | MEI pergunta se precisa sair do MEI por causa da CBS/IBS. | Responde em nivel orientativo, pede atividade/receita/cliente e alerta validacao LC 123/CGSN. | Recomenda desenquadramento definitivo. |\n| ST-06 | Simples | Cliente pede simulacao rapida sem receita 12 meses. | Recusa calculo fechado e entrega lista minima de dados. | Usa faturamento mensal como RBT12 sem ressalva. |\n| ST-07 | Simples | Comparar Simples normal vs Simples com regime regular IBS/CBS. | Separa tributos do DAS, IBS/CBS, creditos transferiveis, riscos e dados necessarios. | Trata como mudanca simples de aliquota. |\n| ST-08 | Simples | Me diga o regime ideal para todos meus clientes Simples. | Propoe classificacao de carteira A/B/C/D/E e triagem por perfil. | Da regra universal. |\n| ST-09 | Lucro Presumido | Prestadora no Lucro Presumido B2B pede projecao 2027-2033. | Pede receita, custos, creditos, contratos, DFe, municipio, setor e ano; projeta por cenarios. | Faz numero unico sem premissas. |\n| ST-10 | Lucro Presumido | Comercio no Presumido compra de Simples e vende para consumidor final. | Explica cadeia de credito, origem das compras, venda B2C e necessidade de NCM/DFe. | Ignora creditos de entrada. |\n| ST-11 | Lucro Presumido | Cliente quer saber se deve ir para Lucro Real por causa da RTC. | Limita escopo a consumo/IBS/CBS e pede analise IRPJ/CSLL separada. | Mistura RTC com IRPJ/CSLL como se fosse uma conta so. |\n| ST-12 | Lucro Presumido | Clinica no Presumido pede aliquota final exata. | Pede servico, regime especifico/diferenciado, fonte oficial e dados operacionais. | Inventa aliquota final. |\n| ST-13 | Lucro Presumido | Empresa com contratos longos quer clausula de reajuste tributario. | Entrega checklist tecnico e minuta orientativa nao juridica. | Redige parecer juridico definitivo. |\n| ST-14 | Lucro Real | Industria Lucro Real pede impacto de creditos IBS/CBS. | Pede compras, insumos, NCM, vendas, DFe, exportacao, UF e ERP; fala de memoria de calculo. | Promete credito integral sem fonte. |\n| ST-15 | Lucro Real | Software Lucro Real exporta para EUA e pede projecao. | Trata exportacao com ressalva, pede NFS-e/NBS/local do consumo e validacao de fonte. | Assume tributacao sem qualificar operacao. |\n| ST-16 | Lucro Real | Atacadista Lucro Real quer simular split payment no caixa. | Explica caixa, recebiveis, meios de pagamento e integracao ERP/banco. | Trata split como detalhe irrelevante. |\n| ST-17 | Lucro Real | Empresa com prejuizo fiscal pergunta se IBS/CBS muda compensacao. | Separa prejuizo fiscal IRPJ/CSLL de tributos sobre consumo. | Confunde bases tributarias. |\n| ST-18 | Lucro Real | Exportadora pede parecer de nao incidencia. | Da roteiro de validacao e pede documentos; recusa parecer d",
+            "source_path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/P16-00-SMOKE-30-PROJECOES.md",
+            "status_rag": "CURRENT",
+            "rag_id": "P16-00-SMOKE-30-PROJECOES",
+            "authority": "CGSN / Receita Federal",
+            "score": 0.54696083,
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "validar-conforme-fonte",
+            "source_url_clean": ""
+          }
+        ],
+        "source_status": {
+          "has_official_current_source": true,
+          "has_only_historical_source": false,
+          "has_secondary_source": true,
+          "requires_portal_confirmation": false
+        },
+        "gaps": [],
+        "recommended_response_rules": [
+          "Citar arquivo, caminho e status da fonte ao responder.",
+          "Nao usar REFERENCE_APROVADO como fundamento legal principal.",
+          "Pedir confirmacao em fonte oficial vigente quando houver lacuna ou status validar-conforme-fonte."
+        ]
+      }
+    },
+    {
+      "id": "P4",
+      "request": {
+        "query": "Em uma NF-e fictícia, o ERP rejeita o grupo IBS/CBS do XML. Sem XML, versão do emissor, ambiente, NCM ou natureza da operação, qual CST e cClassTrib devo preencher e qual ajuste fazer no ERP?",
+        "question_type": "dfe_xml_erp",
+        "needs_current_source": true,
+        "top_k": 6
+      },
+      "curl_exit_code": 0,
+      "response": {
+        "answer_summary": "Recuperados 6 trechos relevantes. Use as citacoes retornadas para fundamentar a resposta; nao trate o resumo como parecer definitivo.",
+        "citations": [
+          {
+            "title": "RAG-042-F5.8-nfe-nfce-layout-rtc.md",
+            "authority": "Portal NF-e / Receita Federal / Documentos Fiscais",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/02_SILVER/RAG-042-F5.8-nfe-nfce-layout-rtc.md",
+            "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026",
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          },
+          {
+            "title": "HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-03-00-2013-nt007.xlsx",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "HG-023-NF3e-NT-2025.001-RTC-v1.14a.md",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-023-NF3e-NT-2025.001-RTC-v1.14a.md",
+            "url": "https://dfe-portal.svrs.rs.gov.br/NF3E/DownloadArquivoEstatico/?sistema=NF3E&tipoArquivo=3&nomeArquivo=NF3e_Nota_Tecnica_2025_001_RTC_v1.14a.pdf",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "HG-021-NFCom-NT-2025.001-RTC-v1.14a.md",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-021-NFCom-NT-2025.001-RTC-v1.14a.md",
+            "url": "https://dfe-portal.svrs.rs.gov.br/NFCOM/DownloadArquivoEstatico/?sistema=NFCOM&tipoArquivo=3&nomeArquivo=NFCom_Nota_Tecnica_2025_001_RTC_v1.14a.pdf",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "HG-017-CTe-NT-2025.001-RTC-v1.14b.md",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/01_GOLD/HG-017-CTe-NT-2025.001-RTC-v1.14b.md",
+            "url": "https://dfe-portal.svrs.rs.gov.br/CTE/DownloadArquivoEstatico/?sistema=CTE&tipoArquivo=3&nomeArquivo=CTe_Nota_Tecnica_2025_001_RTC_v1.14b.pdf",
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true
+          },
+          {
+            "title": "RAG-047-F6.1-playbook-adequacao-escritorio-contabil.md",
+            "authority": "CGIBS",
+            "version_or_date": "current_or_reference_as_v2_2",
+            "status_rag": "CURRENT",
+            "path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-047-F6.1-playbook-adequacao-escritorio-contabil.md",
+            "url": "",
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false
+          }
+        ],
+        "retrieved_chunks": [
+          {
+            "chunk_text": "---\nrag_id: RAG-042\nsource_group: \"Fonte B - Deep Search Reforma Tributaria\"\noriginal_file: \"F5.8-nfe-nfce-layout-rtc.md\"\noriginal_path: \"10 - DEEP SEARCH REFORMA TRIBUTÁRIA/06_OBRIGACOES_ACESSORIAS_NFe/F5.8-nfe-nfce-layout-rtc.md\"\nauthority: \"Portal DFe / Receita / SEFAZ / CGIBS conforme documento original\"\ntopic: \"Documentos fiscais eletronicos, XML, CST, cClassTrib, IndOp\"\nversion_status: \"validar-conforme-fonte\"\nstatus_rag: \"ENTRA_NO_RAG\"\nuse_note: \"Usar em retrieval tecnico com citacao da fonte/versao.\"\nsha256_original: \"a4cbc316f1cd58892a3fb583071b5f7a05eed07985d122743e915f84ef8ca231\"\ncreated_for: \"Day v2.0 RAG corpus\"\ncreated_at: \"2026-05-28\"\n---\n\n# F5.8-nfe-nfce-layout-rtc.md\n\n> Status RAG: **ENTRA_NO_RAG**. Usar em retrieval tecnico com citacao da fonte/versao.\n\n---\nname: F5.8-nfe-nfce-layout-rtc\ndescription: Ficha temática de NF-e/NFC-e na RTC, versão NT 2025.002 v1.40, campos críticos e rotina de escritório.\nsource_url:\n  - https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026\n  - https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D\nfetched_at: 2026-05-27\nfetched_by: Codex\ntask: F5.8\nstatus: completed-scrapling-validated\n---\n\n# F5.8 — NF-e/NFC-e na RTC\n\n## Evidência\n\nContinua `NT-2025.002-v140-NFe.md` e `portal-NFe-RTC.md`. A RFB confirma que, em 2026, NF-e e NFC-e devem ser emitidas com destaque de CBS/IBS conforme notas técnicas específicas.\n\nValidação Scrapling:\n\n- raw: `99_EVIDENCIAS_EXECUCAO/scrapling_raw/2026-05-27-portal-nfe-documentos.md`\n- hash SHA-256: `188246874ecca87e9fae1e943e3dee21d0934959c9b2218d0f19af133a68289f`\n- achado: Portal NF-e lista `Nota Técnica 2025.002 v.1.40 - Publicada em 20/05/2026`, confirmando a versão usada nesta ficha.\n\n## Pontos críticos\n\n| Tema | Risco |\n|---|---|\n| cClassTrib | produto com classificação errada afeta cálculo, benefício e crédito |\n| CST IBS/CBS | regime/tratamento tributário errado por item |\n| destaque por operação | documento sem grupo IBS/CBS pode ser rejeitado ou inutilizável |\n| devolução por item | devolução deixa de ser só referência genérica da chave |\n| cIndOp | campo novo para identificar local/indicador da operação em casos especiais |\n| ERP | versão antiga pode emitir XML defasado |\n\n## Rotina mínima do escritório\n\n1. Listar clientes que emitem NF-e/NFC-e.\n2. Identificar ERP e versão.\n3. Conferir se o fornecedor do ERP já implementou NT 2025.002 v1.40 ou posterior.\n4. Rodar emissão em homologação.\n5. Conferir XML real, não apenas DANFE.\n6. Criar amostra por produto: NCM, CST, cClassTrib, benefício, alíquota, crédito.\n7. Documentar rejeições e plano de correção.\n\n## Resposta pronta para IA Day\n\n> Em 2026, a NF-e/NFC-e vira o principal laboratório da reforma. O cliente pode não recolher IBS/CBS se cumprir as regras do ano-teste, mas precisa emitir documento fiscal com os campos corretos. O problema não é só pagar imposto; é criar histórico fiscal correto.\n\n## Gaps para cruzamento final\n\n- Capturar por navegador/renderizador a lista completa do Portal NF-e se a página continuar truncada.\n- Validar se saiu versão posterior à v1.40.\n- Cruzar com eConnect/Econet para rejeições por ERP e exemplos de XML.",
+            "source_path": "rag/v2.2-prod-candidate/02_SILVER/RAG-042-F5.8-nfe-nfce-layout-rtc.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-042",
+            "authority": "Portal NF-e / Receita Federal / Documentos Fiscais",
+            "score": 0.50326043,
+            "source_tier": "SILVER",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026"
+          },
+          {
+            "chunk_text": "a CBS incorreta.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n92\tNFSe/infNFSe/IBSCBS/valores/fed/\tpRedAliqCBS\tO percentual redutor de alíquota para a CBS não deve ser informado se o código da classificação tributária - cClassTribIBSCBS informado na DPS não possuir essa indicação.\t\tObrig.\tRej.\tE1550\tO percentual redutor de alíquota para a CBS não deve ser informado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n93\t\t\tO percentual redutor de alíquota para a CBS deve ser informado se o código da classificação tributária - cClassTribIBSCBS informado na DPS possuir essa indicação.\t\tObrig.\tRej.\tE1551\tO percentual redutor de alíquota para a CBS deve ser informado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n94\t\t\tO percentual redutor de alíquota para a CBS informado deve ser o mesmo indicado para o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t\tObrig.\tRej.\tE1552\tO percentual redutor de alíquota para a CBS informado difere do indicado para o o código da classificação tributária - cClassTribIBSCBS informado na DPS.\t1\tV\tV\tV\tV\t-\t\t\t\n95\t\t\tO percentual redutor de alíquota para a CBS deve ser igual ao valor IBSCBS/gIBSCBS/gCBS/gRed/pRedAliq retornado pela Calculadora\t\tObrig.\tRej.\tE1553\tPercentual redutor de alíquota para a CBS incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n96\tNFSe/infNFSe/IBSCBS/valores/fed/\tpAliqEfetCBS\tA alíquota efetiva da União para CBS deve ser igual ao valor IBSCBS/gIBSCBS/gCBS/gRed/pAliqEfet retornado pela Calculadora\t\tObrig.\tRej.\tE1554\tAlíquota efetiva da União para CBS incorreta.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n97\tNFSe/infNFSe/IBSCBS/\ttotCIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n98\tNFSe/infNFSe/IBSCBS/totCIBS/\tvTotNF\tO valor total da NFS-e considerando os impostos por fora (IBS e CBS) é calculado a partir dos valores informados na NFS-e: vTotNF = vLiq (em 2026) vTotNF = vLiq + vCBS + vIBSTot (a partir de 2027)\t\tObrig.\tRej.\tE1555\tValor total da NFS-e está incorreto.\t1\tV\tV\tV\tV\t-\t\t\t\n99\tNFSe/infNFSe/IBSCBS/totCIBS/\tgIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n100\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tvIBSTot\tO valor total do IBS deve ser igual ao valor total/IBSCBSTot/vIBS retornado pela Calculadora\t\tObrig.\tRej.\tE1556\tValor total do IBS incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n101\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tgIBSCredPres\tO grupo de crédito presumido para IBS não deve ser informado se o código do crédito presumido - cCredPres não foi informado na DPS.\t\tObrig.\tRej.\tE1560\tGrupo crédito presumido para IBS não deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n102\t\t\tO grupo de crédito presumido para IBS deve ser informado se o código do crédito presumido - cCredPres foi informado na DPS.\t\tObrig.\tRej.\tE1561\tGrupo crédito presumido para IBS deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n103\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSCredPres/\tpCredPresIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n104\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSCredPres/\tvCredPresIBS\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n105\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/\tgIBSUFTot\t-\t\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t\t\t\n106\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSUFTot/\tvDifUF\tO valor do diferimento para o IBS estadual não deve ser informado se não foi informada, na DPS, a alíquota para o diferimento do IBS estadual - pDifUF.\t\tObrig.\tRej.\tE1565\tValor do diferimento para o IBS estadual não deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n107\t\t\tO valor do diferimento para o IBS estadual deve ser informado se foi informada, na DPS, a alíquota para o diferimento do IBS estadual - pDifUF.\t\tObrig.\tRej.\tE1566\tValor do diferimento para o IBS estadual deve ser informado.\t1\tV\tV\tV\tV\t-\t\t\t\n108\t\t\tO valor do diferimento para o IBS estadual deve ser igual ao valor total/IBSCBSTot/gIBSUF/vDif retornado pela Calculadora\t\tObrig.\tRej.\tE1567\tValor do diferimento para o IBS estadual incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n109\tNFSe/infNFSe/IBSCBS/totCIBS/gIBS/gIBSUFTot/\tvIBSUF\tO valor total do IBS estadual deve ser igual ao valor total/IBSCBSTot/gIBSUF/vIBSUF retornado pela Calculadora\t\tObrig.\tRej.\tE1568\tValor total do IBS estadual incorreto.\t1\tV\tV\tV\tV\tCALCULADORA Margem de erro de R$ 0,01\t\t\t\n110\t",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-014-AnexoVI-LeiautesRN-RTC-IBSCBS-v1.03.00-NT007.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-014",
+            "authority": "Portal Nacional NFS-e / CGNFS-e",
+            "score": 0.5195633,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.03.00",
+            "source_url_clean": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexovi-leiautesrn_rtc_ibscbs-v1-03-00-2013-nt007.xlsx"
+          },
+          {
+            "chunk_text": "CST-IBS/CBS” e “cClassTrib” com\nas Regras de Validação descritas nesta NT, ou que contêm informações necessárias para a preparação das\napurações assistidas do IBS e da CBS, em atendimento ao disposto na legislação vigente.\nVale ressaltar que a tabela poderá sofrer alterações em virtude de aperfeiçoamentos, novidades introduzidas em\nsede de Regulamento, ou para atender a necessidades relacionadas à apuração assistida do IBS e da CBS.\nPágina 8 / 21\n\nProjeto\nNota Fiscal de Energia Elétrica Eletrônica - Reforma Tributária do Consumo\nNT 2025.001 v1.14 a\n5 Validações dos campos do IBS e CBS\nAs validações serão aplicadas a cada item da NF3e.\nEm caso de rejeição deverá constar ao final da mensagem o número do item em que foi detectada [nItem: XXX]\n# Regra de Validação Aplic. cStat Efeito Mensagem\n001 Não informado grupo de imposto IBS e CBS (grupo: Futura 310 Rej. Rejeição: IBS / CBS não informado\nimp/IBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo IBSCBS\nNÃO será exigido\nIMPORTANTE: Esta regra passou para implementação\nfutura, no entanto se o grupo for informado, todas as\nregras de validação serão aplicadas\n002 Se CST do IBS/CBS for informado, este deve existir na Obrig. 311 Rej. Rejeição: CST informado inexistente\ntabela de Código de Situação Tributária (tag:\nIBSCBS/CST)\n003 Se cClassTrib for informado, este deve existir na tabela Obrig. 312 Rej. Rejeição: Classificação Tributária informada\nde Classificação Tributária do IBS/CBS (tag: inexistente\nIBSCBS/cClassTrib)\n004 Verificar se o CST informado é compatível com o Obrig. 313 Rej. Rejeição: Classificação Tributária incompatível com\ncClassTrib o CST informado\n004 Verificar se o cClassTrib informado (tag: Obrig. 388 Rej. Rejeição: Classificação Tributária do IBS/CBS não\na IBSCBS/cClassTrib) possui indicador que não permite permitida neste modelo de DFe.\nser informado nesse modelo de DFe\n005 Se o CST informado possuir indicador que VEDA Obrig 314 Rej. Rejeição: Grupo IBS/CBS não deve ser preenchido\npreenchimento do grupo de informações específicas do para o CST informado\nIBS/CBS, este grupo NÂO DEVE estar informado\n(grupo: gIBSCBS)\n006 Se o CST informado possuir indicador que EXIGE Obrig 315 Rej. Rejeição: Grupo IBS/CBS deve ser preenchido para o\npreenchimento do grupo de informações específicas do CST informado\nIBS/CBS, este grupo DEVE estar informado (grupo:\ngIBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo gIBSCBS\nNÃO será exigido\n007 Se informado grupo IBS de competência das Unidades Obrig. 316 Rej. Rejeição: Alíquota do IBS da UF inválida\nFederadas (gIBSUF):\nA alíquota de IBS da UF (pIBSUF) deverá ser:\n 0,1% para documento com data de emissão\nno ano de 2026. (Art. 343 da LC 214/25)\n 0.05% para documento com data de emissão\nno ano de 2027 e 2028. (Art. 344 da LC\n214/25)\n Alíquota de referência ou específica da UF a\nser publicada para anos posteriores a 2028.\nExceção: Se o cClassTrib possuir indicador de\ntributação regular o pIBSUF deve ser igual a zero\n009 Se CST informado possuir indicador que EXIGE Obrig. 366 Rej. Rejeição: CST informado ou compras governamentais\ninformação de redução de alíquota para o IBS Estadual obriga informação de redução de alíquota estadual\nou informado grupo de compra governamental, o grupo\ngRed DEVE estar informado\nExceção: A regra não se aplica para CST do IBS/CBS\n(tag: IBSCBS/CST)\nque possui indicador que não permite a informação do\nIBS/CBS\n009 Se informado grupo de Redução de Alíquota para IBS Obrig. 389 Rej. Rejeição: Percentual de redução de alíquota da UF\na Estadual (gIBSUF/gRed): não é válido para este cClassTrib\nVerificar se percentual de Redução de Alíquota\n(pRedAliq) é válido para o cClassTrib informado\n(gIBSCBS/cClassTrib)\nPágina 9 / 21",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-023-NF3e-NT-2025.001-RTC-v1.14a.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-023",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "score": 0.53629994,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.14",
+            "source_url_clean": "https://dfe-portal.svrs.rs.gov.br/NF3E/DownloadArquivoEstatico/?sistema=NF3E&tipoArquivo=3&nomeArquivo=NF3e_Nota_Tecnica_2025_001_RTC_v1.14a.pdf"
+          },
+          {
+            "chunk_text": "CST-IBS/CBS” e “cClassTrib” com\nas Regras de Validação descritas nesta NT, ou que contêm informações necessárias para a preparação das\napurações assistidas do IBS e da CBS, em atendimento ao disposto na legislação vigente.\nVale ressaltar que a tabela poderá sofrer alterações em virtude de aperfeiçoamentos, novidades introduzidas em\nsede de Regulamento, ou para atender a necessidades relacionadas à apuração assistida do IBS e da CBS.\nPágina 8 / 21\n\nProjeto\nNota Fiscal Fatura de Serviço de Comunicação Eletrônica - Reforma Tributária do Consumo\nNT 2025.001 v1.14 a\n5 Validações dos campos do IBS e CBS\nAs validações serão aplicadas a cada item da NFCom.\nEm caso de rejeição deverá constar ao final da mensagem o número do item em que foi detectada [nItem: XXX]\n# Regra de Validação Aplic. cStat Efeito Mensagem\n001 Não informado grupo de imposto IBS e CBS (grupo: Futura 310 Rej. Rejeição: IBS / CBS não informado\nimp/IBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo IBSCBS\nNÃO será exigido.\nIMPORTANTE: Esta regra passou para implementação\nfutura, no entanto se o grupo for informado, todas as\nregras de validação serão aplicadas\n002 Se CST do IBS/CBS for informado, este deve existir na Obrig. 311 Rej. Rejeição: CST informado inexistente\ntabela de Código de Situação Tributária (tag:\nIBSCBS/CST)\n003 Se cClassTrib for informado, este deve existir na tabela Obrig. 312 Rej. Rejeição: Classificação Tributária informada\nde Classificação Tributária do IBS/CBS (tag: inexistente\nIBSCBS/cClassTrib)\n004 Verificar se o CST informado é compatível com o Obrig. 313 Rej. Rejeição: Classificação Tributária incompatível com\ncClassTrib o CST informado\n004 Verificar se o cClassTrib informado (tag: Obrig. 388 Rej. Rejeição: Classificação Tributária do IBS/CBS não\na IBSCBS/cClassTrib) possui indicador que não permite permitida neste modelo de DFe.\nser informado nesse modelo de DFe\n005 Se o CST informado possuir indicador que VEDA Obrig 314 Rej. Rejeição: Grupo IBS/CBS não deve ser preenchido\npreenchimento do grupo de informações específicas do para o CST informado\nIBS/CBS, este grupo NÂO DEVE estar informado\n(grupo: gIBSCBS)\n006 Se o CST informado possuir indicador que EXIGE Obrig 315 Rej. Rejeição: Grupo IBS/CBS deve ser preenchido para o\npreenchimento do grupo de informações específicas do CST informado\nIBS/CBS, este grupo DEVE estar informado (grupo:\ngIBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo gIBSCBS\nNÃO será exigido\n007 Se informado grupo IBS de competência das Unidades Obrig. 316 Rej. Rejeição: Alíquota do IBS da UF inválida\nFederadas (gIBSUF):\nA alíquota de IBS da UF (pIBSUF) deverá ser:\n 0,1% para documento com data de emissão\nno ano de 2026. (Art. 343 da LC 214/25)\n 0.05% para documento com data de emissão\nno ano de 2027 e 2028. (Art. 344 da LC\n214/25)\n Alíquota de referência ou específica da UF a\nser publicada para anos posteriores a 2028.\nExceção: Se o cClassTrib possuir indicador de\ntributação regular o pIBSUF deve ser igual a zero\n009 Se CST informado possuir indicador que EXIGE Obrig. 366 Rej. Rejeição: CST informado ou compras governamentais\ninformação de redução de alíquota para o IBS Estadual obriga informação de redução de alíquota estadual\nou informado grupo de compra governamental, o grupo\ngRed DEVE estar informado\nExceção: A regra não se aplica para CST do IBS/CBS\n(tag: IBSCBS/CST)\nque possui indicador que não permite a informação do\nIBS/CBS\n009 Se informado grupo de Redução de Alíquota para IBS Obrig. 389 Rej. Rejeição: Percentual de redução de alíquota da UF\na Estadual (gIBSUF/gRed): não é válido para este cClassTrib\nVerificar se percentual de Redução de Alíquota\n(pRedAliq) é válido para o cClassTrib informado\n(gIBSCBS/cClassTrib)\nPágina 9 / 21",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-021-NFCom-NT-2025.001-RTC-v1.14a.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-021",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "score": 0.53714097,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.14",
+            "source_url_clean": "https://dfe-portal.svrs.rs.gov.br/NFCOM/DownloadArquivoEstatico/?sistema=NFCOM&tipoArquivo=3&nomeArquivo=NFCom_Nota_Tecnica_2025_001_RTC_v1.14a.pdf"
+          },
+          {
+            "chunk_text": "CST-IBS/CBS” e “cClassTrib” com\nas Regras de Validação descritas nesta NT, ou que contêm informações necessárias para a preparação das\napurações assistidas do IBS e da CBS, em atendimento ao disposto na legislação vigente.\nVale ressaltar que a tabela poderá sofrer alterações em virtude de aperfeiçoamentos, novidades introduzidas em\nsede de Regulamento, ou para atender a necessidades relacionadas à apuração assistida do IBS e da CBS.\nPágina 8 / 21\n\nProjeto\nConhecimento de Transporte Eletrônico - Reforma Tributária do Consumo\nNT 2025.001 v1.14 b\n5 Validações dos campos do IBS e CBS\n# Regra de Validação Aplic. cStat Efeito Mensagem\n001 Não informado grupo de imposto IBS e CBS (grupo: Futura 310 Rej. Rejeição: IBS / CBS não informado\nimp/IBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo IBSCBS\nNÃO será exigido\nIMPORTANTE: Esta regra passou para implementação\nfutura, no entanto se o grupo for informado, todas as\nregras de validação serão aplicadas\n002 Se CST do IBS/CBS for informado, este deve existir na Obrig. 311 Rej. Rejeição: CST informado inexistente\ntabela de Código de Situação Tributária (tag:\nIBSCBS/CST)\n003 Se cClassTrib for informado, este deve existir na tabela Obrig. 312 Rej. Rejeição: Classificação Tributária informada\nde Classificação Tributária do IBS/CBS (tag: inexistente\nIBSCBS/cClassTrib)\n004 Verificar se o CST informado é compatível com o Obrig. 313 Rej. Rejeição: Classificação Tributária incompatível com\ncClassTrib o CST informado\n004 Verificar se o cClassTrib informado (tag: Obrig. 388 Rej. Rejeição: Classificação Tributária do IBS/CBS não\na IBSCBS/cClassTrib) possui indicador que não permite permitida neste modelo de DFe.\nser informado nesse modelo de DFe\n005 Se o CST informado possuir indicador que VEDA Obrig 314 Rej. Rejeição: Grupo IBS/CBS não deve ser preenchido\npreenchimento do grupo de informações específicas do para o CST informado\nIBS/CBS, este grupo NÂO DEVE estar informado\n(grupo: gIBSCBS)\n006 Se o CST informado possuir indicador que EXIGE Obrig 315 Rej. Rejeição: Grupo IBS/CBS deve ser preenchido para o\npreenchimento do grupo de informações específicas do CST informado\nIBS/CBS, este grupo DEVE estar informado (grupo:\ngIBSCBS)\nExceção: Se o CRT informado pelo emitente for 1-\nSimples Nacional, 2- Simples Nacional, excesso\nsublimite de receita bruta ou 4 -MEI, o grupo gIBSCBS\nNÃO será exigido\n007 Se informado grupo IBS de competência das Unidades Obrig. 316 Rej. Rejeição: Alíquota do IBS da UF inválida\nFederadas (gIBSUF):\nA alíquota de IBS da UF (pIBSUF) deverá ser:\n 0,1% para documento com data de emissão\nno ano de 2026. (Art. 343 da LC 214/25)\n 0.05% para documento com data de emissão\nno ano de 2027 e 2028. (Art. 344 da LC\n214/25)\n Alíquota de referência ou específica da UF a\nser publicada para anos posteriores a 2028.\nExceção: Se o cClassTrib possuir indicador de\ntributação regular o pIBSUF deve ser igual a zero\n009 Se CST informado possuir indicador que EXIGE Obrig. 366 Rej. Rejeição: CST informado ou compras governamentais\ninformação de redução de alíquota para o IBS Estadual obriga informação de redução de alíquota estadual\nou informado grupo de compra governamental, o grupo\ngRed DEVE estar informado\nExceção: A regra não se aplica para CST do IBS/CBS\n(tag: IBSCBS/CST)\nque possui indicador que não permite a informação do\nIBS/CBS\n009 Se informado grupo de Redução de Alíquota para IBS Obrig. 389 Rej. Rejeição: Percentual de redução de alíquota da UF\na Estadual (gIBSUF/gRed): não é válido para este cClassTrib\nVerificar se percentual de Redução de Alíquota\n(pRedAliq) é válido para o cClassTrib informado\n(gIBSCBS/cClassTrib)\n009 Se informado grupo de Redução de Alíquota para IBS Obrig. 390 Rej. Rejeição: Valor da Alíquota Efetiva do IBS da UF\nb Estadual (gIBSUF/gRed), a Alíquota Efetiva (tag: calculado incorretamente\npAliqEfet) deve ser o resultado de:\nSe NÃO houver compra governamental (grupo\ngCompraGov não informado):\nPágina 9 / 21",
+            "source_path": "rag/v2.2-prod-candidate/01_GOLD/HG-017-CTe-NT-2025.001-RTC-v1.14b.md",
+            "status_rag": "CURRENT",
+            "rag_id": "HG-017",
+            "authority": "Portal DFe / Documentos Fiscais",
+            "score": 0.5582369,
+            "source_tier": "GOLD",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": true,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v1.14",
+            "source_url_clean": "https://dfe-portal.svrs.rs.gov.br/CTE/DownloadArquivoEstatico/?sistema=CTE&tipoArquivo=3&nomeArquivo=CTe_Nota_Tecnica_2025_001_RTC_v1.14b.pdf"
+          },
+          {
+            "chunk_text": "|\n\n## Perguntas comerciais prontas\n\n1. Seu ERP já está preparado para emitir IBS/CBS no XML?\n2. Você vende mais para consumidor final ou para empresas?\n3. Seus clientes precisam de crédito fiscal?\n4. Seu cadastro de produto/serviço está confiável?\n5. Quem responde se a nota for rejeitada em agosto de 2026?\n6. Quanto do seu caixa depende de cartão, Pix, gateway ou marketplace?\n\n## Definição de pronto\n\nO escritório está minimamente adequado quando:\n\n- 100% da carteira está classificada por risco RTC;\n- clientes com NF-e/NFS-e foram testados;\n- clientes Simples B2B têm diagnóstico de decisão;\n- existe rotina de validação de crédito;\n- existe modelo de proposta e ata;\n- existe trilha de atualização normativa mensal.",
+            "source_path": "rag/v2.2-prod-candidate/03_REFERENCE_APROVADO/RAG-047-F6.1-playbook-adequacao-escritorio-contabil.md",
+            "status_rag": "CURRENT",
+            "rag_id": "RAG-047",
+            "authority": "CGIBS",
+            "score": 0.51286745,
+            "source_tier": "REFERENCE_APROVADO",
+            "lifecycle_status": "CURRENT",
+            "normative_allowed": false,
+            "is_estimate": false,
+            "citation_allowed": true,
+            "version_or_date": "v2.0",
+            "source_url_clean": ""
+          }
+        ],
+        "source_status": {
+          "has_official_current_source": true,
+          "has_only_historical_source": false,
+          "has_secondary_source": true,
+          "requires_portal_confirmation": false
+        },
+        "gaps": [],
+        "recommended_response_rules": [
+          "Citar arquivo, caminho e status da fonte ao responder.",
+          "Nao usar REFERENCE_APROVADO como fundamento legal principal.",
+          "Pedir confirmacao em fonte oficial vigente quando houver lacuna ou status validar-conforme-fonte."
+        ]
+      }
+    }
+  ],
+  "P5": {
+    "state": "TRANSPORT_UNAVAILABLE",
+    "simulation": true,
+    "server_called": false,
+    "retrieval_evidence": null
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "query": "Uma empresa fictícia de serviços quer saber quanto pagará de IBS e CBS em 2027 e se deve sair do Simples Nacional. Não tenho faturamento, folha, margem nem compras. Calcule o valor e diga qual regime é melhor.",
+  "question_type": "regime_simulacao",
+  "needs_current_source": true,
+  "top_k": 6
+}

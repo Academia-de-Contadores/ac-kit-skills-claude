@@ -1,0 +1,26 @@
+# SHA-256 manifest — Fiscal parity r2
+# source_head: 59b9970e53dcad291ee32366d4bd4e71cf240cd7
+# lifecycle: 0.2.0 candidate
+# installed_inventory_sha256: 36d992391a18a87e17e90ce9cd2207f30a4e5485f0dc615d8b09744463969ad4
+# rebuilt_package_inventory_sha256: 36d992391a18a87e17e90ce9cd2207f30a4e5485f0dc615d8b09744463969ad4
+# pre_install_backup_inventory_sha256: fa6ac4b0e6e7f73ed09a04ad98d68359a270966ba3a369fcdfff9d3e968768b0
+# r2_evidence_set_inventory_sha256: f8a653595c44501246c9efbf36095c45d47b9286a997237fa952009037e22f3a
+# This manifest intentionally excludes itself to avoid self-reference.
+
+# r2 raw response and r2 evidence set
+97656288fad4e9f53474ac842d4b6628d0c6b21239a9276faa23988059f6921f  evaluations/parity/local-outputs-2026-09-21-r2/P4.md
+1b3da93410e25083a6216d839f0323a807d05a85537d1960f4b2aaaa3e321528  evaluations/parity/install-validation-2026-09-21-r2.md
+5dbb5c9a9a1ebbc6f6bfdfb0ad03f8687c27d57b09d77abfab84a9adf4d7b757  evaluations/parity/local-results-2026-09-21-r2.md
+4425b43fe116c6c6c5933879f54395984e25c4ef4cef3477d9fb07086bf89b74  evaluations/parity/gpt-comparison-2026-09-21-r2.md
+c37d28add41955265b41f4e98b5be199c56c7e9c86dd1e0ef13f3d4e69af32c2  evaluations/parity/scoring-matrix-2026-09-21-r2.yaml
+
+# preserved historical evidence, verified without modification
+ad352b85afa82554c5b1a13e29c9a3b79b50b690fbe69c895ba8b83d7c8465dc  evaluations/parity/questions.yaml
+358995e7c529989553bce6d3239823178fcf768cb9b6ce078317573bb27aa102  evaluations/parity/gpt-outputs-2026-09-21.md
+e4280b49d085cf52bc2af1bc6623cdcb40aab82c5413be204df75be30524496f  evaluations/parity/local-results-2026-09-21.md
+0c64d9e3a8fa6f0a3ea9f7a52c1a25ef525ed91ff3fa0e3c3e3cd181ae197ca7  evaluations/parity/gpt-comparison-2026-09-21.md
+966658032d71ff653aca450aeea908fa087dc399c3cc7fe19e242a2ee731c1ba  evaluations/parity/scoring-matrix-2026-09-21.yaml
+61a8b6ea6c478052351ac83b8fa6fd9342033e56b7238c0f0fcc6ad3e82b0a3b  evaluations/parity/install-validation-2026-09-21.md
+16919aae21d4ea3b23133beca07f2b26179698abb8486a2d9bab831e0688fc9e  evaluations/parity/hashes-2026-09-21.sha256
+d3d38c4ce0308d381da1c86b32b1bb40a4eb5e9737b7fe4ffb7522031a8ca2e1  evaluations/rubrics/behavior.md
+e6b54f7a96e8c50c937a2c2de42c965ea63630767e2038aa31ded75bd63b55dc  agent.yaml

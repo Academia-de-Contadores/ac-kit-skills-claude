@@ -1,0 +1,47 @@
+id: legacy
+canonical_agent_version: "0.2.1"
+default: false
+selection: explicit
+status: historical
+path_base: profile-directory
+instances:
+  - gpt_id: g-6a7259edf2688191b44cec56ff3b7221
+    name: "Agente Reforma Tributária Day - Consulta RAG (copy)"
+    editor_url: https://chatgpt.com/gpts/editor/g-6a7259edf2688191b44cec56ff3b7221
+  - gpt_id: g-6a6121888b28819181336806361154b8
+    name: "Agente da Reforma Tributária | Oficial"
+    editor_url: https://chatgpt.com/gpts/editor/g-6a6121888b28819181336806361154b8
+equivalence:
+  observed_at: "2026-09-20"
+  evidence: "Auditoria autenticada de 2026-09-20, informada na coordenação desta implementação."
+  normalized_online_instructions_sha256: 41f0a48d6d997a89ec9e941646ed47098f2aa8c6538493ce930019226af461e5
+  scope: "Instruções equivalentes após normalização; mesmos oito documentos, ferramentas e domínio da Action."
+  filename_difference: "Os anexos da instância Oficial têm o sufixo editorial (1)."
+  limitation: "A equivalência online não afirma igualdade desse hash com a captura local histórica nem identidade dos schemas."
+instructions: ../../instructions/system.md
+source_capture: ../../evaluations/source-capture.md
+knowledge:
+  status: historical
+  captured_at: "2026-08-07"
+  manifest: ../../knowledge/MANIFEST.md
+  files:
+    - ../../knowledge/original/01-INSTRUCOES-GPT-ACTIONS-RAG.md
+    - ../../knowledge/original/02-REQUISITOS-RETRIEVAL.md
+    - ../../knowledge/original/03-GAPS-CRITICOS-ANTES-DOS-240-TESTES.md
+    - ../../knowledge/original/04-MAPA-COBERTURA-LEGAL-E-ARTIGOS.md
+    - ../../knowledge/original/05-MAPA-DFE-XML-ERP.md
+    - ../../knowledge/original/06-MAPA-SIMPLES-CREDITOS-SPLIT-CASHBACK.md
+    - ../../knowledge/original/07-REGRAS-DE-NAO-CALCULAR.md
+    - ../../knowledge/original/08-GUIA-REFORMA-SEM-SURTO-DAY.md
+action:
+  status: historical
+  captured_at: "2026-08-07"
+  schema: ../../connectors/actions/searchDayRagCorpus/openapi.builder-capture.yaml
+  capture: ../../connectors/actions/searchDayRagCorpus/BUILDER-CAPTURE.md
+  server: https://day-rag-chroma-actions.onrender.com
+  authentication: none
+  search_operation: searchDayRagCorpus
+limitations:
+  - "Perfil para consulta explícita ao legado e comparação histórica."
+  - "O schema preservado é da cópia privada; não foi promovido a contrato ativo."
+  - "Para aplicação vigente, consultar o retrieval de current; não presumir que o endpoint sirva a versão histórica."

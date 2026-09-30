@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fiscal"
+  short_description: "Triagem e conferência fiscal com fonte e revisão"
+  default_prompt: "Use $ac-fiscal para organizar este caso fiscal, marcar lacunas, indicar fontes oficiais e preparar a próxima ação segura."
+policy:
+  allow_implicit_invocation: true

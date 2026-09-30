@@ -1,0 +1,5 @@
+Use a skill ac-instalar-skills para instalar permanentemente na minha conta Claude a skill ou plugin deste repositório:
+
+[COLE AQUI O LINK DO NOVO REPOSITÓRIO]
+
+Inspecione a estrutura, referências e dependências. Se o nome já estiver instalado, verifique se é atualização e preserve minhas personalizações. Use a instalação nativa na conta; se algum clique meu for obrigatório, mostre qual. Não considere um download ou uma pasta local como instalação na conta. Não desinstale o pacote Academia para adicionar a nova skill. Ao concluir, mostre o estado real e um teste para eu fazer em nova conversa. Não amplie permissões nem execute scripts do repositório sem avaliar sua finalidade e o escopo autorizado.

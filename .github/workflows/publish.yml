@@ -1,0 +1,49 @@
+name: Validar e publicar kit
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: kit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/build.py
+      - name: Publicar versão validada
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="kit-${GITHUB_SHA}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Esta revisão já tem uma release; mantendo seus arquivos."
+            exit 0
+          fi
+          python - <<'PYNOTES'
+          import json
+          from pathlib import Path
+          v = json.loads(Path('dist/version.json').read_text())
+          Path('dist/release-notes.md').write_text(
+              f"Kit {v['version']} com {v['skills_count']} skills.\n\n"
+              f"Commit: {v['commit']}\n\n"
+              "Baixe KIT-ALUNAS-CLAUDE.zip para o conjunto com guia e alternativas, "
+              "ou academia-skills-contabeis.zip para importar só o plugin.\n\n"
+              "Validação estrutural concluída. A importação e o teste em nova conversa "
+              "precisam ser feitos em cada conta. Publicar aqui não atualiza o Claude automaticamente.\n"
+          )
+          PYNOTES
+          gh release create "$tag" --target "$GITHUB_SHA" --latest             --title "Kit Academia — ${GITHUB_SHA:0:7}" --notes-file dist/release-notes.md             dist/KIT-ALUNAS-CLAUDE.zip dist/academia-skills-contabeis.zip             dist/version.json dist/catalogo.json dist/SHA256SUMS.txt

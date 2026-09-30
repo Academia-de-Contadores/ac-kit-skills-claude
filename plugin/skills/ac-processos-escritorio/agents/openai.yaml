@@ -1,0 +1,6 @@
+interface:
+  display_name: "Processos do Escritório"
+  short_description: "Rotinas contábeis em processos executáveis"
+  default_prompt: "Use $ac-processos-escritorio para transformar esta rotina em um processo executável, marcando lacunas e decisões humanas."
+policy:
+  allow_implicit_invocation: true

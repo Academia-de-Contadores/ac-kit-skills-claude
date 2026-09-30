@@ -1,0 +1,158 @@
+openapi: 3.1.0
+info:
+  title: Day v2.1 RAG Retrieval API
+  version: 0.1.0
+  description: >
+    Schema para GPT Actions consultar a memoria tecnica propria da Day v2.1
+    via API Gateway read-only conectada ao Chroma Cloud.
+servers:
+  - url: https://day-rag-chroma-actions.onrender.com
+    description: Substituir pelo dominio HTTPS real gerado no Render, se o slug for diferente
+paths:
+  /rag/search:
+    post:
+      operationId: searchDayRagCorpus
+      summary: Consulta o corpus RAG da Day v2.1
+      description: >
+        Recupera trechos relevantes do corpus de Reforma Tributaria do Consumo,
+        retornando fonte, versao, autoridade, status da fonte e lacunas.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: Pergunta original do usuario.
+                question_type:
+                  type: string
+                  enum:
+                    - factual
+                    - diagnostico
+                    - regime_simulacao
+                    - dfe_xml_erp
+                    - classificacao
+                    - resposta_cliente
+                    - fora_escopo
+                    - adversarial_risco
+                  description: Classificacao interna da pergunta.
+                topics:
+                  type: array
+                  items:
+                    type: string
+                  description: Topicos provaveis para filtro ou ranking.
+                needs_current_source:
+                  type: boolean
+                  description: true quando a resposta depender de versao, prazo, artigo, DFe ou aplicacao operacional.
+                filters:
+                  type: object
+                  properties:
+                    status_rag:
+                      type: array
+                      items:
+                        type: string
+                        enum:
+                          - ENTRA_NO_RAG
+                          - HISTORICO
+                          - REFERENCIA_LOCAL
+                          - NAO_USAR_COMO_FONTE_TECNICA
+                    authority:
+                      type: array
+                      items:
+                        type: string
+                    include_historical:
+                      type: boolean
+                      default: false
+                top_k:
+                  type: integer
+                  default: 6
+                  minimum: 1
+                  maximum: 12
+      responses:
+        "200":
+          description: Resultado de retrieval com fontes e lacunas.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - answer_summary
+                  - citations
+                  - retrieved_chunks
+                  - source_status
+                  - gaps
+                properties:
+                  answer_summary:
+                    type: string
+                    description: Resumo neutro dos achados recuperados, sem parecer definitivo.
+                  citations:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - title
+                        - authority
+                        - version_or_date
+                        - status_rag
+                        - path
+                      properties:
+                        title:
+                          type: string
+                        authority:
+                          type: string
+                        version_or_date:
+                          type: string
+                        status_rag:
+                          type: string
+                        path:
+                          type: string
+                        url:
+                          type: string
+                  retrieved_chunks:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - chunk_text
+                        - source_path
+                        - status_rag
+                      properties:
+                        chunk_text:
+                          type: string
+                        source_path:
+                          type: string
+                        rag_id:
+                          type: string
+                        authority:
+                          type: string
+                        status_rag:
+                          type: string
+                        score:
+                          type: number
+                  source_status:
+                    type: object
+                    properties:
+                      has_official_current_source:
+                        type: boolean
+                      has_only_historical_source:
+                        type: boolean
+                      has_secondary_source:
+                        type: boolean
+                      requires_portal_confirmation:
+                        type: boolean
+                  gaps:
+                    type: array
+                    items:
+                      type: string
+                  recommended_response_rules:
+                    type: array
+                    items:
+                      type: string
+        "400":
+          description: Consulta invalida.
+        "500":
+          description: Erro interno da API RAG.

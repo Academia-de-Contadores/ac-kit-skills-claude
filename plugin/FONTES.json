@@ -1,0 +1,79 @@
+[
+  {
+    "repository": "ac-agente-reforma-tributaria-rag",
+    "commit": "88c57ab2cee3f26b3ec1042e48aaa901b4a615b4",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-rag",
+    "skill": "ac-reforma-tributaria-rag",
+    "files": 146,
+    "entrypoint_adapted": true,
+    "source_sha256": "d35963cb8b11c1e0a7f6399af730164af04a27b133114aabf8ab681522388bd4"
+  },
+  {
+    "repository": "ac-agente-societario",
+    "commit": "c5b8740124971e086ea25d3dbe8737722ef14d33",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-societario",
+    "skill": "ac-societario",
+    "files": 93,
+    "entrypoint_adapted": false,
+    "source_sha256": "ea560caced18e38f58fec655b11bd4c3c20b8687500c4addf6b960d19b44cbe4"
+  },
+  {
+    "repository": "ac-agente-processos-escritorio",
+    "commit": "a03a34063314801e05e1f10853f7235301e531f0",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-processos-escritorio",
+    "skill": "ac-processos-escritorio",
+    "files": 83,
+    "entrypoint_adapted": false,
+    "source_sha256": "440e93e0fa158eb09e60a36b14bb024f57493d47a6eaaf86de99d6fd5dcc223f"
+  },
+  {
+    "repository": "ac-agente-fiscal",
+    "commit": "b36a6f7186c51db02183f858c9404c80856d65f2",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-fiscal",
+    "skill": "ac-fiscal",
+    "files": 127,
+    "entrypoint_adapted": true,
+    "source_sha256": "ed43f81dad3443b8daa7a9ef5935ac8a7761d5cdf4aab1131de898e7b23ebcd8"
+  },
+  {
+    "repository": "ac-agente-dp",
+    "commit": "8038c6a3cedead9884f001b8f622755a7f757098",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-dp",
+    "skill": "ac-dp",
+    "files": 93,
+    "entrypoint_adapted": false,
+    "source_sha256": "80b43d0bce104e412c55f9eb308f429097174dfb047ce53d792795bc2f8eb599"
+  },
+  {
+    "repository": "ac-agente-estrategista-conteudo-dai",
+    "commit": "f347629b9fde45129d38f494f47f17029b43bc35",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-estrategista-conteudo-dai",
+    "skill": "ac-estrategista-conteudo-dai",
+    "files": 115,
+    "entrypoint_adapted": false,
+    "source_sha256": "a749cd5dadf5d57af90bf3bea7b78fce18a7f259ee1a748d3a5e81da64e309be"
+  },
+  {
+    "repository": "ac-agente-reforma-tributaria",
+    "commit": "ae5476455d68359d93a84318b37650ad7d7a6174",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria",
+    "skill": "ac-reforma-tributaria",
+    "files": 106,
+    "entrypoint_adapted": true,
+    "source_sha256": "63ca5da10bec52c90f1b114e9997b70a20a8de5d5f5c79afc9946bd427f825f9"
+  },
+  {
+    "repository": "ac-agente-reforma-tributaria-sem-surto",
+    "commit": "17e4df1dba9423e45e2022c1e5b318704efa0504",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto",
+    "skill": "ac-reforma-tributaria-sem-surto",
+    "files": 72,
+    "entrypoint_adapted": false,
+    "source_sha256": "038e297a2d1a2e39e40cd0278d6e6a3adc58aad324d790035175e65093f2a5bb"
+  },
+  {
+    "skill": "ac-instalar-skills",
+    "origin": "Criada para este kit por solicitação de Copetti em 2026-09-30",
+    "version": "1.1.0"
+  }
+]

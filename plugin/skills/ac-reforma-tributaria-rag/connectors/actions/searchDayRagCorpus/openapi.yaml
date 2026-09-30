@@ -1,0 +1,266 @@
+openapi: 3.1.0
+info:
+  title: Day RTC RAG Retrieval API - Production Final Candidate
+  version: 2.2.0-candidate
+  description: >
+    Schema para GPT Actions consultar a memoria tecnica da Day RTC em modo
+    producao final candidata. O retorno precisa permitir auditoria de fonte,
+    hierarquia GOLD/SILVER/REFERENCE, vigencia, permissao normativa e lacunas.
+servers:
+  - url: https://day-rag-chroma-actions.onrender.com
+    description: Dominio HTTPS da Action RAG viva.
+paths:
+  /rag/search:
+    post:
+      operationId: searchDayRagCorpus
+      summary: Consulta o corpus RAG da Day RTC com auditoria de fonte.
+      description: >
+        Recupera trechos relevantes do corpus da Reforma Tributaria do Consumo,
+        retornando conteudo, citacoes, tier, vigencia, permissao normativa,
+        lacunas, dados faltantes e regras recomendadas de resposta.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: Pergunta original do usuario.
+                question_type:
+                  type: string
+                  enum:
+                    - factual
+                    - diagnostico
+                    - regime_simulacao
+                    - dfe_xml_erp
+                    - classificacao
+                    - resposta_cliente
+                    - fora_escopo
+                    - adversarial_risco
+                  description: Classificacao interna da pergunta.
+                topics:
+                  type: array
+                  items:
+                    type: string
+                  description: Topicos provaveis para filtro, ranking e auditoria.
+                needs_current_source:
+                  type: boolean
+                  description: true quando depender de versao, prazo, artigo, tabela, aliquota, DFe ou aplicacao operacional.
+                filters:
+                  type: object
+                  properties:
+                    source_tier:
+                      type: array
+                      items:
+                        type: string
+                        enum:
+                          - OFFICIAL_CURRENT
+                          - GOLD
+                          - SILVER
+                          - REFERENCE_APROVADO
+                          - PEDAGOGIA_DAY
+                          - HISTORICO
+                          - NAO_NORMATIVO
+                    status_rag:
+                      type: array
+                      items:
+                        type: string
+                        enum:
+                          - ENTRA_NO_RAG
+                          - HISTORICO
+                          - REFERENCIA_LOCAL
+                          - NAO_USAR_COMO_FONTE_TECNICA
+                    authority:
+                      type: array
+                      items:
+                        type: string
+                    normative_allowed:
+                      type: boolean
+                    include_historical:
+                      type: boolean
+                      default: false
+                top_k:
+                  type: integer
+                  default: 6
+                  minimum: 1
+                  maximum: 12
+      responses:
+        "200":
+          description: Resultado de retrieval com fontes, lacunas e auditoria.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - answer_summary
+                  - citations
+                  - retrieved_chunks
+                  - source_status
+                  - gaps
+                  - recommended_response_rules
+                  - retrieval_audit
+                properties:
+                  answer_summary:
+                    type: string
+                    description: Resumo neutro dos achados recuperados, sem parecer definitivo.
+                  citations:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - title
+                        - authority
+                        - version_or_date
+                        - source_tier
+                        - normative_allowed
+                        - citation_allowed
+                        - source_url_clean
+                      properties:
+                        title:
+                          type: string
+                        authority:
+                          type: string
+                        version_or_date:
+                          type: string
+                        source_tier:
+                          type: string
+                        source_type:
+                          type: string
+                        version_status:
+                          type: string
+                        status_rag:
+                          type: string
+                        normative_allowed:
+                          type: boolean
+                        citation_allowed:
+                          type: boolean
+                        path:
+                          type: string
+                        source_url_clean:
+                          type: string
+                        sha256:
+                          type: string
+                  retrieved_chunks:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - chunk_id
+                        - retrieval_rank
+                        - chunk_text
+                        - source_path
+                        - source_tier
+                        - normative_allowed
+                        - citation_allowed
+                      properties:
+                        chunk_id:
+                          type: string
+                        retrieval_rank:
+                          type: integer
+                        chunk_text:
+                          type: string
+                        source_path:
+                          type: string
+                        rag_id:
+                          type: string
+                        authority:
+                          type: string
+                        source_tier:
+                          type: string
+                        source_type:
+                          type: string
+                        status_rag:
+                          type: string
+                        version_or_date:
+                          type: string
+                        version_status:
+                          type: string
+                        normative_allowed:
+                          type: boolean
+                        citation_allowed:
+                          type: boolean
+                        source_url_clean:
+                          type: string
+                        topic_tags:
+                          type: array
+                          items:
+                            type: string
+                        blocked_topics:
+                          type: array
+                          items:
+                            type: string
+                        score:
+                          type: number
+                  source_status:
+                    type: object
+                    required:
+                      - has_official_current_source
+                      - has_gold_source
+                      - has_only_reference_or_pedagogy
+                      - requires_portal_confirmation
+                      - cannot_conclude
+                    properties:
+                      has_official_current_source:
+                        type: boolean
+                      has_gold_source:
+                        type: boolean
+                      has_only_historical_source:
+                        type: boolean
+                      has_secondary_source:
+                        type: boolean
+                      has_only_reference_or_pedagogy:
+                        type: boolean
+                      requires_portal_confirmation:
+                        type: boolean
+                      cannot_conclude:
+                        type: boolean
+                      conflicting_sources:
+                        type: array
+                        items:
+                          type: string
+                  gaps:
+                    type: array
+                    items:
+                      type: string
+                  missing_data:
+                    type: array
+                    items:
+                      type: string
+                  missing_source:
+                    type: array
+                    items:
+                      type: string
+                  recommended_response_rules:
+                    type: array
+                    items:
+                      type: string
+                  retrieval_audit:
+                    type: object
+                    required:
+                      - query_received
+                      - top_k_used
+                      - official_or_gold_in_top_k
+                      - non_normative_sources_blocked
+                    properties:
+                      query_received:
+                        type: string
+                      top_k_used:
+                        type: integer
+                      official_or_gold_in_top_k:
+                        type: boolean
+                      non_normative_sources_blocked:
+                        type: boolean
+                      highest_ranked_source_tier:
+                        type: string
+                      audit_notes:
+                        type: array
+                        items:
+                          type: string
+        "400":
+          description: Consulta invalida.
+        "500":
+          description: Erro interno da API RAG.

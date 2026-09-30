@@ -1,0 +1,191 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Day RAG Retrieval API",
+    "description": "Consulta o corpus Day indexado no Chroma Cloud.",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://day-rag-chroma-actions.onrender.com",
+      "description": "Day RAG Actions production API"
+    }
+  ],
+  "paths": {
+    "/rag/search": {
+      "post": {
+        "summary": "Search Day Rag Corpus",
+        "operationId": "search_day_rag_corpus_rag_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Citation": {
+        "properties": {
+          "title": { "type": "string", "title": "Title" },
+          "authority": { "type": "string", "title": "Authority" },
+          "version_or_date": { "type": "string", "title": "Version Or Date" },
+          "status_rag": { "type": "string", "title": "Status Rag" },
+          "path": { "type": "string", "title": "Path" },
+          "url": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Url" },
+          "source_tier": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Source Tier" },
+          "lifecycle_status": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Lifecycle Status" },
+          "normative_allowed": { "anyOf": [{ "type": "boolean" }, { "type": "null" }], "title": "Normative Allowed" }
+        },
+        "type": "object",
+        "required": ["title", "authority", "version_or_date", "status_rag", "path"],
+        "title": "Citation"
+      },
+      "HTTPValidationError": {
+        "properties": { "detail": { "items": { "$ref": "#/components/schemas/ValidationError" }, "type": "array", "title": "Detail" } },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "ok": { "type": "boolean", "title": "Ok" },
+          "service": { "type": "string", "title": "Service" },
+          "corpus_version": { "type": "string", "title": "Corpus Version" },
+          "authority_collection": { "type": "string", "title": "Authority Collection" },
+          "reference_collection": { "type": "string", "title": "Reference Collection" },
+          "public_api_only": { "type": "boolean", "title": "Public Api Only" },
+          "retrieval_mode": { "type": "string", "title": "Retrieval Mode", "default": "chroma_cloud_v2_1" },
+          "database": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Database" },
+          "collection": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Collection" }
+        },
+        "type": "object",
+        "required": ["ok", "service", "corpus_version", "authority_collection", "reference_collection", "public_api_only"],
+        "title": "HealthResponse"
+      },
+      "RetrievedChunk": {
+        "properties": {
+          "chunk_text": { "type": "string", "title": "Chunk Text" },
+          "source_path": { "type": "string", "title": "Source Path" },
+          "status_rag": { "type": "string", "title": "Status Rag" },
+          "rag_id": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Rag Id" },
+          "authority": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Authority" },
+          "score": { "anyOf": [{ "type": "number" }, { "type": "null" }], "title": "Score" },
+          "source_tier": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Source Tier" },
+          "lifecycle_status": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Lifecycle Status" },
+          "normative_allowed": { "anyOf": [{ "type": "boolean" }, { "type": "null" }], "title": "Normative Allowed" },
+          "is_estimate": { "anyOf": [{ "type": "boolean" }, { "type": "null" }], "title": "Is Estimate" },
+          "citation_allowed": { "anyOf": [{ "type": "boolean" }, { "type": "null" }], "title": "Citation Allowed" },
+          "version_or_date": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Version Or Date" },
+          "source_url_clean": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Source Url Clean" }
+        },
+        "type": "object",
+        "required": ["chunk_text", "source_path", "status_rag"],
+        "title": "RetrievedChunk"
+      },
+      "SearchFilters": {
+        "properties": {
+          "status_rag": { "anyOf": [{ "items": { "type": "string" }, "type": "array" }, { "type": "null" }], "title": "Status Rag" },
+          "authority": { "anyOf": [{ "items": { "type": "string" }, "type": "array" }, { "type": "null" }], "title": "Authority" },
+          "include_historical": { "type": "boolean", "title": "Include Historical", "default": false }
+        },
+        "type": "object",
+        "title": "SearchFilters"
+      },
+      "SearchRequest": {
+        "properties": {
+          "query": { "type": "string", "minLength": 1, "title": "Query" },
+          "question_type": { "anyOf": [{ "type": "string", "enum": ["factual", "diagnostico", "regime_simulacao", "dfe_xml_erp", "classificacao", "resposta_cliente", "fora_escopo", "adversarial_risco"] }, { "type": "null" }], "title": "Question Type", "default": "factual" },
+          "topics": { "anyOf": [{ "items": { "type": "string" }, "type": "array" }, { "type": "null" }], "title": "Topics" },
+          "needs_current_source": { "type": "boolean", "title": "Needs Current Source", "default": false },
+          "filters": { "anyOf": [{ "$ref": "#/components/schemas/SearchFilters" }, { "type": "null" }] },
+          "top_k": { "type": "integer", "maximum": 12, "minimum": 1, "title": "Top K", "default": 6 }
+        },
+        "type": "object",
+        "required": ["query"],
+        "title": "SearchRequest"
+      },
+      "SearchResponse": {
+        "properties": {
+          "answer_summary": { "type": "string", "title": "Answer Summary" },
+          "citations": { "items": { "$ref": "#/components/schemas/Citation" }, "type": "array", "title": "Citations" },
+          "retrieved_chunks": { "items": { "$ref": "#/components/schemas/RetrievedChunk" }, "type": "array", "title": "Retrieved Chunks" },
+          "source_status": { "$ref": "#/components/schemas/SourceStatus" },
+          "gaps": { "items": { "type": "string" }, "type": "array", "title": "Gaps" },
+          "recommended_response_rules": { "items": { "type": "string" }, "type": "array", "title": "Recommended Response Rules", "default": [] }
+        },
+        "type": "object",
+        "required": ["answer_summary", "citations", "retrieved_chunks", "source_status", "gaps"],
+        "title": "SearchResponse"
+      },
+      "SourceStatus": {
+        "properties": {
+          "has_official_current_source": { "type": "boolean", "title": "Has Official Current Source" },
+          "has_only_historical_source": { "type": "boolean", "title": "Has Only Historical Source" },
+          "has_secondary_source": { "type": "boolean", "title": "Has Secondary Source" },
+          "requires_portal_confirmation": { "type": "boolean", "title": "Requires Portal Confirmation" }
+        },
+        "type": "object",
+        "required": ["has_official_current_source", "has_only_historical_source", "has_secondary_source", "requires_portal_confirmation"],
+        "title": "SourceStatus"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": { "items": { "anyOf": [{ "type": "string" }, { "type": "integer" }] }, "type": "array", "title": "Location" },
+          "msg": { "type": "string", "title": "Message" },
+          "type": { "type": "string", "title": "Error Type" },
+          "input": { "title": "Input" },
+          "ctx": { "type": "object", "title": "Context" }
+        },
+        "type": "object",
+        "required": ["loc", "msg", "type"],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

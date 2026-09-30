@@ -1,0 +1,55 @@
+# Manifesto consolidado do Knowledge do GPT
+
+## Estado online reconfirmado em 2026-09-21
+
+- O editor exibe os mesmos dez nomes da captura inicial.
+- As URLs geradas pelas tentativas de download retornaram `404 Not found` no
+  navegador interno; nomes e quantidade estão confirmados, mas os hashes
+  online atuais não.
+- A última captura binária comprovada do conjunto ativo é de 2026-08-22:
+  nove arquivos em `live-2026-08-22/` e o índice
+  `original/00-INDICE-FISCAL.md`.
+- Consulte [a auditoria corrente](../evaluations/live-editor-audit-2026-09-21.md)
+  e [o manifesto da captura de 2026-08-22](live-2026-08-22/MANIFEST.md).
+
+## Captura original — 2026-08-07
+
+- **GPT:** `ac.fiscal`
+- **Editor:** https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626
+- **Captura integral:** 2026-08-07
+- **Arquivos preservados:** 10/10
+- **Método:** download direto de cada anexo no editor autenticado do GPT Builder.
+- **Integridade local reconfirmada:** 2026-09-21; bytes e SHA-256 continuam
+  iguais aos valores abaixo.
+
+| Arquivo preservado | SHA-256 | Bytes |
+| --- | --- | ---: |
+| `original/08-LACUNAS-E-ROADMAP.md` | `20931e6c393e3e6e662d1e1526e672dc029e3476fafaf789f68e4097002287ec` | 1431 |
+| `original/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md` | `a2b4cf8964be07b0d88dd6d415a122fb3fbca6bf80fb946947e67be454718fa3` | 2064 |
+| `original/02-ESCOPO-E-ROTEAMENTO.md` | `50e4f5c43ff8471e27e341ada3c112685c98da3b761d598482655fc217f4a6b7` | 3342 |
+| `original/01-REGRAS-DE-USO-E-LIMITES.md` | `53f52cc81668c5b0cdfb9a267ce4c694aa6b04661e9e01cf0f4da8381c0bba79` | 4506 |
+| `original/00-INDICE-FISCAL.md` | `7b1847f59d362f0497936e3d20de5254860b5869b551638520db2781e6f96a9c` | 1938 |
+| `original/03-FONTES-CANONICAS.md` | `02353d1c992659f2cde283ddc3fa72cf9990363dca4b8afbbb5d68fe85d3115a` | 2594 |
+| `original/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md` | `05374b6ce9247236d4eb62a9c216193b585e6169ec7fe2d94670da8eaf4bc71a` | 4115 |
+| `original/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md` | `4772eee8f4e4e276560b6434037bebcbe2f4f85ba59f289106635cf8623902c5` | 1534 |
+| `original/04-SKILLS-E-CENARIOS-DE-USO.md` | `6913372aada02f901f9402a09647f60d56005b9f600b972e3be7daafcc1bd3af` | 2034 |
+| `original/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md` | `c5b302e56ecb817b59e5351071b3775bb56f2ce3ec7c2034ee156806feb69aa2` | 2050 |
+
+Os arquivos foram copiados byte a byte com o mesmo nome exibido no GPT. Os
+hashes acima são a referência da captura histórica de 2026-08-07, não uma prova
+do estado binário online atual.
+
+## Separação entre as duas gerações preservadas
+
+| Geração | Conteúdo | Estado de evidência | Uso na futura skill |
+| --- | --- | --- | --- |
+| `original/` | dez arquivos baixados em 2026-08-07 | íntegro localmente; nove arquivos são material de DP anexado ao GPT Fiscal | histórico e auditoria; não usar como baseline operacional |
+| `live-2026-08-22/` + `original/00-INDICE-FISCAL.md` | dez arquivos ativos baixados em 2026-08-22 | última captura binária comprovada; nove hashes mudaram e o conteúdo foi corrigido para Fiscal | baseline documental provisório |
+| Knowledge online em 2026-09-21 | dez nomes visualmente iguais | bytes e hashes atuais não obtidos | baseline comportamental; paridade binária permanece `GAP` |
+
+Os arquivos de 2026-08-22 identificam-se como curadoria interna
+(`fonte_tipo: curadoria`, `origem: agents/knowledge/fiscal`) e citam caminhos
+de um corpus Fiscal anterior, prompts curados, síntese, parecer, OCR pendente e
+materiais da Reforma. Esses arquivos-fonte não estão neste repositório;
+portanto, as referências registram proveniência declarada, mas não constituem
+verificação independente dos originais primários.
