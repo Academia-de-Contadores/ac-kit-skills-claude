@@ -1,6 +1,6 @@
 # Academia — Skills Contábeis
 
-Pacote 1.1.0 de 30/09/2026. Oito skills com seus arquivos de origem.
+Nove skills: oito especialistas contábeis e ac-instalar-skills, com seus arquivos de apoio. Consulte .claude-plugin/plugin.json para a versão do pacote e VERSION.json no ZIP publicado para o commit da distribuição.
 
 | Especialista | Nome da skill | Para que usar |
 |---|---|---|
