@@ -1,7 +1,7 @@
 {
   "name": "academia-skills-contabeis",
-  "version": "1.3.0",
-  "description": "Oito skills da Academia (Fiscal, DP, Societário, Processos, Conteúdo D.A.I., Reforma RAG, Entrada de Clientes e gestão no Notion) e um assistente para futuras instalações e atualizações por link.",
+  "version": "1.3.1",
+  "description": "Nove skills da Academia (Fiscal, DP, Societário, Processos, Conteúdo D.A.I., Reforma RAG, Concierge do Combo da Reforma Sem Surto, Entrada de Clientes e gestão no Notion) e um assistente para futuras instalações e atualizações por link.",
   "author": {
     "name": "Academia de Contadores"
   },

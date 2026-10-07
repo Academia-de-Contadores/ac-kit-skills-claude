@@ -67,6 +67,16 @@
     "version": "0.2.1"
   },
   {
+    "repository": "ac-agente-reforma-tributaria-sem-surto",
+    "commit": "17e4df1dba9423e45e2022c1e5b318704efa0504",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto",
+    "skill": "ac-concierge-combo-reforma-sem-surto",
+    "files": 72,
+    "entrypoint_adapted": true,
+    "source_sha256": "038e297a2d1a2e39e40cd0278d6e6a3adc58aad324d790035175e65093f2a5bb",
+    "note": "Renomeada em 2026-10-07 de ac-reforma-tributaria-sem-surto para Concierge do Combo da Reforma Sem Surto, a pedido da AC; conteúdo igual ao kit 1.2.0."
+  },
+  {
     "skill": "ac-instalar-skills",
     "origin": "Criada para este kit por solicitação de Copetti em 2026-09-30",
     "version": "1.1.0"

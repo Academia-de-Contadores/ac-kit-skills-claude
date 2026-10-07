@@ -1,6 +1,6 @@
 # Skills da Academia de Contadores para Claude
 
-Kit público para alunas da Mentoria Master: **oito especialistas (contábeis, Entrada de Clientes e gestão no Notion) + um assistente para instalar e atualizar outras skills por link**.
+Kit público para alunas da Mentoria Master: **nove especialistas (contábeis, Concierge do Combo da Reforma Sem Surto, Entrada de Clientes e gestão no Notion) + um assistente para instalar e atualizar outras skills por link**.
 
 **[BAIXAR KIT COMPLETO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip)** · **[BAIXAR SÓ O PLUGIN](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip)** · **[ÚLTIMA VERSÃO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest)**
 
@@ -19,7 +19,7 @@ Você foi chamado para instalar este kit na conta da pessoa que enviou o link. S
 1. **Capacidade obrigatória.** Confira se "Execução de código e criação de arquivos" está ligada. Se não estiver, peça à pessoa para abrir **Configurações > Capacidades** (Settings > Capabilities) e ligar essa opção, e espere a confirmação. Skills e plugins exigem plano Pro, Max, Team ou Enterprise; no Team/Enterprise o administrador pode ter bloqueado a opção.
 2. **Baixe o plugin publicado:** https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip . Use somente esse arquivo da release, nunca o "Download ZIP" do repositório. Se a rede do seu ambiente bloquear o download, entregue o link à pessoa, peça que ela clique, baixe e anexe o arquivo aqui.
 3. **Instale na conta.** Use a ferramenta nativa de instalação de plugin ou skill, se você tiver uma, e mostre o cartão de Adicionar/Instalar. Sem essa ferramenta, guie o upload: **Personalizar > Plugins > enviar plugin** com `academia-skills-contabeis.zip`. Se a conta não aceitar plugin, use os ZIPs individuais de `skills-individuais/` do [kit completo](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip) em **Configurações > Capacidades > Skills > Enviar skill**, um por vez. Escolha uma rota só, para não duplicar.
-4. **Confira as nove skills** na lista da conta: `ac-fiscal`, `ac-dp`, `ac-societario`, `ac-processos-escritorio`, `ac-estrategista-conteudo-dai`, `ac-reforma-tributaria-rag`, `ac-entrada-clientes`, `notion-home-negocio` e `ac-instalar-skills`. Ler ou baixar o ZIP nesta conversa não é instalação.
+4. **Confira as dez skills** na lista da conta: `ac-fiscal`, `ac-dp`, `ac-societario`, `ac-processos-escritorio`, `ac-estrategista-conteudo-dai`, `ac-reforma-tributaria-rag`, `ac-concierge-combo-reforma-sem-surto`, `ac-entrada-clientes`, `notion-home-negocio` e `ac-instalar-skills`. Ler ou baixar o ZIP nesta conversa não é instalação.
 5. **Termine com um teste em conversa nova**, sem reenviar o arquivo: entregue o texto de [docs/03-TESTE-EM-CONVERSA-NOVA.txt](docs/03-TESTE-EM-CONVERSA-NOVA.txt).
 6. **Avise sobre os dois extras, sem configurar nada:** `notion-home-negocio` só funciona com o Notion conectado em **Configurações > Conectores > Notion**; `ac-reforma-tributaria-rag` consulta `day-rag-chroma-actions.onrender.com` e pode precisar desse domínio liberado na rede da execução de código.
 
@@ -46,6 +46,7 @@ Use o download da release. **Code > Download ZIP baixa o projeto de manutenção
 | `ac-processos-escritorio` | Etapas, responsabilidades, checklists e evidências das rotinas |
 | `ac-estrategista-conteudo-dai` | Conteúdo, carrosséis, Reels, anúncios e revisão de promessas |
 | `ac-reforma-tributaria-rag` | Consulta à base Day, quando serviço e rede estiverem disponíveis |
+| `ac-concierge-combo-reforma-sem-surto` | Concierge do Combo da Reforma Sem Surto: explicação prática de IBS/CBS/IS, adequação, DFe/ERP e comunicação com clientes |
 | `ac-entrada-clientes` | Entrada de cliente novo e transferência: documentos, acessos, riscos e handoffs por departamento (beta) |
 | `notion-home-negocio` | Gestão do escritório no Notion (template Home do Negócio 2.0): clientes, onboarding, tarefas, pergunta do dia (exige o conector do Notion) |
 | `ac-instalar-skills` | Instalação e atualização de skills/plugins por link, com verificação de persistência |

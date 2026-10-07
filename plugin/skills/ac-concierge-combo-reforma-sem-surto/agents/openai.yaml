@@ -1,0 +1,6 @@
+interface:
+  display_name: "Concierge do Combo da Reforma Sem Surto"
+  short_description: "Orientação prática em IBS, CBS, IS e DFe"
+  default_prompt: "Use $ac-concierge-combo-reforma-sem-surto para orientar este caso com fontes, checklist e próximos passos."
+policy:
+  allow_implicit_invocation: true
