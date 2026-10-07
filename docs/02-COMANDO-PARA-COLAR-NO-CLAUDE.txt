@@ -1,17 +1,15 @@
-Quero configurar e instalar as dez skills especialistas e a skill ac-instalar-skills da Academia de Contadores permanentemente na MINHA CONTA do Claude, para usar em novas conversas. Estou no Claude Desktop. Faça o trabalho possível agora e peça apenas os cliques que a interface exigir de mim.
+Quero configurar e instalar as oito skills especialistas e a skill ac-instalar-skills da Academia de Contadores permanentemente na MINHA CONTA do Claude, para usar em novas conversas. Estou no Claude Desktop. Faça o trabalho possível agora e peça apenas os cliques que a interface exigir de mim.
 
-PACOTE: use primeiro o arquivo academia-skills-contabeis.zip enviado pela Mentoria. Ele é um plugin completo; preserve suas onze skills (dez especialistas e ac-instalar-skills) e todos os arquivos de apoio. Se não estiver anexado ou acessível, baixe a versão publicada em https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip. Se o ambiente impedir o download, forneça esse link para eu baixar e anexar. Não diga que está instalado apenas porque abriu o ZIP.
+PACOTE: use primeiro o arquivo academia-skills-contabeis.zip enviado pela Mentoria. Ele é um plugin completo; preserve suas nove skills (oito especialistas e ac-instalar-skills) e todos os arquivos de apoio. Se não estiver anexado ou acessível, baixe a versão publicada em https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip. Se o ambiente impedir o download, forneça esse link para eu baixar e anexar. Não diga que está instalado apenas porque abriu o ZIP.
 
 Se eu estiver usando somente links, as fontes autorizadas são:
 https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-rag
-https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto
-https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria
 https://github.com/Academia-de-Contadores/ac-agente-societario
 https://github.com/Academia-de-Contadores/ac-agente-processos-escritorio
 https://github.com/Academia-de-Contadores/ac-agente-fiscal
 https://github.com/Academia-de-Contadores/ac-agente-dp
 https://github.com/Academia-de-Contadores/ac-agente-estrategista-conteudo-dai
-Esses oito links fornecem oito skills contábeis. As outras três estão somente no repositório público do kit, em https://github.com/Academia-de-Contadores/ac-kit-skills-claude/tree/main/plugin/skills: ac-entrada-clientes, notion-home-negocio e ac-instalar-skills. Prefira o plugin completo da última versão publicada para instalar as onze juntas.
+Esses seis links fornecem seis skills. As outras três estão somente no repositório público do kit, em https://github.com/Academia-de-Contadores/ac-kit-skills-claude/tree/main/plugin/skills: ac-entrada-clientes, notion-home-negocio e ac-instalar-skills. Prefira o plugin completo da última versão publicada para instalar as nove juntas.
 Baixe essas fontes públicas somente se necessário. Não instale outros repositórios nem invente skills ausentes.
 
 1. IDENTIFIQUE O AMBIENTE
@@ -19,21 +17,19 @@ Confirme quais ferramentas você realmente tem para arquivos, rede e instalaçã
 
 2. CONFIGURE O NECESSÁRIO
 Confira se Execução de código e criação de arquivos está ativa em Configurações > Capacidades. Para o modo de aprovação, quero Aprovar automaticamente, quando disponível. Se precisar de mudança de permissão, mostre o controle e peça que eu faça o clique exigido; não contorne esse passo. Se o modo automático não estiver disponível, mantenha o modo manual e prossiga com minhas aprovações. Não selecione Ignorar todas as aprovações. Não altere meus conectores, credenciais, proteções do computador ou outras configurações.
-Se houver necessidade real de uma pasta local, peça que eu escolha uma pasta exclusiva chamada Academia-Skills. Não solicite o disco inteiro. GitHub não exige login para baixar esses oito repositórios públicos; não peça token nem senha.
+Se houver necessidade real de uma pasta local, peça que eu escolha uma pasta exclusiva chamada Academia-Skills. Não solicite o disco inteiro. GitHub não exige login para baixar esses repositórios públicos; não peça token nem senha.
 
 3. INSTALE NA CONTA
-Use o mecanismo nativo de instalação, se disponível, e apresente o cartão de Adicionar/Instalar. Se não houver ferramenta para salvar na conta, indique o caminho de Personalização > Plugins para enviar o plugin personalizado; eu farei esse upload. Caso a conta não ofereça importação de plugin, use os onze ZIPs individuais em Personalização > Habilidades/Skills, um por vez, e ative-os. Escolha uma rota para evitar duplicatas.
+Use o mecanismo nativo de instalação, se disponível, e apresente o cartão de Adicionar/Instalar. Se não houver ferramenta para salvar na conta, indique o caminho de Personalização > Plugins para enviar o plugin personalizado; eu farei esse upload. Caso a conta não ofereça importação de plugin, use os nove ZIPs individuais em Personalização > Habilidades/Skills, um por vez, e ative-os. Escolha uma rota para evitar duplicatas.
 Preserve nome, descrição, Knowledge, perfis, referências e limites das skills. Não reescreva conteúdo técnico nem remova etapas de revisão profissional. Não instale somente em ~/.claude/skills e não use instruções de projeto como substituto da instalação na conta.
 
-4. CONFIRA AS ONZE SKILLS
+4. CONFIRA AS NOVE SKILLS
 ac-fiscal
 ac-dp
 ac-societario
 ac-processos-escritorio
 ac-estrategista-conteudo-dai
-ac-reforma-tributaria-sem-surto
 ac-reforma-tributaria-rag
-ac-reforma-tributaria
 ac-entrada-clientes
 notion-home-negocio
 ac-instalar-skills

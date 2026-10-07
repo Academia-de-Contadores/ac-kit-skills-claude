@@ -4,15 +4,15 @@ Guia para alunas da Mentoria Master • pacote 1.3.0 • 07/10/2026
 
 ## O resultado esperado
 
-Ao terminar, você terá onze skills disponíveis (dez especialistas e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
+Ao terminar, você terá nove skills disponíveis (oito especialistas e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
 
 O pacote foi preparado e validado estruturalmente. A instalação e o teste em sua conta ainda precisam ser feitos. Um comando pode conduzir a instalação, mas não garante que o Claude possa mudar permissões ou salvar plugins sozinho: os cliques nativos de consentimento e importação, quando exigidos, são feitos por você.
 
 ## 1. Arquivos recebidos
 
-- `academia-skills-contabeis.zip`: plugin com as dez skills especialistas e ac-instalar-skills. É o arquivo principal.
+- `academia-skills-contabeis.zip`: plugin com as oito skills especialistas e ac-instalar-skills. É o arquivo principal.
 - `02-COMANDO-PARA-COLAR-NO-CLAUDE.txt`: pedido completo para conduzir a configuração e verificar a instalação.
-- `skills-individuais/`: onze ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
+- `skills-individuais/`: nove ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
 - `03-TESTE-EM-CONVERSA-NOVA.txt`: teste final de persistência.
 
 Se recebeu `KIT-ALUNAS-CLAUDE.zip`, extraia esse kit no Windows (botão direito > Extrair tudo). Não extraia o ZIP do plugin antes de enviá-lo no importador. Não envie o kit inteiro como se fosse uma skill.
@@ -54,15 +54,15 @@ As regras das próprias skills continuam distinguindo preparar um rascunho de en
 2. Procure a opção de adicionar/enviar um plugin personalizado. O nome do botão pode variar com a versão.
 3. Selecione `academia-skills-contabeis.zip` e conclua o fluxo de importação.
 4. Confirme que `academia-skills-contabeis` está instalado e habilitado.
-5. Abra Personalização > Habilidades/Skills > Meus e confira as onze skills. Algumas versões agrupam as skills dentro do plugin.
+5. Abra Personalização > Habilidades/Skills > Meus e confira as nove skills. Algumas versões agrupam as skills dentro do plugin.
 
 Se a interface não oferecer importação de plugin, ou rejeitar esse formato, use a Opção B e anote o erro para a Mentoria. Não trate uma rejeição como instalação concluída.
 
-### Opção B — onze skills individuais
+### Opção B — nove skills individuais
 
 1. Abra Personalização > Habilidades/Skills.
 2. Use Adicionar habilidade > Criar skill > Enviar uma skill, ou a opção equivalente de upload da sua versão.
-3. Envie os onze ZIPs de `skills-individuais`, UM POR VEZ.
+3. Envie os nove ZIPs de `skills-individuais`, UM POR VEZ.
 4. Ative cada skill e confira seu nome na lista.
 5. Não envie o ZIP do plugin no importador de UMA skill: são estruturas diferentes.
 
@@ -77,18 +77,10 @@ Se já instalou uma das rotas, não repita a outra. Se já possui uma skill com 
 | Societário | `ac-societario` | Abertura, alteração, baixa, viabilidade, documentos e minutas para revisão. |
 | Processos do Escritório | `ac-processos-escritorio` | Transforma uma rotina real em processo, checklist, matriz de responsabilidades e plano de teste. |
 | Conteúdo D.A.I. | `ac-estrategista-conteudo-dai` | Rascunhos completos de carrosséis, Reels, anúncios, sequências, CTAs e revisão de promessas. |
-| Reforma Sem Surto | `ac-reforma-tributaria-sem-surto` | Explicação prática de IBS/CBS/IS, adequação, documentos fiscais, ERP e comunicação com clientes. |
 | Reforma com consulta à base Day | `ac-reforma-tributaria-rag` | Consulta o corpus Day quando a rede e o serviço estão disponíveis; apresenta fontes, lacunas e apoio local quando necessário. |
-| Reforma — acervo restaurado | `ac-reforma-tributaria` | Orientação técnica, cenários e DFe/ERP com acervo preservado, distinguindo histórico de fonte atual. |
+| Entrada de Clientes (beta) | `ac-entrada-clientes` | Cliente novo e transferência de contabilidade: checklist por departamento, acessos, riscos e handoffs. |
+| Gestão no Notion | `notion-home-negocio` | Clientes, onboarding, tarefas do time e pergunta do dia no template Home do Negócio 2.0. Exige o Notion conectado. |
 | Instalação e atualização | `ac-instalar-skills` | Conduz futuras instalações por link, confere compatibilidade, duplicatas e persistência na conta. |
-
-### Qual Reforma escolher?
-
-- Comece por **Reforma Sem Surto** para explicações práticas e comunicação.
-- Use **Reforma RAG** quando precisar consultar a base Day, verificando se a consulta realmente ocorreu.
-- Use **Reforma — acervo restaurado** quando quiser trabalhar especificamente com esse acervo e perfil técnico. Sua instalação não reativa o GPT antigo.
-
-As três têm sobreposição. Para uma tarefa, diga qual deseja usar. Não é necessário chamar as três sempre.
 
 ## 7. Comandos prontos para o dia a dia
 
@@ -114,17 +106,9 @@ Você pode chamar pelo nome, em português, sem decorar comandos com barra. Nos 
 
 > Use a skill ac-estrategista-conteudo-dai para criar um carrossel de 6 slides sobre organização do escritório contábil, sem prometer resultado garantido.
 
-### Reforma Sem Surto
-
-> Use a skill ac-reforma-tributaria-sem-surto para preparar uma explicação introdutória da Reforma do Consumo para um cliente. Separe regra confirmada de ponto a validar.
-
 ### Reforma com consulta à base Day
 
 > Use a skill ac-reforma-tributaria-rag. Consulte a base para listar dados necessários à análise de créditos de CBS. Informe se a consulta ocorreu e suas lacunas. Não use dados reais de cliente.
-
-### Reforma — acervo restaurado
-
-> Use a skill ac-reforma-tributaria no perfil restored-technical para organizar os dados necessários a um diagnóstico de adequação do ERP. Identifique o que precisa de fonte atual.
 
 ### Usar duas especialidades em sequência
 
@@ -149,7 +133,7 @@ Se uma skill citar Contábil, Captação ou Guia de Operação, isso pode ser um
 3. Cole o conteúdo de `03-TESTE-EM-CONVERSA-NOVA.txt`.
 4. Confira a lista da conta e, quando a interface mostrar, a leitura/ativação da skill durante a execução. Uma resposta “instalei” sozinha não serve como comprovação.
 
-Critério de conclusão: onze skills visíveis/ativas na conta ou dentro do plugin habilitado; uma skill carregada e usada em conversa nova; RAG marcada separadamente como consulta externa testada ou pendente. A leitura de um ZIP na conversa original comprova apenas acesso ao arquivo.
+Critério de conclusão: nove skills visíveis/ativas na conta ou dentro do plugin habilitado; uma skill carregada e usada em conversa nova; RAG marcada separadamente como consulta externa testada ou pendente. A leitura de um ZIP na conversa original comprova apenas acesso ao arquivo.
 
 ## 9. Teste da Reforma RAG
 

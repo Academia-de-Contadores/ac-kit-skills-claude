@@ -1,6 +1,0 @@
-interface:
-  display_name: "Reforma Tributária Sem Surto"
-  short_description: "Orientação prática em IBS, CBS, IS e DFe"
-  default_prompt: "Use $ac-reforma-tributaria-sem-surto para orientar este caso com fontes, checklist e próximos passos."
-policy:
-  allow_implicit_invocation: true
