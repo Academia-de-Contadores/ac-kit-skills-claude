@@ -28,7 +28,7 @@ indicar a revisão técnica. Ela não gera o valor final nem a guia.
 - `/pre-apuracao`: organiza estimativa e evidências, sem virar guia;
 - `/dominio-fiscal`: estrutura importação, parâmetros e divergências;
 - `/regularizacao`: organiza CND, PGFN, dívida e parcelamento sem aderir;
-- `/reforma-handoff`: prepara o caso para `$ac-reforma-tributaria`;
+- `/reforma-handoff`: prepara o caso para `$ac-reforma-tributaria-rag`;
 - `/mensagem-cliente`: cria rascunho que ainda precisa de aprovação para envio.
 
 Os contratos completos estão em `references/fiscal-outputs.md`.

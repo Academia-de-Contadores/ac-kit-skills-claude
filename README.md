@@ -1,16 +1,29 @@
 # Skills da Academia de Contadores para Claude
 
-Kit público para alunas da Mentoria Master: **oito especialistas contábeis + um assistente para instalar e atualizar outras skills por link**.
+Kit público para alunas da Mentoria Master: **oito especialistas (contábeis, Entrada de Clientes e gestão no Notion) + um assistente para instalar e atualizar outras skills por link**.
 
 **[BAIXAR KIT COMPLETO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip)** · **[BAIXAR SÓ O PLUGIN](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip)** · **[ÚLTIMA VERSÃO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest)**
 
-## Só quero mandar um link ao Claude
+## Instalar só com o link
 
-Abra uma tarefa Cowork e cole:
+Abra uma conversa nova no Claude (de preferência uma tarefa Cowork no Claude Desktop) e mande:
 
-> Quero instalar na minha conta o kit da Academia: https://github.com/Academia-de-Contadores/ac-kit-skills-claude . Leia o README e docs/02-COMANDO-PARA-COLAR-NO-CLAUDE.txt. Baixe o plugin da última versão publicada e conduza a instalação persistente das nove skills. Oriente a seleção de Aprovar automaticamente, se disponível, pedindo o clique de consentimento exigido. Não selecione Ignorar todas as aprovações. Se não tiver ferramenta para instalar na conta, indique exatamente o upload que devo fazer. Não considere download ou uso nesta conversa como instalação. Termine conferindo as skills e me dando um teste em conversa nova.
+> Instala na minha conta o kit da Academia: https://github.com/Academia-de-Contadores/ac-kit-skills-claude
 
-O comando pode conduzir o processo, mas **o Claude pode exigir que você clique para importar ou autorizar**. O pacote não concede permissões a si mesmo. Não precisa fornecer senha do GitHub para baixar este kit público.
+O Claude lê as instruções abaixo e conduz o resto. Você só faz os cliques que o próprio aplicativo exigir, como ligar a execução de código ou confirmar a importação. Não precisa de login no GitHub nem de senha.
+
+## Instruções para o Claude que recebeu este link
+
+Você foi chamado para instalar este kit na conta da pessoa que enviou o link. Siga nesta ordem, em português, um passo por vez:
+
+1. **Capacidade obrigatória.** Confira se "Execução de código e criação de arquivos" está ligada. Se não estiver, peça à pessoa para abrir **Configurações > Capacidades** (Settings > Capabilities) e ligar essa opção, e espere a confirmação. Skills e plugins exigem plano Pro, Max, Team ou Enterprise; no Team/Enterprise o administrador pode ter bloqueado a opção.
+2. **Baixe o plugin publicado:** https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip . Use somente esse arquivo da release, nunca o "Download ZIP" do repositório. Se a rede do seu ambiente bloquear o download, entregue o link à pessoa, peça que ela clique, baixe e anexe o arquivo aqui.
+3. **Instale na conta.** Use a ferramenta nativa de instalação de plugin ou skill, se você tiver uma, e mostre o cartão de Adicionar/Instalar. Sem essa ferramenta, guie o upload: **Personalizar > Plugins > enviar plugin** com `academia-skills-contabeis.zip`. Se a conta não aceitar plugin, use os ZIPs individuais de `skills-individuais/` do [kit completo](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip) em **Configurações > Capacidades > Skills > Enviar skill**, um por vez. Escolha uma rota só, para não duplicar.
+4. **Confira as nove skills** na lista da conta: `ac-fiscal`, `ac-dp`, `ac-societario`, `ac-processos-escritorio`, `ac-estrategista-conteudo-dai`, `ac-reforma-tributaria-rag`, `ac-entrada-clientes`, `notion-home-negocio` e `ac-instalar-skills`. Ler ou baixar o ZIP nesta conversa não é instalação.
+5. **Termine com um teste em conversa nova**, sem reenviar o arquivo: entregue o texto de [docs/03-TESTE-EM-CONVERSA-NOVA.txt](docs/03-TESTE-EM-CONVERSA-NOVA.txt).
+6. **Avise sobre os dois extras, sem configurar nada:** `notion-home-negocio` só funciona com o Notion conectado em **Configurações > Conectores > Notion**; `ac-reforma-tributaria-rag` consulta `day-rag-chroma-actions.onrender.com` e pode precisar desse domínio liberado na rede da execução de código.
+
+Não peça senha, token ou certificado. Não selecione "Ignorar todas as aprovações". Não altere outros conectores ou permissões. O pacote não concede permissões a si mesmo: os cliques de consentimento são da pessoa.
 
 ## Instalação com download
 
@@ -32,9 +45,9 @@ Use o download da release. **Code > Download ZIP baixa o projeto de manutenção
 | `ac-societario` | Abertura, alteração, baixa e documentos societários |
 | `ac-processos-escritorio` | Etapas, responsabilidades, checklists e evidências das rotinas |
 | `ac-estrategista-conteudo-dai` | Conteúdo, carrosséis, Reels, anúncios e revisão de promessas |
-| `ac-reforma-tributaria-sem-surto` | Explicação prática da Reforma e comunicação ao cliente |
 | `ac-reforma-tributaria-rag` | Consulta à base Day, quando serviço e rede estiverem disponíveis |
-| `ac-reforma-tributaria` | Trabalho com acervo técnico restaurado, distinguindo histórico de fonte atual |
+| `ac-entrada-clientes` | Entrada de cliente novo e transferência: documentos, acessos, riscos e handoffs por departamento (beta) |
+| `notion-home-negocio` | Gestão do escritório no Notion (template Home do Negócio 2.0): clientes, onboarding, tarefas, pergunta do dia (exige o conector do Notion) |
 | `ac-instalar-skills` | Instalação e atualização de skills/plugins por link, com verificação de persistência |
 
 Veja [o guia detalhado e exemplos de pedidos](docs/01-GUIA-DA-ALUNA.md). As skills apoiam a profissional responsável e não integram automaticamente sistemas externos. Agentes apenas citados em encaminhamentos não estão necessariamente instalados.

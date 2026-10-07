@@ -1,16 +1,16 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.2.0 • 30/09/2026
+Guia para alunas da Mentoria Master • pacote 1.3.0 • 07/10/2026
 
 ## O resultado esperado
 
-Ao terminar, você terá nove skills disponíveis (oito contábeis e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
+Ao terminar, você terá nove skills disponíveis (oito especialistas e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
 
 O pacote foi preparado e validado estruturalmente. A instalação e o teste em sua conta ainda precisam ser feitos. Um comando pode conduzir a instalação, mas não garante que o Claude possa mudar permissões ou salvar plugins sozinho: os cliques nativos de consentimento e importação, quando exigidos, são feitos por você.
 
 ## 1. Arquivos recebidos
 
-- `academia-skills-contabeis.zip`: plugin com as oito skills contábeis e ac-instalar-skills. É o arquivo principal.
+- `academia-skills-contabeis.zip`: plugin com as oito skills especialistas e ac-instalar-skills. É o arquivo principal.
 - `02-COMANDO-PARA-COLAR-NO-CLAUDE.txt`: pedido completo para conduzir a configuração e verificar a instalação.
 - `skills-individuais/`: nove ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
 - `03-TESTE-EM-CONVERSA-NOVA.txt`: teste final de persistência.
@@ -77,18 +77,10 @@ Se já instalou uma das rotas, não repita a outra. Se já possui uma skill com 
 | Societário | `ac-societario` | Abertura, alteração, baixa, viabilidade, documentos e minutas para revisão. |
 | Processos do Escritório | `ac-processos-escritorio` | Transforma uma rotina real em processo, checklist, matriz de responsabilidades e plano de teste. |
 | Conteúdo D.A.I. | `ac-estrategista-conteudo-dai` | Rascunhos completos de carrosséis, Reels, anúncios, sequências, CTAs e revisão de promessas. |
-| Reforma Sem Surto | `ac-reforma-tributaria-sem-surto` | Explicação prática de IBS/CBS/IS, adequação, documentos fiscais, ERP e comunicação com clientes. |
 | Reforma com consulta à base Day | `ac-reforma-tributaria-rag` | Consulta o corpus Day quando a rede e o serviço estão disponíveis; apresenta fontes, lacunas e apoio local quando necessário. |
-| Reforma — acervo restaurado | `ac-reforma-tributaria` | Orientação técnica, cenários e DFe/ERP com acervo preservado, distinguindo histórico de fonte atual. |
+| Entrada de Clientes (beta) | `ac-entrada-clientes` | Cliente novo e transferência de contabilidade: checklist por departamento, acessos, riscos e handoffs. |
+| Gestão no Notion | `notion-home-negocio` | Clientes, onboarding, tarefas do time e pergunta do dia no template Home do Negócio 2.0. Exige o Notion conectado. |
 | Instalação e atualização | `ac-instalar-skills` | Conduz futuras instalações por link, confere compatibilidade, duplicatas e persistência na conta. |
-
-### Qual Reforma escolher?
-
-- Comece por **Reforma Sem Surto** para explicações práticas e comunicação.
-- Use **Reforma RAG** quando precisar consultar a base Day, verificando se a consulta realmente ocorreu.
-- Use **Reforma — acervo restaurado** quando quiser trabalhar especificamente com esse acervo e perfil técnico. Sua instalação não reativa o GPT antigo.
-
-As três têm sobreposição. Para uma tarefa, diga qual deseja usar. Não é necessário chamar as três sempre.
 
 ## 7. Comandos prontos para o dia a dia
 
@@ -114,23 +106,25 @@ Você pode chamar pelo nome, em português, sem decorar comandos com barra. Nos 
 
 > Use a skill ac-estrategista-conteudo-dai para criar um carrossel de 6 slides sobre organização do escritório contábil, sem prometer resultado garantido.
 
-### Reforma Sem Surto
-
-> Use a skill ac-reforma-tributaria-sem-surto para preparar uma explicação introdutória da Reforma do Consumo para um cliente. Separe regra confirmada de ponto a validar.
-
 ### Reforma com consulta à base Day
 
 > Use a skill ac-reforma-tributaria-rag. Consulte a base para listar dados necessários à análise de créditos de CBS. Informe se a consulta ocorreu e suas lacunas. Não use dados reais de cliente.
-
-### Reforma — acervo restaurado
-
-> Use a skill ac-reforma-tributaria no perfil restored-technical para organizar os dados necessários a um diagnóstico de adequação do ERP. Identifique o que precisa de fonte atual.
 
 ### Usar duas especialidades em sequência
 
 > Use ac-fiscal para listar as conferências desta rotina. Depois, use ac-processos-escritorio para organizar essas conferências em etapas, responsáveis e evidências. Separe o que foi informado do que precisa de validação.
 
-Se uma skill citar Contábil, Entrada de Clientes, Captação, Guia de Operação ou gestão no Notion, isso pode ser um encaminhamento previsto no conteúdo. Esses agentes NÃO fazem parte do conjunto contábil deste pacote. Não considere que foram instalados apenas porque apareceram na resposta.
+### Entrada de Clientes (beta)
+
+> Use a skill ac-entrada-clientes. Um cliente fictício de comércio e serviços, com 2 funcionários, vem de outra contabilidade. Monte o checklist por departamento, os acessos pendentes e os handoffs. Não peça senhas.
+
+### Gestão no Notion
+
+Exige o Notion conectado em Configurações > Conectores e uma cópia do template Home do Negócio 2.0.
+
+> Use a skill notion-home-negocio. Esta é a Home da minha cópia: [link]. Identifique onde ficam clientes, onboarding, tarefas do time e os controles de DP, Fiscal, Contábil e Legalização. Me mostre os links e o que não conseguiu confirmar. Não altere nada.
+
+Se uma skill citar Contábil, Captação ou Guia de Operação, isso pode ser um encaminhamento previsto no conteúdo. Esses agentes NÃO fazem parte deste pacote. Não considere que foram instalados apenas porque apareceram na resposta.
 
 ## 8. Teste obrigatório em outra conversa
 

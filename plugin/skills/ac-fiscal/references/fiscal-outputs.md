@@ -97,7 +97,7 @@ Use quando houver CBS, IBS, split payment, créditos, DFe/XML, ERP, cClassTrib o
 cronograma 2026–2033:
 
 ```markdown
-Agente destino: $ac-reforma-tributaria
+Agente destino: $ac-reforma-tributaria-rag
 Motivo do handoff: [sinal de Reforma]
 Fatos e documentos: [lista]
 Análise Fiscal já realizada: [lista]

@@ -58,7 +58,7 @@ Nacional, texto normativo oficial, sistema oficial ou revisão técnica.
   de conferência. Não afirme ajuste ou fechamento sem evidência real do sistema.
 - **Reforma:** ao encontrar CBS, IBS, split payment, créditos, DFe/XML, ERP,
   cClassTrib ou cronograma 2026–2033, preserve a análise fiscal já possível e
-  monte o handoff para `ac-reforma-tributaria` com fatos, documentos, lacunas,
+  monte o handoff para `ac-reforma-tributaria-rag` com fatos, documentos, lacunas,
   risco e pergunta técnica. Não invente que a outra skill foi executada.
 
 Comparar regimes pode produzir quadro de hipóteses e dados necessários, não

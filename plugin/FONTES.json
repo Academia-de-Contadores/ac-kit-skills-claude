@@ -54,22 +54,17 @@
     "source_sha256": "a749cd5dadf5d57af90bf3bea7b78fce18a7f259ee1a748d3a5e81da64e309be"
   },
   {
-    "repository": "ac-agente-reforma-tributaria",
-    "commit": "ae5476455d68359d93a84318b37650ad7d7a6174",
-    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria",
-    "skill": "ac-reforma-tributaria",
-    "files": 106,
+    "repository": "ac-agente-entrada-clientes",
+    "commit": "16046607b84f8252abf855406394406cfca71f87",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-entrada-clientes",
+    "skill": "ac-entrada-clientes",
     "entrypoint_adapted": true,
-    "source_sha256": "63ca5da10bec52c90f1b114e9997b70a20a8de5d5f5c79afc9946bd427f825f9"
+    "note": "SKILL.md criado para o kit em 2026-10-07; instructions/system.md e Knowledge ativo (00 de original/, 01-99 de live-2026-08-22/) copiados byte a byte."
   },
   {
-    "repository": "ac-agente-reforma-tributaria-sem-surto",
-    "commit": "17e4df1dba9423e45e2022c1e5b318704efa0504",
-    "url": "https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto",
-    "skill": "ac-reforma-tributaria-sem-surto",
-    "files": 72,
-    "entrypoint_adapted": false,
-    "source_sha256": "038e297a2d1a2e39e40cd0278d6e6a3adc58aad324d790035175e65093f2a5bb"
+    "skill": "notion-home-negocio",
+    "origin": "Criada para a aula Gestão Notion com IA (MCCEO, 08/10/2026)",
+    "version": "0.2.1"
   },
   {
     "skill": "ac-instalar-skills",
