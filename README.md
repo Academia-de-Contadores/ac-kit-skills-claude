@@ -12,13 +12,32 @@ Abra uma conversa nova no Claude (de preferência uma tarefa Cowork no Claude De
 
 O Claude lê as instruções abaixo e conduz o resto. Você só faz os cliques que o próprio aplicativo exigir, como ligar a execução de código ou confirmar a importação. Não precisa de login no GitHub nem de senha.
 
+## Pelo navegador (claude.ai): skill por skill
+
+Se o aplicativo estiver lento no seu computador, use o Claude no navegador. As skills e o conector do Notion funcionam igual; a diferença é que você envia **uma skill por vez**, sem descompactar o ZIP, em **Personalização > Habilidades/Skills > Adicionar habilidade > Enviar uma skill** (em algumas contas, Configurações > Capacidades > Skills). Passo a passo e solução de erros: [docs/07-VERSAO-WEB-SKILL-POR-SKILL.txt](docs/07-VERSAO-WEB-SKILL-POR-SKILL.txt).
+
+| Ordem | Skill | Baixar |
+|---|---|---|
+| 1 | Notion (aula de gestão; exige o conector) | [notion-home-negocio.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/notion-home-negocio.zip) |
+| 2 | Processos do Escritório (aula de gestão) | [ac-processos-escritorio.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-processos-escritorio.zip) |
+| 3 | Entrada de Clientes, beta (aula de gestão) | [ac-entrada-clientes.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-entrada-clientes.zip) |
+| 4 | Fiscal | [ac-fiscal.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-fiscal.zip) |
+| 5 | Departamento Pessoal | [ac-dp.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-dp.zip) |
+| 6 | Societário | [ac-societario.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-societario.zip) |
+| 7 | Reforma Tributária — RAG | [ac-reforma-tributaria-rag.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-reforma-tributaria-rag.zip) |
+| 8 | Concierge do Combo da Reforma Sem Surto | [ac-concierge-combo-reforma-sem-surto.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-concierge-combo-reforma-sem-surto.zip) |
+| 9 | Estrategista de Conteúdo D.A.I. | [ac-estrategista-conteudo-dai.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-estrategista-conteudo-dai.zip) |
+| 10 | Instalador (opcional no navegador) | [ac-instalar-skills.zip](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-instalar-skills.zip) |
+
+Já instalou pelo aplicativo? Não repita: a conta é a mesma e as skills aparecem nos dois.
+
 ## Instruções para o Claude que recebeu este link
 
 Você foi chamado para instalar este kit na conta da pessoa que enviou o link. Siga nesta ordem, em português, um passo por vez:
 
 1. **Capacidade obrigatória.** Confira se "Execução de código e criação de arquivos" está ligada. Se não estiver, peça à pessoa para abrir **Configurações > Capacidades** (Settings > Capabilities) e ligar essa opção, e espere a confirmação. Skills e plugins exigem plano Pro, Max, Team ou Enterprise; no Team/Enterprise o administrador pode ter bloqueado a opção.
 2. **Baixe o plugin publicado:** https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip . Use somente esse arquivo da release, nunca o "Download ZIP" do repositório. Se a rede do seu ambiente bloquear o download, entregue o link à pessoa, peça que ela clique, baixe e anexe o arquivo aqui.
-3. **Instale na conta.** Use a ferramenta nativa de instalação de plugin ou skill, se você tiver uma, e mostre o cartão de Adicionar/Instalar. Sem essa ferramenta, guie o upload: **Personalizar > Plugins > enviar plugin** com `academia-skills-contabeis.zip`. Se a conta não aceitar plugin, use os ZIPs individuais de `skills-individuais/` do [kit completo](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip) em **Configurações > Capacidades > Skills > Enviar skill**, um por vez. Escolha uma rota só, para não duplicar.
+3. **Instale na conta.** Use a ferramenta nativa de instalação de plugin ou skill, se você tiver uma, e mostre o cartão de Adicionar/Instalar. Sem essa ferramenta, guie o upload: **Personalizar > Plugins > enviar plugin** com `academia-skills-contabeis.zip`. Se a conta não aceitar plugin, ou se a pessoa estiver no navegador (claude.ai), siga a seção "Pelo navegador": entregue os links diretos de cada skill da tabela e guie o envio de um ZIP por vez em **Personalização > Habilidades/Skills > Adicionar habilidade > Enviar uma skill** (ou Configurações > Capacidades > Skills), sem descompactar. Escolha uma rota só, para não duplicar.
 4. **Confira as dez skills** na lista da conta: `ac-fiscal`, `ac-dp`, `ac-societario`, `ac-processos-escritorio`, `ac-estrategista-conteudo-dai`, `ac-reforma-tributaria-rag`, `ac-concierge-combo-reforma-sem-surto`, `ac-entrada-clientes`, `notion-home-negocio` e `ac-instalar-skills`. Ler ou baixar o ZIP nesta conversa não é instalação.
 5. **Termine com um teste em conversa nova**, sem reenviar o arquivo: entregue o texto de [docs/03-TESTE-EM-CONVERSA-NOVA.txt](docs/03-TESTE-EM-CONVERSA-NOVA.txt).
 6. **Avise sobre os dois extras, sem configurar nada:** `notion-home-negocio` só funciona com o Notion conectado em **Configurações > Conectores > Notion**; `ac-reforma-tributaria-rag` consulta `day-rag-chroma-actions.onrender.com` e pode precisar desse domínio liberado na rede da execução de código.

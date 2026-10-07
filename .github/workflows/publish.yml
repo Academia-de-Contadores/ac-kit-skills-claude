@@ -41,9 +41,10 @@ jobs:
               f"Kit {v['version']} com {v['skills_count']} skills.\n\n"
               f"Commit: {v['commit']}\n\n"
               "Baixe KIT-ALUNAS-CLAUDE.zip para o conjunto com guia e alternativas, "
-              "ou academia-skills-contabeis.zip para importar só o plugin.\n\n"
+              "ou academia-skills-contabeis.zip para importar só o plugin. "
+              "No navegador (claude.ai), envie as skills uma a uma pelos ZIPs com o nome de cada skill.\n\n"
               "Validação estrutural concluída. A importação e o teste em nova conversa "
               "precisam ser feitos em cada conta. Publicar aqui não atualiza o Claude automaticamente.\n"
           )
           PYNOTES
-          gh release create "$tag" --target "$GITHUB_SHA" --latest             --title "Kit Academia — ${GITHUB_SHA:0:7}" --notes-file dist/release-notes.md             dist/KIT-ALUNAS-CLAUDE.zip dist/academia-skills-contabeis.zip             dist/version.json dist/catalogo.json dist/SHA256SUMS.txt
+          gh release create "$tag" --target "$GITHUB_SHA" --latest             --title "Kit Academia — ${GITHUB_SHA:0:7}" --notes-file dist/release-notes.md             dist/KIT-ALUNAS-CLAUDE.zip dist/academia-skills-contabeis.zip             dist/version.json dist/catalogo.json dist/SHA256SUMS.txt dist/skills/*.zip

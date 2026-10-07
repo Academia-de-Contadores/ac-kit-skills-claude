@@ -1,6 +1,6 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.3.1 • 07/10/2026
+Guia para alunas da Mentoria Master • pacote 1.3.2 • 07/10/2026
 
 ## O resultado esperado
 
@@ -60,9 +60,11 @@ Se a interface não oferecer importação de plugin, ou rejeitar esse formato, u
 
 ### Opção B — dez skills individuais
 
+É a rota do Claude no navegador (claude.ai), útil quando o aplicativo fica lento no computador. Os links diretos de cada skill e a ordem recomendada estão em `07-VERSAO-WEB-SKILL-POR-SKILL.txt`.
+
 1. Abra Personalização > Habilidades/Skills.
 2. Use Adicionar habilidade > Criar skill > Enviar uma skill, ou a opção equivalente de upload da sua versão.
-3. Envie os dez ZIPs de `skills-individuais`, UM POR VEZ.
+3. Envie os ZIPs de `skills-individuais` (ou baixados pelos links do arquivo 07), UM POR VEZ, sem descompactar.
 4. Ative cada skill e confira seu nome na lista.
 5. Não envie o ZIP do plugin no importador de UMA skill: são estruturas diferentes.
 

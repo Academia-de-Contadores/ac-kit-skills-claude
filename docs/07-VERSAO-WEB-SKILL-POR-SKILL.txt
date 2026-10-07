@@ -1,0 +1,48 @@
+VERSÃO WEB (claude.ai no navegador): instalar skill por skill
+
+Use este caminho se o aplicativo do Claude estiver lento no seu computador ou se você não tiver o Claude Desktop. Tudo o que a aula usa funciona no navegador: as skills e o conector do Notion. A diferença é que no navegador não dá para instalar o pacote inteiro de uma vez: você envia uma skill por vez (cerca de 1 minuto cada).
+
+ANTES DE COMEÇAR
+- Plano pago do Claude (Pro, Max, Team ou Enterprise). No Team, o administrador precisa ter liberado as skills.
+- Navegador Chrome ou Edge. No Safari, desligue "Abrir arquivos seguros após baixar" (Safari > Ajustes > Geral), senão ele descompacta o ZIP e o envio falha.
+
+PASSO A PASSO
+1. Entre em claude.ai com a sua conta.
+2. Configurações > Capacidades: ligue "Execução de código e criação de arquivos".
+3. Baixe as skills pelos links abaixo. NÃO descompacte: a skill é o próprio arquivo .zip.
+4. Abra Personalização > Habilidades/Skills e use Adicionar habilidade > Criar skill > Enviar uma skill (o nome pode variar um pouco; em algumas contas fica em Configurações > Capacidades > Skills). Escolha um ZIP e repita para cada arquivo.
+5. Confira se cada skill aparece na lista e está ligada.
+6. Para o Notion: Configurações > Conectores > Notion > Conectar, e autorize no Notion.
+7. Abra uma conversa NOVA e faça o teste do arquivo 03-TESTE-EM-CONVERSA-NOVA.txt.
+
+PARA A AULA DE GESTÃO COM NOTION (comece por estas três)
+1. Notion: gestão do escritório no Home do Negócio (exige o conector do Notion)
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/notion-home-negocio.zip
+2. Processos do Escritório: transforma processo em POP
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-processos-escritorio.zip
+3. Entrada de Clientes (beta): onboarding e transferência de clientes
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-entrada-clientes.zip
+
+AS OUTRAS SKILLS DO KIT
+4. Fiscal
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-fiscal.zip
+5. Departamento Pessoal
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-dp.zip
+6. Societário
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-societario.zip
+7. Reforma Tributária — RAG (consulta a base da Day)
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-reforma-tributaria-rag.zip
+8. Concierge do Combo da Reforma Sem Surto
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-concierge-combo-reforma-sem-surto.zip
+9. Estrategista de Conteúdo D.A.I.
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-estrategista-conteudo-dai.zip
+10. Instalador (opcional na web: serve para instalar skills novas por link)
+   https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/ac-instalar-skills.zip
+
+SE DER ERRO
+- "Arquivo inválido": você enviou uma pasta descompactada ou o "Download ZIP" do repositório. Baixe de novo pelo link da lista e envie o .zip sem abrir.
+- "Já existe uma skill com esse nome": ela já está instalada (talvez pelo aplicativo). Não precisa enviar de novo; para atualizar, apague a antiga e envie a nova.
+- A opção de skills não aparece: confira o plano e a "Execução de código e criação de arquivos". No Team, peça ao administrador.
+- Já instalou o pacote pelo aplicativo? Não repita pelo navegador: a conta é a mesma e as skills já aparecem nos dois.
+
+As skills ficam na sua conta: instalou no navegador, elas também aparecem no aplicativo e vice-versa. Nunca informe senha, token ou certificado para instalar nada.

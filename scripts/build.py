@@ -59,7 +59,12 @@ for folder in sorted((PLUGIN / "skills").iterdir()):
     pack(folder, individual / (folder.name + ".zip"), folder.name)
 (stage / "SHA256.json").write_text(json.dumps({str(p.relative_to(stage)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(stage.rglob("*.zip"))}, indent=2))
 pack(stage, OUT / "KIT-ALUNAS-CLAUDE.zip")
+# Each skill also ships as its own release asset, for the browser route (one upload per skill).
+web = OUT / "skills"
+if web.exists(): shutil.rmtree(web)
+shutil.copytree(individual, web)
 for name in ["academia-skills-contabeis.zip", "version.json", "catalogo.json"]:
     shutil.copy2(stage / name, OUT / name)
-(OUT / "SHA256SUMS.txt").write_text("".join(hashlib.sha256((OUT / n).read_bytes()).hexdigest() + "  " + n + "\n" for n in ["KIT-ALUNAS-CLAUDE.zip", "academia-skills-contabeis.zip", "version.json", "catalogo.json"]))
+sums = [(OUT / n, n) for n in ["KIT-ALUNAS-CLAUDE.zip", "academia-skills-contabeis.zip", "version.json", "catalogo.json"]] + [(p, p.name) for p in sorted(web.glob("*.zip"))]
+(OUT / "SHA256SUMS.txt").write_text("".join(hashlib.sha256(path.read_bytes()).hexdigest() + "  " + name + "\n" for path, name in sums))
 print(json.dumps(version, ensure_ascii=False))
