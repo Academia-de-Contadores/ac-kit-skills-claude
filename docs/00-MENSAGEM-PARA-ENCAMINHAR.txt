@@ -5,7 +5,7 @@ Olá! Vamos configurar as skills da Academia de Contadores no seu Claude para vo
 3. Em Configurações > Capacidades, confira Execução de código e criação de arquivos. Na tarefa, use Aprovar automaticamente se disponível; não é necessário ignorar todas as aprovações.
 4. Inicie uma tarefa Cowork, anexe academia-skills-contabeis.zip e cole todo o texto de 02-COMANDO-PARA-COLAR-NO-CLAUDE.txt.
 5. Conclua os cliques de instalação que o Claude pedir. Se ele só preparar os arquivos, use o caminho de importação explicado no 01-GUIA-DA-ALUNA.
-6. Confira as nove skills em Personalização e faça o teste do arquivo 03 em uma conversa NOVA, sem reenviar o pacote.
+6. Confira as onze skills em Personalização e faça o teste do arquivo 03 em uma conversa NOVA, sem reenviar o pacote.
 
 O guia traz o que cada especialista faz e exemplos de pedidos. A instalação precisa aparecer na sua conta; apenas anexar o arquivo no chat não conclui essa etapa. A consulta externa da Reforma RAG é testada separadamente.
 

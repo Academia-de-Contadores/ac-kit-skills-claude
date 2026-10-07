@@ -1,18 +1,18 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.2.0 • 30/09/2026
+Guia para alunas da Mentoria Master • pacote 1.3.0 • 07/10/2026
 
 ## O resultado esperado
 
-Ao terminar, você terá nove skills disponíveis (oito contábeis e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
+Ao terminar, você terá onze skills disponíveis (dez especialistas e uma de instalação) na sua conta, para usar em novas conversas. Elas funcionam como especialistas que o Claude consulta conforme a tarefa. Não são contas separadas nem novos GPTs e não executam obrigações contábeis sozinhas.
 
 O pacote foi preparado e validado estruturalmente. A instalação e o teste em sua conta ainda precisam ser feitos. Um comando pode conduzir a instalação, mas não garante que o Claude possa mudar permissões ou salvar plugins sozinho: os cliques nativos de consentimento e importação, quando exigidos, são feitos por você.
 
 ## 1. Arquivos recebidos
 
-- `academia-skills-contabeis.zip`: plugin com as oito skills contábeis e ac-instalar-skills. É o arquivo principal.
+- `academia-skills-contabeis.zip`: plugin com as dez skills especialistas e ac-instalar-skills. É o arquivo principal.
 - `02-COMANDO-PARA-COLAR-NO-CLAUDE.txt`: pedido completo para conduzir a configuração e verificar a instalação.
-- `skills-individuais/`: nove ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
+- `skills-individuais/`: onze ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
 - `03-TESTE-EM-CONVERSA-NOVA.txt`: teste final de persistência.
 
 Se recebeu `KIT-ALUNAS-CLAUDE.zip`, extraia esse kit no Windows (botão direito > Extrair tudo). Não extraia o ZIP do plugin antes de enviá-lo no importador. Não envie o kit inteiro como se fosse uma skill.
@@ -54,15 +54,15 @@ As regras das próprias skills continuam distinguindo preparar um rascunho de en
 2. Procure a opção de adicionar/enviar um plugin personalizado. O nome do botão pode variar com a versão.
 3. Selecione `academia-skills-contabeis.zip` e conclua o fluxo de importação.
 4. Confirme que `academia-skills-contabeis` está instalado e habilitado.
-5. Abra Personalização > Habilidades/Skills > Meus e confira as nove skills. Algumas versões agrupam as skills dentro do plugin.
+5. Abra Personalização > Habilidades/Skills > Meus e confira as onze skills. Algumas versões agrupam as skills dentro do plugin.
 
 Se a interface não oferecer importação de plugin, ou rejeitar esse formato, use a Opção B e anote o erro para a Mentoria. Não trate uma rejeição como instalação concluída.
 
-### Opção B — nove skills individuais
+### Opção B — onze skills individuais
 
 1. Abra Personalização > Habilidades/Skills.
 2. Use Adicionar habilidade > Criar skill > Enviar uma skill, ou a opção equivalente de upload da sua versão.
-3. Envie os nove ZIPs de `skills-individuais`, UM POR VEZ.
+3. Envie os onze ZIPs de `skills-individuais`, UM POR VEZ.
 4. Ative cada skill e confira seu nome na lista.
 5. Não envie o ZIP do plugin no importador de UMA skill: são estruturas diferentes.
 
@@ -130,7 +130,17 @@ Você pode chamar pelo nome, em português, sem decorar comandos com barra. Nos 
 
 > Use ac-fiscal para listar as conferências desta rotina. Depois, use ac-processos-escritorio para organizar essas conferências em etapas, responsáveis e evidências. Separe o que foi informado do que precisa de validação.
 
-Se uma skill citar Contábil, Entrada de Clientes, Captação, Guia de Operação ou gestão no Notion, isso pode ser um encaminhamento previsto no conteúdo. Esses agentes NÃO fazem parte do conjunto contábil deste pacote. Não considere que foram instalados apenas porque apareceram na resposta.
+### Entrada de Clientes (beta)
+
+> Use a skill ac-entrada-clientes. Um cliente fictício de comércio e serviços, com 2 funcionários, vem de outra contabilidade. Monte o checklist por departamento, os acessos pendentes e os handoffs. Não peça senhas.
+
+### Gestão no Notion
+
+Exige o Notion conectado em Configurações > Conectores e uma cópia do template Home do Negócio 2.0.
+
+> Use a skill notion-home-negocio. Esta é a Home da minha cópia: [link]. Identifique onde ficam clientes, onboarding, tarefas do time e os controles de DP, Fiscal, Contábil e Legalização. Me mostre os links e o que não conseguiu confirmar. Não altere nada.
+
+Se uma skill citar Contábil, Captação ou Guia de Operação, isso pode ser um encaminhamento previsto no conteúdo. Esses agentes NÃO fazem parte deste pacote. Não considere que foram instalados apenas porque apareceram na resposta.
 
 ## 8. Teste obrigatório em outra conversa
 
@@ -139,7 +149,7 @@ Se uma skill citar Contábil, Entrada de Clientes, Captação, Guia de Operaçã
 3. Cole o conteúdo de `03-TESTE-EM-CONVERSA-NOVA.txt`.
 4. Confira a lista da conta e, quando a interface mostrar, a leitura/ativação da skill durante a execução. Uma resposta “instalei” sozinha não serve como comprovação.
 
-Critério de conclusão: nove skills visíveis/ativas na conta ou dentro do plugin habilitado; uma skill carregada e usada em conversa nova; RAG marcada separadamente como consulta externa testada ou pendente. A leitura de um ZIP na conversa original comprova apenas acesso ao arquivo.
+Critério de conclusão: onze skills visíveis/ativas na conta ou dentro do plugin habilitado; uma skill carregada e usada em conversa nova; RAG marcada separadamente como consulta externa testada ou pendente. A leitura de um ZIP na conversa original comprova apenas acesso ao arquivo.
 
 ## 9. Teste da Reforma RAG
 

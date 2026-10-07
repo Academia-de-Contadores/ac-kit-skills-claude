@@ -1,6 +1,6 @@
 # Academia — Skills Contábeis
 
-Nove skills: oito especialistas contábeis e ac-instalar-skills, com seus arquivos de apoio. Consulte .claude-plugin/plugin.json para a versão do pacote e VERSION.json no ZIP publicado para o commit da distribuição.
+Onze skills: dez especialistas e ac-instalar-skills, com seus arquivos de apoio. Consulte .claude-plugin/plugin.json para a versão do pacote e VERSION.json no ZIP publicado para o commit da distribuição.
 
 | Especialista | Nome da skill | Para que usar |
 |---|---|---|
@@ -12,6 +12,8 @@ Nove skills: oito especialistas contábeis e ac-instalar-skills, com seus arquiv
 | Reforma Sem Surto | `ac-reforma-tributaria-sem-surto` | Explicação prática de IBS/CBS/IS, adequação, documentos fiscais, ERP e comunicação com clientes. |
 | Reforma com consulta à base Day | `ac-reforma-tributaria-rag` | Consulta o corpus Day quando a rede e o serviço estão disponíveis; apresenta fontes, lacunas e apoio local quando necessário. |
 | Reforma — acervo restaurado | `ac-reforma-tributaria` | Orientação técnica, cenários e DFe/ERP com acervo preservado, distinguindo histórico de fonte atual. |
+| Entrada de Clientes (beta) | `ac-entrada-clientes` | Cliente novo e transferência de contabilidade: checklist por departamento, acessos, riscos e handoffs. |
+| Gestão no Notion | `notion-home-negocio` | Opera o Notion do escritório no template Home do Negócio 2.0: perfil da cópia, clientes, onboarding, tarefas do time e pergunta do dia. Exige o conector do Notion. |
 
 Importe este plugin na sua conta Claude. Não contém configuração automática de permissões, conectores ou credenciais. O RAG exige transporte HTTP e serviço disponível. Consulte o guia externo.
 
@@ -19,4 +21,4 @@ Adaptações: menções de ambiente Codex no SKILL.md foram ajustadas para Claud
 
 ## Futuras instalações
 
-Inclui também ac-instalar-skills, assistente de instalação e atualização por link. Total: nove skills. Não altera permissões automaticamente nem dispensa consentimentos da conta.
+Inclui também ac-instalar-skills, assistente de instalação e atualização por link. Total: onze skills. Não altera permissões automaticamente nem dispensa consentimentos da conta.

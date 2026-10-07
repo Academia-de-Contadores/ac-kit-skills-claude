@@ -1,6 +1,6 @@
 # Skills da Academia de Contadores para Claude
 
-Kit público para alunas da Mentoria Master: **oito especialistas contábeis + um assistente para instalar e atualizar outras skills por link**.
+Kit público para alunas da Mentoria Master: **dez especialistas (oito contábeis, Entrada de Clientes e gestão no Notion) + um assistente para instalar e atualizar outras skills por link**.
 
 **[BAIXAR KIT COMPLETO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/KIT-ALUNAS-CLAUDE.zip)** · **[BAIXAR SÓ O PLUGIN](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest/download/academia-skills-contabeis.zip)** · **[ÚLTIMA VERSÃO](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/releases/latest)**
 
@@ -8,7 +8,7 @@ Kit público para alunas da Mentoria Master: **oito especialistas contábeis + u
 
 Abra uma tarefa Cowork e cole:
 
-> Quero instalar na minha conta o kit da Academia: https://github.com/Academia-de-Contadores/ac-kit-skills-claude . Leia o README e docs/02-COMANDO-PARA-COLAR-NO-CLAUDE.txt. Baixe o plugin da última versão publicada e conduza a instalação persistente das nove skills. Oriente a seleção de Aprovar automaticamente, se disponível, pedindo o clique de consentimento exigido. Não selecione Ignorar todas as aprovações. Se não tiver ferramenta para instalar na conta, indique exatamente o upload que devo fazer. Não considere download ou uso nesta conversa como instalação. Termine conferindo as skills e me dando um teste em conversa nova.
+> Quero instalar na minha conta o kit da Academia: https://github.com/Academia-de-Contadores/ac-kit-skills-claude . Leia o README e docs/02-COMANDO-PARA-COLAR-NO-CLAUDE.txt. Baixe o plugin da última versão publicada e conduza a instalação persistente das onze skills. Oriente a seleção de Aprovar automaticamente, se disponível, pedindo o clique de consentimento exigido. Não selecione Ignorar todas as aprovações. Se não tiver ferramenta para instalar na conta, indique exatamente o upload que devo fazer. Não considere download ou uso nesta conversa como instalação. Termine conferindo as skills e me dando um teste em conversa nova.
 
 O comando pode conduzir o processo, mas **o Claude pode exigir que você clique para importar ou autorizar**. O pacote não concede permissões a si mesmo. Não precisa fornecer senha do GitHub para baixar este kit público.
 
@@ -35,6 +35,8 @@ Use o download da release. **Code > Download ZIP baixa o projeto de manutenção
 | `ac-reforma-tributaria-sem-surto` | Explicação prática da Reforma e comunicação ao cliente |
 | `ac-reforma-tributaria-rag` | Consulta à base Day, quando serviço e rede estiverem disponíveis |
 | `ac-reforma-tributaria` | Trabalho com acervo técnico restaurado, distinguindo histórico de fonte atual |
+| `ac-entrada-clientes` | Entrada de cliente novo e transferência: documentos, acessos, riscos e handoffs por departamento (beta) |
+| `notion-home-negocio` | Gestão do escritório no Notion (template Home do Negócio 2.0): clientes, onboarding, tarefas, pergunta do dia (exige o conector do Notion) |
 | `ac-instalar-skills` | Instalação e atualização de skills/plugins por link, com verificação de persistência |
 
 Veja [o guia detalhado e exemplos de pedidos](docs/01-GUIA-DA-ALUNA.md). As skills apoiam a profissional responsável e não integram automaticamente sistemas externos. Agentes apenas citados em encaminhamentos não estão necessariamente instalados.

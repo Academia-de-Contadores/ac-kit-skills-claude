@@ -72,6 +72,19 @@
     "source_sha256": "038e297a2d1a2e39e40cd0278d6e6a3adc58aad324d790035175e65093f2a5bb"
   },
   {
+    "repository": "ac-agente-entrada-clientes",
+    "commit": "16046607b84f8252abf855406394406cfca71f87",
+    "url": "https://github.com/Academia-de-Contadores/ac-agente-entrada-clientes",
+    "skill": "ac-entrada-clientes",
+    "entrypoint_adapted": true,
+    "note": "SKILL.md criado para o kit em 2026-10-07; instructions/system.md e Knowledge ativo (00 de original/, 01-99 de live-2026-08-22/) copiados byte a byte."
+  },
+  {
+    "skill": "notion-home-negocio",
+    "origin": "Criada para a aula Gestão Notion com IA (MCCEO, 08/10/2026)",
+    "version": "0.2.1"
+  },
+  {
     "skill": "ac-instalar-skills",
     "origin": "Criada para este kit por solicitação de Copetti em 2026-09-30",
     "version": "1.1.0"
