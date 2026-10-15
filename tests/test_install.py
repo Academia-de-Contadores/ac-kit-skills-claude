@@ -68,6 +68,12 @@ class InstallTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             installer.choose_destination(self.source, self.root, legacy)
 
+    def test_github_api_requests_json(self):
+        with patch.object(installer, 'urlopen') as open_url:
+            installer.fetch('https://api.github.com/repos/example/kit/releases/latest')
+            request = open_url.call_args.args[0]
+            self.assertEqual(request.get_header('Accept'), 'application/vnd.github+json')
+
     def test_release_checksum_rejected_before_install(self):
         url = f'https://github.com/{installer.REPO}/releases/download/v1/'
         release = json.dumps({'tag_name': 'v1', 'assets': [
