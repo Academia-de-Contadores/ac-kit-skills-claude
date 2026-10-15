@@ -23,3 +23,7 @@ O pacote não altera permissões de contas, não distribui credenciais, não con
 ## Retorno a uma versão anterior
 
 Baixe os assets da release anterior e aplique pela interface do Claude, preservando personalizações. Não apague releases para corrigir uma nova versão: corrija o código e publique outro commit.
+
+## Instalação em Claude e Codex (1.4.0)
+
+O fluxo canônico está em INSTALL.md. Mantenha README, comandos de encaminhamento e ac-instalar-skills alinhados. Rode `python3 -m unittest discover -s tests -v`, `python3 scripts/build.py` e os validadores oficiais `claude plugin validate .` e `claude plugin validate ./plugin`. A release inclui install.py e seu checksum. Não altere conteúdo técnico para adaptar o instalador. Teste Codex em destino isolado e Claude Code com CLAUDE_CONFIG_DIR isolado; registre separadamente o teste de conta Claude Chat/Cowork.

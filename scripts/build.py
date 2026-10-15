@@ -13,6 +13,11 @@ for forbidden in ["hooks", "settings", "mcpServers"]:
     assert forbidden not in manifest, f"Unexpected execution/permission component: {forbidden}"
 for name in ["hooks", "settings.json", ".mcp.json", "bin"]:
     assert not (PLUGIN / name).exists(), f"Unexpected plugin component: {name}"
+marketplace = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
+assert marketplace["name"] == "academia-de-contadores"
+assert marketplace["owner"]["name"]
+assert marketplace["plugins"][0]["source"] == "./plugin"
+assert marketplace["plugins"][0]["name"] == manifest["name"]
 catalog = []
 for folder in sorted((PLUGIN / "skills").iterdir()):
     assert folder.is_dir() and not folder.is_symlink()
@@ -39,6 +44,8 @@ OUT.mkdir(exist_ok=True)
 stage = OUT / "kit"
 if stage.exists(): shutil.rmtree(stage)
 stage.mkdir()
+shutil.copy2(ROOT / "INSTALL.md", stage / "INSTALL.md")
+shutil.copy2(ROOT / "scripts/install.py", stage / "install.py")
 for path in (ROOT / "docs").iterdir():
     if path.is_file(): shutil.copy2(path, stage / path.name)
 (stage / "version.json").write_text(json.dumps(version, ensure_ascii=False, indent=2) + "\n")
@@ -59,7 +66,7 @@ for folder in sorted((PLUGIN / "skills").iterdir()):
     pack(folder, individual / (folder.name + ".zip"), folder.name)
 (stage / "SHA256.json").write_text(json.dumps({str(p.relative_to(stage)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(stage.rglob("*.zip"))}, indent=2))
 pack(stage, OUT / "KIT-ALUNAS-CLAUDE.zip")
-for name in ["academia-skills-contabeis.zip", "version.json", "catalogo.json"]:
+for name in ["academia-skills-contabeis.zip", "version.json", "catalogo.json", "install.py"]:
     shutil.copy2(stage / name, OUT / name)
-(OUT / "SHA256SUMS.txt").write_text("".join(hashlib.sha256((OUT / n).read_bytes()).hexdigest() + "  " + n + "\n" for n in ["KIT-ALUNAS-CLAUDE.zip", "academia-skills-contabeis.zip", "version.json", "catalogo.json"]))
+(OUT / "SHA256SUMS.txt").write_text("".join(hashlib.sha256((OUT / n).read_bytes()).hexdigest() + "  " + n + "\n" for n in ["KIT-ALUNAS-CLAUDE.zip", "academia-skills-contabeis.zip", "version.json", "catalogo.json", "install.py"]))
 print(json.dumps(version, ensure_ascii=False))

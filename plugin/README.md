@@ -21,3 +21,13 @@ Adaptações: menções de ambiente Codex no SKILL.md foram ajustadas para Claud
 ## Futuras instalações
 
 Inclui também ac-instalar-skills, assistente de instalação e atualização por link. Total: dez skills. Não altera permissões automaticamente nem dispensa consentimentos da conta.
+
+## Instalação por link
+
+No Claude Code 2.1.275 ou posterior:
+
+```text
+/plugin install academia-skills-contabeis --marketplace Academia-de-Contadores/ac-kit-skills-claude
+```
+
+No Claude Chat/Cowork ou Codex, siga o [procedimento do kit](../INSTALL.md).

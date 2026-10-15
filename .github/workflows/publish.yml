@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
       - run: python scripts/build.py
       - name: Publicar versão validada
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -46,4 +47,4 @@ jobs:
               "precisam ser feitos em cada conta. Publicar aqui não atualiza o Claude automaticamente.\n"
           )
           PYNOTES
-          gh release create "$tag" --target "$GITHUB_SHA" --latest             --title "Kit Academia — ${GITHUB_SHA:0:7}" --notes-file dist/release-notes.md             dist/KIT-ALUNAS-CLAUDE.zip dist/academia-skills-contabeis.zip             dist/version.json dist/catalogo.json dist/SHA256SUMS.txt
+          gh release create "$tag" --target "$GITHUB_SHA" --latest             --title "Kit Academia — ${GITHUB_SHA:0:7}" --notes-file dist/release-notes.md             dist/KIT-ALUNAS-CLAUDE.zip dist/academia-skills-contabeis.zip             dist/version.json dist/catalogo.json dist/install.py dist/SHA256SUMS.txt

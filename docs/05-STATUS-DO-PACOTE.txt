@@ -1,3 +1,13 @@
+Pacote 1.4.0 — 15/10/2026
+
+CORRIGIDO: comando único para Claude e Codex, procedimento INSTALL.md, URLs diretas e fallback sem busca do GitHub.
+NOVO: catálogo nativo .claude-plugin/marketplace.json e instalador Codex com SHA-256, verificação pós-cópia, repetição sem duplicatas e preservação de conflitos.
+VALIDADO: nove testes automatizados; build com dez skills; instalação do ZIP completo em destino isolado e repetição; validadores oficiais de plugin e catálogo do Claude sem avisos.
+TESTADO: instalação nativa do plugin 1.4.0 no Claude Code com configuração isolada; lista final mostrou scope user e enabled.
+PENDENTE: instalação e teste em nova conversa na conta real do Claude Chat/Cowork. Instalação no Claude Code não prova instalação nessa conta. Os testes locais de arquivos do Codex não comprovam sincronização na nuvem.
+
+---
+
 Pacote 1.3.1 — 07/10/2026
 
 VOLTA COM NOVO NOME: a IA do Combo (antes ac-reforma-tributaria-sem-surto) agora é ac-concierge-combo-reforma-sem-surto, "Concierge do Combo da Reforma Sem Surto". Conteúdo sem alteração; só nome, título e descrição.
