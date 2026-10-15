@@ -1,3 +1,10 @@
+Pacote 1.4.1 — 15/10/2026
+
+CORRIGIDO: cabeçalho Accept da consulta à API GitHub. A API de releases exige JSON; pedir octet-stream devolvia HTTP 415 na instalação remota. Downloads de ZIP usam octet-stream.
+VALIDADO: dez testes automatizados, incluindo regressão do cabeçalho. A rota de importação Claude e a alternativa --archive não eram afetadas.
+
+---
+
 Pacote 1.4.0 — 15/10/2026
 
 CORRIGIDO: comando único para Claude e Codex, procedimento INSTALL.md, URLs diretas e fallback sem busca do GitHub.

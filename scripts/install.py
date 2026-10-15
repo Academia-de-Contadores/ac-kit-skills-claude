@@ -86,7 +86,8 @@ def install(source, destination):
 
 
 def fetch(url):
-    request = Request(url, headers={'User-Agent': 'Academia-Skills-Installer', 'Accept': 'application/octet-stream'})
+    accept = 'application/vnd.github+json' if url.startswith('https://api.github.com/') else 'application/octet-stream'
+    request = Request(url, headers={'User-Agent': 'Academia-Skills-Installer', 'Accept': accept})
     with urlopen(request, timeout=60) as response:
         return response.read()
 
