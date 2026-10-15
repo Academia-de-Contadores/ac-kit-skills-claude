@@ -1,0 +1,14 @@
+{
+  "name": "academia-de-contadores",
+  "owner": {
+    "name": "Academia de Contadores"
+  },
+  "plugins": [
+    {
+      "name": "academia-skills-contabeis",
+      "source": "./plugin",
+      "description": "Kit Academia com dez skills contábeis, de gestão e instalação."
+    }
+  ],
+  "description": "Skills contábeis e de gestão da Academia de Contadores."
+}

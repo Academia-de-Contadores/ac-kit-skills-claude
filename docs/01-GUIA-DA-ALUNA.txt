@@ -1,6 +1,14 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.3.1 • 07/10/2026
+Guia para alunas da Mentoria Master • pacote 1.4.0 • 15/10/2026
+
+## Comece pelo comando único (Claude ou Codex)
+
+Instala o kit da Academia neste aplicativo: https://github.com/Academia-de-Contadores/ac-kit-skills-claude . Leia INSTALL.md, identifique se está no Codex ou no Claude e execute a rota correspondente. Preserve minhas skills existentes e confira as dez skills ao terminar.
+
+O procedimento completo está em INSTALL.md no repositório e no kit. No Claude, a primeira rota é Personalizar > Plugins > Adicionar > Adicionar marketplace, informando o link do repositório, e instalar o plugin Academia. Se esse controle não existir, use o ZIP conforme abaixo. No Codex local, o assistente usa o instalador para a pasta de skills do usuário deste computador. Não precisa fazer o download manual antes de tentar o comando.
+
+As seções seguintes descrevem a alternativa de importação no Claude.
 
 ## O resultado esperado
 
@@ -10,7 +18,7 @@ O pacote foi preparado e validado estruturalmente. A instalação e o teste em s
 
 ## 1. Arquivos recebidos
 
-- `academia-skills-contabeis.zip`: plugin com as dez skills especialistas e ac-instalar-skills. É o arquivo principal.
+- `academia-skills-contabeis.zip`: plugin com nove skills especialistas e ac-instalar-skills. É o arquivo principal.
 - `02-COMANDO-PARA-COLAR-NO-CLAUDE.txt`: pedido completo para conduzir a configuração e verificar a instalação.
 - `skills-individuais/`: dez ZIPs alternativos, para contas que não ofereçam importação de plugin. Use o plugin OU os ZIPs individuais, evitando duplicatas.
 - `03-TESTE-EM-CONVERSA-NOVA.txt`: teste final de persistência.
@@ -30,7 +38,7 @@ Se recebeu `KIT-ALUNAS-CLAUDE.zip`, extraia esse kit no Windows (botão direito 
 | Controle | O que selecionar | Para que serve |
 |---|---|---|
 | Execução de código e criação de arquivos | Ligado | Permite o ambiente que carrega e usa skills |
-| Aprovação da tarefa | Aprovar automaticamente, se disponível | Reduz as interrupções com revisão automática das ações |
+| Aprovação da tarefa | Mantenha o modo atual | Conclua os consentimentos exigidos pelo aplicativo |
 | Se o modo automático não existir | Aprovar manualmente | A instalação ainda pode ser concluída com os cliques solicitados |
 | Pasta local, se necessária | Apenas Academia-Skills | Acesso aos arquivos usados nesta instalação |
 | Rede para a skill RAG | Verificar acesso ao domínio específico quando necessário | Permite tentar a consulta externa |

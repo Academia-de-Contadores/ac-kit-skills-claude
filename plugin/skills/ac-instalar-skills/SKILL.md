@@ -1,9 +1,9 @@
 ---
 name: ac-instalar-skills
-description: Use quando a aluna da Academia pedir para instalar, atualizar ou conferir uma skill ou plugin a partir de link de repositório GitHub ou ZIP no Claude. Priorize instalação persistente na conta e evidência em nova conversa; não confunda download com instalação.
+description: Use quando a aluna da Academia pedir para instalar, atualizar ou conferir uma skill ou plugin a partir de link de repositório GitHub ou ZIP no Claude ou Codex. Priorize instalação persistente na conta e evidência em nova conversa; não confunda download com instalação.
 ---
 
-# Instalar e atualizar skills no Claude
+# Instalar e atualizar skills no Claude e Codex
 
 ## Resultado
 
@@ -23,7 +23,15 @@ Preserve name, description, referências, perfis e Knowledge. Leia os manifestos
 
 Não altere silenciosamente regras técnicas, dados, alíquotas, revisões profissionais ou aprovações de ações externas. Uma adaptação de ambiente deve ser mínima, registrada e compatível com o pedido. Se exigir mudança de comportamento relevante, apresente-a antes de aplicar.
 
-## Instalação na conta
+## Escolha a rota do aplicativo atual
+
+Para o kit Academia, leia https://raw.githubusercontent.com/Academia-de-Contadores/ac-kit-skills-claude/main/INSTALL.md. Use o endereço direto, não a busca do GitHub; normalize apenas espaços/quebras inseridos acidentalmente no endereço conhecido. Falha de rede não prova que o repositório seja privado.
+
+No Codex local, instale as pastas de skills no diretório do usuário confirmado pelo ambiente (padrão atual ~/.agents/skills; algumas instalações usam $CODEX_HOME/skills). Inspecione scripts antes de executá-los. O instalador oficial scripts/install.py --target codex verifica SHA-256 da release e preserva skills existentes diferentes. Não instale novamente em outra raiz se o mesmo nome já estiver carregado. Verifique todos os recursos e teste numa conversa nova. Isso não instala na conta em nuvem do ChatGPT.
+
+No Claude Code, use o catálogo e o comando nativo de instalação em escopo de usuário. No Claude Chat/Desktop/Cowork, use ferramenta nativa ou a interface de plugins. Uma instalação do Claude Code não comprova instalação na conta do Claude Chat.
+
+## Instalação na conta do Claude
 
 Use o instalador nativo disponível, se existir. Pode ser necessário apresentar um cartão para a aluna clicar em Adicionar/Instalar. Sem ferramenta de instalação, prepare o arquivo e conduza pelo importador em Personalização; diga que o upload ainda está pendente.
 
@@ -34,7 +42,7 @@ Use o instalador nativo disponível, se existir. Pode ser necessário apresentar
 
 ## Permissões e dependências
 
-Confira apenas o necessário: execução de código/criação de arquivos; rede específica; pasta dedicada quando realmente necessária. Recomende Aprovar automaticamente quando disponível, ou aprovações manuais. Não mude o modo para Ignorar todas as aprovações, não amplie o disco, não copie credenciais/configuração de outra pessoa nem enfraqueça proteções para fazer uma instalação passar. Mudanças de permissão e consentimentos exigidos pelo produto são feitos/confirmados pela titular. O pedido de instalação não autoriza envio a terceiros, transmissão fiscal, pagamento ou uso de dados de clientes.
+Confira apenas o necessário: execução de código/criação de arquivos; rede específica; pasta dedicada quando realmente necessária. Mantenha o modo de aprovação atual. Não mude o modo para Ignorar todas as aprovações, não amplie o disco, não copie credenciais/configuração de outra pessoa nem enfraqueça proteções para fazer uma instalação passar. Mudanças de permissão e consentimentos exigidos pelo produto são feitos/confirmados pela titular. O pedido de instalação não autoriza envio a terceiros, transmissão fiscal, pagamento ou uso de dados de clientes.
 
 Instalar uma skill não conecta sistemas externos. Para conectores e servidores, explique a dependência e seu alcance separadamente. Nos testes, use dados fictícios ou públicos. Se um componente depender de rede indisponível, marque-o como pendente, preservando o que foi instalado e funciona localmente.
 

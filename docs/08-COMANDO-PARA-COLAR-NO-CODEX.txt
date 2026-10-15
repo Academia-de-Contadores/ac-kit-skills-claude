@@ -1,0 +1,1 @@
+Instala o kit da Academia neste aplicativo: https://github.com/Academia-de-Contadores/ac-kit-skills-claude . Leia INSTALL.md, identifique se está no Codex ou no Claude e execute a rota correspondente. Preserve minhas skills existentes e confira as dez skills ao terminar.
