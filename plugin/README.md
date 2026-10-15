@@ -30,4 +30,4 @@ No Claude Code 2.1.275 ou posterior:
 /plugin install academia-skills-contabeis --marketplace Academia-de-Contadores/ac-kit-skills-claude
 ```
 
-No Claude Chat/Cowork ou Codex, siga o [procedimento do kit](../INSTALL.md).
+No Claude Chat/Cowork ou Codex, siga o [procedimento do kit](https://github.com/Academia-de-Contadores/ac-kit-skills-claude/blob/main/INSTALL.md).
