@@ -96,6 +96,23 @@ tributos. Quem fica no DAS transfere ao comprador só o crédito correspondente
 ao valor pago no Simples. Confirme o caso concreto no Portal do Simples
 Nacional antes de orientar.
 
+## Split payment em 2027 (estado em 2026-11-20)
+
+- **Não foi adiado como um todo, mas em 2027 é facultativo e gradual.** O
+  manual do CGIBS diz que o uso é facultativo para quem origina a transação,
+  e obrigatório para a adequação dos PSPs
+  ([Manual de Operações v1.0.1, set/2026](https://www.cgibs.gov.br/upload/arquivos/202609/24101007-split-payment-manual-de-operacoes-v1-0-1.pdf)).
+- Agência Brasil (05/11/2026): começa em 2027 de forma facultativa e fica
+  obrigatório a partir de 2033
+  ([Radioagência](https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-11/impostos-split-payment-sera-adotado-de-forma-facultativa-em-2027)).
+  TV Brasil (out/2026), citando a Receita: gradual para empresas maiores no
+  segundo semestre de 2027, com vigência efetiva prevista para 2028.
+- Testes com PSPs desde 15/10/2026, sem cobrança. **Nenhum ato oficial fixou a
+  data de início** até esta data. Não diga "split payment obrigatório em 2027".
+- Proposta do governo (notícias de 11 e 19/11/2026): manter a CBS em janeiro
+  de 2027 e adiar em cerca de 30 dias o **primeiro recolhimento**. É proposta,
+  depende do Congresso; não é lei.
+
 ## Fontes
 
 - [Senado Notícias, 28/10/2026 — TCU calcula CBS em 11,3% para 2027](https://www12.senado.leg.br/noticias/materias/2026/10/28/reforma-tributaria-tcu-calcula-aliquota-da-cbs-em-11-3-para-2027)
