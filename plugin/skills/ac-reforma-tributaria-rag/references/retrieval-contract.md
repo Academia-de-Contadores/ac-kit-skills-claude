@@ -98,7 +98,8 @@ impedem tratar o trecho como fundamento normativo. Não transforme estimativa em
 alíquota vigente nem o texto histórico em regra atual. Valores ausentes/null
 não equivalem a autorização normativa; identifique a confirmação oficial
 necessária antes da aplicação concreta, sem suprimir orientação geral útil.
-Para simulações de 2027, a premissa de 9,21% aprovada pela responsável contábil
+Para simulações de 2027, a premissa de 11,3% (cálculo do TCU de 28/10/2026,
+pendente de resolução do Senado; 9,21% fica só como comparação histórica)
 tem o uso restrito descrito em [cbs-2027-simulation.md](cbs-2027-simulation.md):
 ela pode entrar numa conta ilustrativa com base e hipóteses dadas, inclusive
 quando o retrieval não confirmar a taxa, desde que seja explicitamente marcada
@@ -159,7 +160,7 @@ checklist de análise, hipóteses/cenários e dados anonimizados a coletar. Sepa
 essa orientação provisória dos pontos a confirmar na fonte oficial e com o
 responsável, dizendo que não houve validação corrente. Em regimes/projeções,
 mostre o framework de comparação sem declarar vencedor ou fechar apuração real.
-Um cenário ilustrativo de 2027 pode usar a premissa de 9,21% quando a base e
+Um cenário ilustrativo de 2027 pode usar a premissa de 11,3% quando a base e
 as hipóteses forem dadas, conforme a referência específica; em
 créditos, organize a análise e as condições a verificar sem liberar crédito
 individual. Não finja consulta nem produza conclusão normativa aplicada,
