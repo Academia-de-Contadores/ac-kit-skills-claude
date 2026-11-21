@@ -1,5 +1,5 @@
 id: legacy
-canonical_agent_version: "0.2.1"
+canonical_agent_version: "0.2.2"
 default: false
 selection: explicit
 status: historical

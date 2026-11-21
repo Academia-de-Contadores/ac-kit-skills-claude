@@ -2,7 +2,7 @@ schema_version: 1
 agent:
   id: ac.reforma-tributaria-rag
   name: Reforma Tributária Day — Consulta RAG
-  version: 0.2.1
+  version: 0.2.2
   lifecycle: validated
   owners:
     - Academia-de-Contadores

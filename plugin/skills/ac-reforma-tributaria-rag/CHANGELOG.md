@@ -16,6 +16,22 @@ Todas as mudanças relevantes deste agente serão registradas aqui.
 
 - Estrutura inicial do template canônico.
 
+## 0.2.2 — 2026-11-20
+
+- Troca o cenário principal de 2027 de 9,21% (premissa de 2026-09-24) para a
+  referência de 11,3% calculada pelo TCU em 28/10/2026, pendente de resolução
+  do Senado (prazo de 15/12/2026): CBS de 11,2% e IBS de 0,1% em 2027.
+  9,21% passa a ser comparação histórica.
+- Marca data e fonte de cada número e separa o que é cálculo oficial, conta
+  derivada, estimativa (IBS de 18,7%, alíquota média de 8,5%) e projeção
+  (IVA dual de cerca de 30%).
+- Acrescenta os prazos oficiais do Simples Nacional para 2027, inclusive o
+  cancelamento da opção pelo regime regular de IBS/CBS até 20/12/2026.
+- Exige busca de notícias recentes em fonte oficial antes de qualquer número
+  de Reforma em simulação ou texto técnico.
+- Não altera a captura do GPT online (`instructions/current-live-2026-09-24.md`)
+  nem o corpus RAG; essas mudanças ficam listadas para o responsável pelo RAG.
+
 ## 0.2.1 — 2026-09-24
 
 - Atualiza o GPT online e a skill para incluir a premissa contábil estimada de

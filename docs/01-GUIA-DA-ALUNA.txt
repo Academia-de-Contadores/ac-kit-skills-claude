@@ -1,6 +1,6 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.4.1 • 15/10/2026
+Guia para alunas da Mentoria Master • pacote 1.4.2 • 20/11/2026
 
 ## Comece pelo comando único (Claude ou Codex)
 
@@ -156,7 +156,7 @@ Domínio: `day-rag-chroma-actions.onrender.com`.
 
 Peça ao Claude para seguir o contrato empacotado, testar `/health` e uma consulta pública em `/rag/search`. Nenhum dado de cliente é necessário para o teste. Uma liberação de rede não corrige serviço fora do ar ou retorno inválido. Se o plano apresentar lista de domínios permitidos e esse for o bloqueio, ajuste apenas o domínio necessário. Em conta organizacional, o administrador pode precisar fazer o ajuste.
 
-Se falhar: as demais skills continuam utilizáveis; a RAG deve registrar a indisponibilidade e oferecer o apoio local permitido pelo contrato, sem alegar que consultou a base. Reavalie fatos normativos atuais em fonte oficial. Uma estimativa de cenário, como CBS de 9,21% no acervo, não é automaticamente uma alíquota oficial nem carga efetiva.
+Se falhar: as demais skills continuam utilizáveis; a RAG deve registrar a indisponibilidade e oferecer o apoio local permitido pelo contrato, sem alegar que consultou a base. Reavalie fatos normativos atuais em fonte oficial. Uma estimativa de cenário não é automaticamente uma alíquota oficial nem carga efetiva: em 20/11/2026, a CBS de 11,3% para 2027 é o cálculo do TCU, ainda pendente de resolução do Senado, e os 9,21% antigos do acervo estão superados.
 
 ## 10. Problemas comuns
 

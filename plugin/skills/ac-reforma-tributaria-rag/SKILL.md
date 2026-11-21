@@ -73,11 +73,16 @@ condicionais, explicando o papel de receita, custos, créditos, mix B2B/B2C e
 impactos operacionais. Peça os dados mínimos do anexo de cálculos do perfil
 atual e explicite premissas e opções ainda a confirmar. Não declare um regime
 definitivamente melhor nem feche números sem os dados e a fonte necessários.
-Em toda simulação referente a 2027, leia a
-[premissa de CBS para 2027](references/cbs-2027-simulation.md). Inclua o cenário
-de 9,21% solicitado pela responsável contábil, identificado como estimativa de
-referência da CBS, e mostre separadamente o ajuste transitório, o IBS e os
-créditos quando o pedido envolver valores. Use 3,65% somente para PIS/Cofins
+Em toda simulação ou texto técnico referente a 2027, leia a
+[premissa de CBS para 2027](references/cbs-2027-simulation.md) e, antes de
+concluir, faça uma busca de notícias recentes em fontes oficiais (Senado,
+Receita, TCU, CGIBS), porque alíquotas e prazos ainda podem mudar. Em
+2026-11-20, o cenário principal é a referência de 11,3% calculada pelo TCU,
+pendente de resolução do Senado (CBS de 11,2% e IBS de 0,1% em 2027); 9,21% é
+premissa antiga, superada, usada só como comparação histórica. Mostre
+separadamente o ajuste transitório, o IBS e os créditos quando o pedido
+envolver valores. Os "cerca de 30%" de IVA dual são projeção para a alíquota
+cheia, não alíquota fixada. Use 3,65% somente para PIS/Cofins
 cumulativo aplicável ao cenário de 2026. A estimativa permite cálculo
 ilustrativo com base e hipóteses informadas; ela não comprova alíquota vigente
 nem autoriza concluir a carga real de uma empresa.
@@ -99,5 +104,6 @@ corrente, e indique a confirmação oficial/profissional pendente. Não invente
 retrieval, fonte, artigo, prazo, alíquota, cálculo ou conclusão; o Knowledge
 apoia a orientação geral, mas não comprova regra vigente nem autoriza cálculo
 fechado, regime definitivo, classificação DFe ou aplicação concreta sem dados
-e fonte suficientes. A premissa declarada de 9,21% é uma exceção apenas para
-cenário ilustrativo de 2027, nunca uma alíquota oficial inventada.
+e fonte suficientes. A premissa declarada de 11,3% (e a comparação histórica de 9,21%) é uma
+exceção apenas para cenário ilustrativo de 2027, com data e fonte, nunca uma
+alíquota oficial inventada.
