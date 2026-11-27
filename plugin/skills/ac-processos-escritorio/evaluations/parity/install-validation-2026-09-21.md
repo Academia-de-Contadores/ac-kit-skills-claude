@@ -6,7 +6,7 @@
 - Branch: `feat/processos-skill-ready`
 - HEAD instalado: `554b1eadb21aad43a3b7f5eccf0c71358a764a84`
 - Skill: `ac-processos-escritorio`
-- Destino: `/Users/levy/.codex/skills/ac-processos-escritorio`
+- Destino: `~/.codex/skills/ac-processos-escritorio`
 - Versão/lifecycle: `0.2.0 candidate`
 - SHA-256 das perguntas P1–P6:
   `cda93c59d7c81cd8355fdde299b01594c8675d2d60dc46e026769d3530e8d3f2`
@@ -62,7 +62,7 @@ zero links e zero `.gitkeep`.
 | `bash tests/validate-agent-repo.test.sh` | PASS |
 
 O `quick_validate.py` foi executado com
-`/Users/levy/.pyenv/versions/3.10.13/bin/python3.10`, que contém PyYAML. O
+`~/.pyenv/versions/3.10.13/bin/python3.10`, que contém PyYAML. O
 `python3` do sistema e o runtime Python geral do Codex não continham o módulo;
 isso foi confirmado como diferença ambiental antes da repetição do teste.
 

@@ -1,0 +1,94 @@
+{
+  "_nota": "Fonte única do catálogo por departamento. Cada skill de plugin/skills/ precisa ter uma entrada em 'skills', e cada entrada precisa apontar para um departamento listado aqui. scripts/check_catalogo.py (rodado pelos testes) falha se o catálogo e as pastas não baterem. A pasta física das skills continua plana (plugin/skills/<nome>/) porque é o formato que o Claude, o Codex e o instalador leem; o departamento é só organização.",
+  "departamentos": {
+    "fiscal": { "label": "Fiscal", "emoji": "🧾", "descricao": "Notas, XML, conferências e pré-apuração revisável." },
+    "reforma-tributaria": { "label": "Reforma Tributária", "emoji": "⚖️", "descricao": "IBS, CBS, IS, documentos fiscais, ERP e comunicação com clientes." },
+    "departamento-pessoal": { "label": "Departamento Pessoal", "emoji": "👥", "descricao": "Admissão, folha, férias, afastamentos, rescisão e eSocial." },
+    "societario": { "label": "Societário e Legalização", "emoji": "🏛️", "descricao": "Abertura, alteração, baixa, viabilidade e documentos." },
+    "gestao-e-processos": { "label": "Gestão e Processos do Escritório", "emoji": "🗂️", "descricao": "Rotinas, entrada de clientes, responsabilidades e gestão no Notion." },
+    "marketing-e-conteudo": { "label": "Marketing e Conteúdo", "emoji": "📣", "descricao": "Carrosséis, Reels, anúncios, sequências e revisão de promessas." },
+    "instalacao": { "label": "Instalação e Atualização", "emoji": "🧰", "descricao": "Instalar e atualizar skills e plugins por link." }
+  },
+  "skills": {
+    "ac-fiscal": {
+      "departamento": "fiscal",
+      "titulo": "Fiscal",
+      "uso": "Triagem fiscal, notas/XML, matriz de conferência e pré-apuração revisável.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-fiscal para montar um checklist de pré-apuração mensal. Liste documentos, conferências e pendências; não calcule imposto sem dados."
+    },
+    "ac-reforma-tributaria-rag": {
+      "departamento": "reforma-tributaria",
+      "titulo": "Reforma com consulta à base Day",
+      "uso": "Consulta o corpus Day quando a rede e o serviço estão disponíveis; apresenta fontes, lacunas e apoio local quando necessário.",
+      "status": "estavel",
+      "requisitos": ["acesso de rede ao serviço de consulta (ver guia, seção 9)"],
+      "exemplo": "Use a skill ac-reforma-tributaria-rag. Consulte a base para listar dados necessários à análise de créditos de CBS. Informe se a consulta ocorreu e suas lacunas. Não use dados reais de cliente."
+    },
+    "ac-concierge-combo-reforma-sem-surto": {
+      "departamento": "reforma-tributaria",
+      "titulo": "Concierge do Combo da Reforma Sem Surto",
+      "uso": "Explicação prática de IBS/CBS/IS, adequação, documentos fiscais, ERP e comunicação com clientes.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-concierge-combo-reforma-sem-surto para preparar uma explicação introdutória da Reforma do Consumo para um cliente. Separe regra confirmada de ponto a validar."
+    },
+    "ac-dp": {
+      "departamento": "departamento-pessoal",
+      "titulo": "Departamento Pessoal",
+      "uso": "Admissão, folha, ponto, férias, afastamentos, rescisão, eSocial, SST e pró-labore: checklists e simulações revisáveis.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-dp para organizar a admissão de um empregado fictício. Monte documentos, etapas, responsáveis e pontos que dependem da CCT."
+    },
+    "ac-societario": {
+      "departamento": "societario",
+      "titulo": "Societário",
+      "uso": "Abertura, alteração, baixa, viabilidade, documentos e minutas para revisão.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-societario para preparar um checklist de alteração de endereço. Informe os dados de UF e município necessários e o que depende de validação local."
+    },
+    "ac-processos-escritorio": {
+      "departamento": "gestao-e-processos",
+      "titulo": "Processos do Escritório",
+      "uso": "Transforma uma rotina real em processo, checklist, matriz de responsabilidades e plano de teste.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-processos-escritorio. Minha rotina é: receber documentos por e-mail, conferir uma lista e pedir faltantes. Transforme essas etapas em um processo com responsável e evidência. Marque lacunas sem inventar prazo."
+    },
+    "ac-entrada-clientes": {
+      "departamento": "gestao-e-processos",
+      "titulo": "Entrada de Clientes",
+      "uso": "Cliente novo e transferência de contabilidade: checklist por departamento, acessos, riscos e handoffs.",
+      "status": "beta",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-entrada-clientes. Um cliente fictício de comércio e serviços, com 2 funcionários, vem de outra contabilidade. Monte o checklist por departamento, os acessos pendentes e os handoffs. Não peça senhas."
+    },
+    "notion-home-negocio": {
+      "departamento": "gestao-e-processos",
+      "titulo": "Gestão no Notion",
+      "uso": "Clientes, onboarding, tarefas do time e pergunta do dia no template Home do Negócio 2.0.",
+      "status": "estavel",
+      "requisitos": ["conector do Notion ligado", "cópia do template Home do Negócio 2.0"],
+      "exemplo": "Use a skill notion-home-negocio. Esta é a Home da minha cópia: [link]. Identifique onde ficam clientes, onboarding, tarefas do time e os controles de DP, Fiscal, Contábil e Legalização. Me mostre os links e o que não conseguiu confirmar. Não altere nada."
+    },
+    "ac-estrategista-conteudo-dai": {
+      "departamento": "marketing-e-conteudo",
+      "titulo": "Conteúdo D.A.I.",
+      "uso": "Rascunhos completos de carrosséis, Reels, anúncios, sequências, CTAs e revisão de promessas.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use a skill ac-estrategista-conteudo-dai para criar um carrossel de 6 slides sobre organização do escritório contábil, sem prometer resultado garantido."
+    },
+    "ac-instalar-skills": {
+      "departamento": "instalacao",
+      "titulo": "Instalação e atualização",
+      "uso": "Conduz futuras instalações por link, confere compatibilidade, duplicatas e persistência na conta.",
+      "status": "estavel",
+      "requisitos": [],
+      "exemplo": "Use ac-instalar-skills e instale na minha conta esta skill: [link]. Confira se aparece na conta e me dê um teste em conversa nova."
+    }
+  }
+}

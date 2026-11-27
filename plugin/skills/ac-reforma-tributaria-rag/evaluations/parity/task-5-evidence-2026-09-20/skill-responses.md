@@ -1,7 +1,7 @@
 # Respostas da skill instalada — avaliação independente
 
 Data: 2026-09-20. Avaliador novo `/root/rag_task5_comparator`, sem participação nas Tasks 1–4.
-Invocação operacional: `$ac-reforma-tributaria-rag`, lida e aplicada diretamente da instalação em `/Users/levy/.codex/skills/ac-reforma-tributaria-rag`.
+Invocação operacional: `$ac-reforma-tributaria-rag`, lida e aplicada diretamente da instalação em `~/.codex/skills/ac-reforma-tributaria-rag`.
 As respostas abaixo foram produzidas antes de enviar qualquer pergunta ao GPT online e sem ler as respostas da Task 3.
 Perfil: current. Runtime: agente Codex; Action MCP não registrada, transporte HTTP documentado via curl.
 P1–P4: pergunta original, question_type do catálogo, needs_current_source=true e top_k=6, com uma chamada independente por caso. P5: TRANSPORT_UNAVAILABLE injetado somente na avaliação local da resposta, sem chamar ou alterar o serviço e sem reutilizar evidência dos outros casos.

@@ -4,7 +4,7 @@ Versão 0.1 · Pesquisa em 01/10/2026. As transcrições são evidências de ori
 
 ## Fontes primárias e como localizar
 
-- **A — Aula de implantação:** `Implementando o Notion no Seu Escritório - Juliana Nicolen - 2026_09_16 09_47 GMT-03_00 - Anotações do Gemini.pdf`, 68 páginas, fornecido em `C:\Users\admin\Downloads`. Referências abaixo usam a página física do PDF e o horário da fala.
+- **A — Aula de implantação:** `Implementando o Notion no Seu Escritório - Juliana Nicolen - 2026_09_16 09_47 GMT-03_00 - Anotações do Gemini.pdf`, 68 páginas, fornecido como arquivo local. Referências abaixo usam a página física do PDF e o horário da fala.
 - **B — Discussão do template:** `Template Notion - 2026_10_01 09_20 GMT-03_00 - Anotações do Gemini.pdf`, 43 páginas, mesmo diretório. Referências usam página física e horário da fala.
 - **T — Template público:** [Home do Negócio 2.0](https://jade-bubble-db4.notion.site/Home-do-Neg-cio-template-aluna-2-0-1af16bf5123481a8aa50cce0e41df85b). Leitura por navegador, sem escrita. Links específicos no [mapa](mapa-template.md).
 - **N — Documentação oficial do Notion:** links e conciliações abaixo, consultados na data da pesquisa.

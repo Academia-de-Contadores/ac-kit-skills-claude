@@ -18,7 +18,7 @@ limites de evidência, conclusão ou aprovação humana.
 | Revisão comportamental pós-fix | 0 Critical / 0 Important / 0 Minor |
 | Auditoria final inicial da release | identificou hash inconsistente; corrigido, com re-review final ainda não registrada neste relatório |
 
-O inventário instalado em `/Users/levy/.codex/skills/ac-societario` tem
+O inventário instalado em `~/.codex/skills/ac-societario` tem
 SHA-256 reproduzível
 `32b8a83a38475236ad1a415b9eb1e9e6a50caa815976d6d688e454f637eddbb1`.
 O cálculo usa a lista ordenada de hashes e caminhos relativos descrita em

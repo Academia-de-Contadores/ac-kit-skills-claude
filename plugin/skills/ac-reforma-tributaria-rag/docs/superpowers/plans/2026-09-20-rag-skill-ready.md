@@ -110,7 +110,7 @@ Atualizar `agent.yaml` para lifecycle `candidate`, versão `0.2.0`, skill `SKILL
 
 - [ ] **Step 6: Validar e commitar**
 
-Run: `python3 /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
+Run: `python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
 
 Expected: `Skill is valid!`
 
@@ -156,7 +156,7 @@ Commit: `test: validate RAG skill against live retrieval`
 ### Task 4: Instalar a skill de verdade
 
 **Files:**
-- Local install target: `/Users/levy/.codex/skills/ac-reforma-tributaria-rag`
+- Local install target: `~/.codex/skills/ac-reforma-tributaria-rag`
 - Create: `evaluations/parity/install-validation-2026-09-20.md`
 
 **Interfaces:**
@@ -165,17 +165,17 @@ Commit: `test: validate RAG skill against live retrieval`
 
 - [ ] **Step 1: Confirmar que o destino está livre**
 
-Run: `test ! -e /Users/levy/.codex/skills/ac-reforma-tributaria-rag`
+Run: `test ! -e ~/.codex/skills/ac-reforma-tributaria-rag`
 
 Expected: exit code `0`. Se existir, inspecionar e atualizar de forma não destrutiva; não sobrescrever silenciosamente.
 
 - [ ] **Step 2: Instalar a partir do repositório candidato**
 
-Copiar para `/Users/levy/.codex/skills/ac-reforma-tributaria-rag` somente `SKILL.md`, `agent.yaml`, `agents/`, `profiles/`, `references/`, `instructions/`, `knowledge/` e `connectors/`. Não instalar `.git`, `.github`, caches, SDD, relatórios, avaliações, governança, documentação de manutenção, testes ou validadores do repositório. Como esta skill não precisa de executável próprio, nenhum diretório `scripts/` será instalado.
+Copiar para `~/.codex/skills/ac-reforma-tributaria-rag` somente `SKILL.md`, `agent.yaml`, `agents/`, `profiles/`, `references/`, `instructions/`, `knowledge/` e `connectors/`. Não instalar `.git`, `.github`, caches, SDD, relatórios, avaliações, governança, documentação de manutenção, testes ou validadores do repositório. Como esta skill não precisa de executável próprio, nenhum diretório `scripts/` será instalado.
 
 - [ ] **Step 3: Validar fora do workspace**
 
-Run: `python3 /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/levy/.codex/skills/ac-reforma-tributaria-rag`
+Run: `python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py ~/.codex/skills/ac-reforma-tributaria-rag`
 
 Expected: `Skill is valid!`
 
@@ -214,7 +214,7 @@ Com PASS global, atualizar `agent.yaml` para lifecycle `validated`, manter vers�
 
 - [ ] **Step 5: Validar e commitar**
 
-Run: `python3 /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
+Run: `python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
 
 Run: `bash scripts/validate-agent-repo.sh`
 

@@ -4,7 +4,7 @@
 
 - Fonte auditada: `59b9970e53dcad291ee32366d4bd4e71cf240cd7`.
 - Origem: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-fiscal/.worktrees/fiscal-skill-ready`.
-- Destino instalado: `/Users/levy/.codex/skills/ac-fiscal`.
+- Destino instalado: `~/.codex/skills/ac-fiscal`.
 - Pacote independente reconstruído: `/tmp/ac-fiscal-package-r2.9iq1I2/rebuilt`.
 - Backup recuperável pré-instalação: `/tmp/ac-fiscal-install-backup-r2.0MVOYI/ac-fiscal`.
 - `agent.yaml` permanece em `0.2.0 candidate`.
@@ -48,7 +48,7 @@ O delta entre backup e pacote contém somente os três arquivos abaixo:
 | `bash tests/validate-fiscal-skill.test.sh` | PASS |
 | `ruby scripts/validate-fiscal-skill.rb` | PASS |
 | `quick_validate.py .` | PASS |
-| `quick_validate.py /Users/levy/.codex/skills/ac-fiscal` | PASS |
+| `quick_validate.py ~/.codex/skills/ac-fiscal` | PASS |
 | gates comportamentais finais | PASS, 6/6 casos qualificam |
 
 Os dois `quick_validate.py` foram executados contra origem e instalação. A

@@ -1,6 +1,6 @@
 # Instalar as skills da Academia de Contadores no Claude
 
-Guia para alunas da Mentoria Master • pacote 1.4.2 • 20/11/2026
+Guia para alunas da Mentoria Master • pacote 1.4.3 • 27/11/2026
 
 ## Comece pelo comando único (Claude ou Codex)
 

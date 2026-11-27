@@ -106,10 +106,10 @@ Decisão: promover `0.2.0` de `candidate` para `validated`, registrar a release 
 Após a promoção e sincronização, executados na worktree:
 
 ```sh
-/Users/levy/.pyenv/versions/3.10.13/bin/python /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
+~/.pyenv/versions/3.10.13/bin/python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
 bash scripts/validate-agent-repo.sh
 bash tests/validate-agent-repo.test.sh
-cmp agent.yaml /Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto/agent.yaml
+cmp agent.yaml ~/.codex/skills/ac-reforma-tributaria-sem-surto/agent.yaml
 git diff --check
 ```
 

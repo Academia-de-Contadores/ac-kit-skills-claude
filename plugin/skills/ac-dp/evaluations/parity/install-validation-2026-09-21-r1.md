@@ -4,7 +4,7 @@
 
 - Fonte de comportamento avaliada:
   `0183605852ded564a63315cafc7747b6fcd26d84`.
-- Instalação: `/Users/levy/.codex/skills/ac-dp`.
+- Instalação: `~/.codex/skills/ac-dp`.
 - Allowlist normativa: `agent.yaml > skill_runtime.package`.
 
 ## Inventário

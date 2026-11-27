@@ -26,7 +26,7 @@ arts. 344 e 347 da [LC 214/2025](https://legis.senado.gov.br/norma/40180341/publ
 
 ## Instalação e integridade
 
-- Pacote local: `/Users/levy/.codex/skills/ac-reforma-tributaria-rag`.
+- Pacote local: `~/.codex/skills/ac-reforma-tributaria-rag`.
 - Oito itens seletivos do repositório (`SKILL.md`, `agent.yaml`, `agents/`,
   `profiles/`, `references/`, `instructions/`, `knowledge/`, `connectors/`)
   foram comparados recursivamente com a instalação e estavam idênticos.

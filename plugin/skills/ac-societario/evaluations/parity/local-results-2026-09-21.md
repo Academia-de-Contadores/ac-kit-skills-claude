@@ -3,7 +3,7 @@
 Base avaliada: `c4642951cdcf6ed80577991bf1a3744fbc31f4ae`.
 Executor: subagente limpo
 `/root/societario_task3_validator/societario_local_forward`, sem delegação.
-Skill usada: `/Users/levy/.codex/skills/ac-societario`.
+Skill usada: `~/.codex/skills/ac-societario`.
 
 Os seis prompts foram congelados antes da instalação em
 `2026-09-21T06:48:09Z`. SHA-256 de `questions.yaml`:
@@ -21,14 +21,14 @@ arquivo bruto anterior à inclusão deste cabeçalho e da avaliação tinha SHA-
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/source-policy.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/source-policy.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
 
 ### Resposta integral
 
@@ -59,14 +59,14 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/source-policy.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/source-policy.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
 
 ### Resposta integral
 
@@ -97,15 +97,15 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/source-policy.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/source-policy.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
 
 ### Resposta integral
 
@@ -136,13 +136,13 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
 
 ### Resposta integral
 
@@ -193,15 +193,15 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/source-policy.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/source-policy.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/03-FONTES-CANONICAS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md
 
 ### Resposta integral
 
@@ -232,12 +232,12 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ### Arquivos instalados consultados
 
-- /Users/levy/.codex/skills/ac-societario/SKILL.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
-- /Users/levy/.codex/skills/ac-societario/references/response-modes.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
-- /Users/levy/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
+- ~/.codex/skills/ac-societario/SKILL.md
+- ~/.codex/skills/ac-societario/knowledge/original/00-INDICE-SOCIETARIO.md
+- ~/.codex/skills/ac-societario/references/response-modes.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md
+- ~/.codex/skills/ac-societario/knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md
 
 ### Resposta integral
 
@@ -265,7 +265,7 @@ Esta resposta é apoio operacional. Antes de aplicar, valide no sistema oficial,
 
 ## Declaração de execução
 
-Execução em contexto independente, usando somente a skill instalada em `/Users/levy/.codex/skills/ac-societario` como fonte de orientação. Não foi usada internet, GPT online, navegador, chamada externa, portal, certificado, credencial, assinatura, protocolo, transmissão, envio, upload ou outra mutação externa. Nenhum arquivo fora deste relatório foi alterado.
+Execução em contexto independente, usando somente a skill instalada em `~/.codex/skills/ac-societario` como fonte de orientação. Não foi usada internet, GPT online, navegador, chamada externa, portal, certificado, credencial, assinatura, protocolo, transmissão, envio, upload ou outra mutação externa. Nenhum arquivo fora deste relatório foi alterado.
 
 ## Avaliação posterior contra a rubrica congelada
 

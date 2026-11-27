@@ -2,7 +2,7 @@
 capture_date: 2026-09-21
 skill: ac-processos-escritorio
 scope: corrective-rerun-P1-P2-only
-installed_path: /Users/levy/.codex/skills/ac-processos-escritorio
+installed_path: ~/.codex/skills/ac-processos-escritorio
 installed_source_head: 39fe62038f1fa885ec2a4776e2391440584279a9
 installed_package_sha256: c980398517c63d03edbd5824def0de90df7e43d54e383f563f34281effa1f23f
 questions_sha256: cda93c59d7c81cd8355fdde299b01594c8675d2d60dc46e026769d3530e8d3f2

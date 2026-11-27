@@ -6,7 +6,7 @@
 - Branch: `feat/processos-skill-ready`
 - HEAD usado na reinstalação: `39fe62038f1fa885ec2a4776e2391440584279a9`
 - Skill: `ac-processos-escritorio`
-- Destino: `/Users/levy/.codex/skills/ac-processos-escritorio`
+- Destino: `~/.codex/skills/ac-processos-escritorio`
 - Versão/lifecycle: `0.2.0 candidate`
 - Perguntas P1–P6 preservadas, SHA-256:
   `cda93c59d7c81cd8355fdde299b01594c8675d2d60dc46e026769d3530e8d3f2`
@@ -71,6 +71,6 @@ mudaram entre a instalação anterior e a r2:
 | `quick_validate.py` na instalação | PASS |
 
 O `quick_validate.py` foi executado com
-`/Users/levy/.pyenv/versions/3.10.13/bin/python3.10`. Esta reinstalação não
+`~/.pyenv/versions/3.10.13/bin/python3.10`. Esta reinstalação não
 altera o lifecycle: a skill continua `candidate` até a revisão posterior da
 rodada r2.

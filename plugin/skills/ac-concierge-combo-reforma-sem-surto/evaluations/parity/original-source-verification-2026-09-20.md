@@ -6,7 +6,7 @@ Rodada 2026-09-20; verificação efetiva em 2026-09-21 UTC por `/root/sem_surto_
 
 ## Identidade e escopo dos originais
 
-Os originais verificados são os seis anexos Markdown preservados do GPT em 2026-08-07, identificados pelo manifesto. Raiz dos caminhos abaixo: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-reforma-tributaria-sem-surto/.worktrees/sem-surto-skill-ready/`. A mesma árvore relativa existe na instalação `/Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto/`, conferida byte a byte nesta Task.
+Os originais verificados são os seis anexos Markdown preservados do GPT em 2026-08-07, identificados pelo manifesto. Raiz dos caminhos abaixo: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-reforma-tributaria-sem-surto/.worktrees/sem-surto-skill-ready/`. A mesma árvore relativa existe na instalação `~/.codex/skills/ac-reforma-tributaria-sem-surto/`, conferida byte a byte nesta Task.
 
 | ID | Caminho do original | SHA-256 calculado nesta Task |
 | --- | --- | --- |

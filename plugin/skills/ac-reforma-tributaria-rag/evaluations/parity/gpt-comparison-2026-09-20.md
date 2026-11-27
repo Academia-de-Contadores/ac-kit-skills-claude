@@ -16,7 +16,7 @@ Na revisão do fix round 1, o usuário definiu o GPT online como baseline e iden
 
 ## Método e evidências
 
-Um avaliador novo, sem participação nas Tasks 1–4, leu integralmente a skill instalada em `/Users/levy/.codex/skills/ac-reforma-tributaria-rag` e aplicou o perfil `current`. As cinco respostas locais foram produzidas antes de enviar qualquer pergunta ao GPT e sem ler as respostas da Task 3.
+Um avaliador novo, sem participação nas Tasks 1–4, leu integralmente a skill instalada em `~/.codex/skills/ac-reforma-tributaria-rag` e aplicou o perfil `current`. As cinco respostas locais foram produzidas antes de enviar qualquer pergunta ao GPT e sem ler as respostas da Task 3.
 
 P1–P4 usaram consultas HTTP reais ao endpoint documentado, com pergunta original, question_type do catálogo, needs_current_source=true e top_k=6. Os retornos completos foram preservados. P5 local exercitou exclusivamente o estado simulado TRANSPORT_UNAVAILABLE, sem chamada ao servidor e sem reutilizar fontes de outros casos.
 
