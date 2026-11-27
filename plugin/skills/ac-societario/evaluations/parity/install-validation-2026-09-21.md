@@ -2,7 +2,7 @@
 
 - Base da preparação da release: `1132fa3a257e6301bde5782b82c68ff577f5bba3`.
 - Origem: worktree `societario-skill-ready`.
-- Destino: `/Users/levy/.codex/skills/ac-societario`.
+- Destino: `~/.codex/skills/ac-societario`.
 - Congelamento dos casos: `2026-09-21T06:48:09Z`.
 - SHA-256 de `questions.yaml`:
   `8509b43986d6fa56e4bab1e96245a9525d0ccc8354f8f2b8565235c7f39d8532`.

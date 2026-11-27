@@ -7,7 +7,7 @@ Resultado: **todos os validadores exigidos passaram, exit code 0**. Os comandos 
 Diretório de execução: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-reforma-tributaria-rag/.worktrees/rag-skill-ready`.
 
 ```sh
-/Users/levy/.pyenv/versions/3.10.13/bin/python3 /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
+~/.pyenv/versions/3.10.13/bin/python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
 ```
 
 Saída real:
@@ -23,7 +23,7 @@ Exit code: `0`.
 Diretório de execução: `/tmp`.
 
 ```sh
-/Users/levy/.pyenv/versions/3.10.13/bin/python3 /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/levy/.codex/skills/ac-reforma-tributaria-rag
+~/.pyenv/versions/3.10.13/bin/python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py ~/.codex/skills/ac-reforma-tributaria-rag
 ```
 
 Saída real:

@@ -68,7 +68,7 @@ preservar seu papel de identidade e comportamento.
 
 - Fonte de comportamento: `e682cdc20a459732b316d8e9b63d843563f116ea`.
 - Pacote: `/tmp/ac-fiscal-r4-package.eGIqmI/ac-fiscal`.
-- Instalação/backup recuperável: `/Users/levy/.codex/skills/ac-fiscal` e
+- Instalação/backup recuperável: `~/.codex/skills/ac-fiscal` e
   `/tmp/ac-fiscal-r4-backup.i3epNP/ac-fiscal`.
 - Pacote e instalação: 23 arquivos regulares, 10 Knowledge, 0 symlinks e 0
   `.gitkeep`; igualdade por caminho e bytes 23/23.

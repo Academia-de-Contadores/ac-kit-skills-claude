@@ -6,7 +6,7 @@
 - Worktree de origem: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-reforma-tributaria-rag/.worktrees/rag-skill-ready`
 - Branch de origem: `feat/rag-skill-ready`
 - Commit-fonte exato: `a1ea42e2ab7019bafe5a9942cbcfa4af9e385b55`
-- Destino: `/Users/levy/.codex/skills/ac-reforma-tributaria-rag`
+- Destino: `~/.codex/skills/ac-reforma-tributaria-rag`
 - Estado inicial do destino: ausente (`test ! -e ...` retornou `0`)
 
 ## Conteúdo instalado
@@ -35,9 +35,9 @@ A inspeção do topo do destino encontrou exatamente os oito itens autorizados. 
 O validador foi executado a partir de `/tmp`, usando o interpretador vinculante com PyYAML:
 
 ```text
-/Users/levy/.pyenv/versions/3.10.13/bin/python3 \
-  /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
-  /Users/levy/.codex/skills/ac-reforma-tributaria-rag
+~/.pyenv/versions/3.10.13/bin/python3 \
+  ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
+  ~/.codex/skills/ac-reforma-tributaria-rag
 ```
 
 Resultado:
@@ -55,7 +55,7 @@ Após a validação funcional r2, foi sincronizado somente o manifesto
 
 - Commit-fonte exato: `e9d1d164308ffdc8f46359a9a80079ee59405c51`.
 - Origem: `agent.yaml` do worktree e branch registrados acima.
-- Destino: `/Users/levy/.codex/skills/ac-reforma-tributaria-rag/agent.yaml`.
+- Destino: `~/.codex/skills/ac-reforma-tributaria-rag/agent.yaml`.
 - Estado final: `agent.lifecycle: validated`, `agent.version: 0.2.0`.
 - Referências sincronizadas: validação da instalação, comparação
   `gpt-comparison-2026-09-20-r2.md` e README das evidências fix1.
@@ -64,7 +64,7 @@ Após a validação funcional r2, foi sincronizado somente o manifesto
 - SHA-256 final, idêntico na origem e na instalação:
   `617072f7eac5c3ca34b3ebcadf48c1c54d02485710f1b03bb45138861d5634d8`.
 
-`cmp agent.yaml /Users/levy/.codex/skills/ac-reforma-tributaria-rag/agent.yaml`
+`cmp agent.yaml ~/.codex/skills/ac-reforma-tributaria-rag/agent.yaml`
 terminou sem saída e com exit code 0, confirmando paridade byte a byte.
 
 Antes e depois da sincronização, foram calculados e comparados os caminhos e

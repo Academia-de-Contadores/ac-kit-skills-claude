@@ -6,7 +6,7 @@
 - Branch: `feat/processos-skill-ready`
 - HEAD-fonte validado: `aa348b1902e5ab99a23efb37e1715818d91b27f1`
 - Skill: `ac-processos-escritorio`
-- Destino: `/Users/levy/.codex/skills/ac-processos-escritorio`
+- Destino: `~/.codex/skills/ac-processos-escritorio`
 - Pacote independente: `/private/tmp/ac-processos-r3.VO6LgV/independent-package`
 - Backup recuperável da instalação r2:
   `/private/tmp/ac-processos-r3.VO6LgV/ac-processos-escritorio.previous`
@@ -58,7 +58,7 @@ find . -type f -exec shasum -a 256 {} + \
 | `quick_validate.py` na instalação | PASS |
 
 O `quick_validate.py` foi executado com
-`/Users/levy/.pyenv/versions/3.10.13/bin/python3.10`. Os validadores do
+`~/.pyenv/versions/3.10.13/bin/python3.10`. Os validadores do
 repositório, a verificação dos hashes e os controles de preservação são
 registrados no relatório da rodada.
 

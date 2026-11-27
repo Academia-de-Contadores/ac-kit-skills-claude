@@ -108,7 +108,7 @@ Em `agent.yaml`, usar versão `0.2.0`, lifecycle `candidate`, apontar para `SKIL
 
 - [ ] **Step 6: Validar e commitar**
 
-Run: `/Users/levy/.pyenv/versions/3.10.13/bin/python /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
+Run: `~/.pyenv/versions/3.10.13/bin/python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
 
 Expected: `Skill is valid!`
 
@@ -121,7 +121,7 @@ Commit: `feat: package Sem Surto agent as installable skill`
 ### Task 3: Instalar seletivamente e executar o forward test
 
 **Files:**
-- Local install target: `/Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto`
+- Local install target: `~/.codex/skills/ac-reforma-tributaria-sem-surto`
 - Create: `evaluations/parity/questions.yaml`
 - Create: `evaluations/parity/install-validation-2026-09-20.md`
 - Create: `evaluations/parity/local-results-2026-09-20.md`
@@ -141,7 +141,7 @@ Copiar para o destino apenas `SKILL.md`, `agent.yaml`, `agents/`, `references/`,
 
 - [ ] **Step 3: Validar fora da worktree**
 
-Run: `/Users/levy/.pyenv/versions/3.10.13/bin/python /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto`
+Run: `~/.pyenv/versions/3.10.13/bin/python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py ~/.codex/skills/ac-reforma-tributaria-sem-surto`
 
 Expected: `Skill is valid!`
 
@@ -185,11 +185,11 @@ Exigir PASS 6/6 funcional, instalação válida, originais verificados e nenhum 
 
 - [ ] **Step 5: Validar e commitar**
 
-Run: `/Users/levy/.pyenv/versions/3.10.13/bin/python /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
+Run: `~/.pyenv/versions/3.10.13/bin/python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .`
 
 Run: `bash scripts/validate-agent-repo.sh && bash tests/validate-agent-repo.test.sh`
 
-Run: `cmp agent.yaml /Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto/agent.yaml`
+Run: `cmp agent.yaml ~/.codex/skills/ac-reforma-tributaria-sem-surto/agent.yaml`
 
 Expected: todos com exit code `0`.
 

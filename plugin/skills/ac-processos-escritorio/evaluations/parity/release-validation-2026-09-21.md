@@ -17,7 +17,7 @@ inventar processo, papel, prazo, evidência ou autorização externa.
 | Instalação seletiva final | 17 arquivos regulares / 4 Knowledge / 0 symlinks / 0 `.gitkeep` |
 | Igualdade origem × instalação | PASS 17/17 por caminho e bytes |
 
-O inventário instalado em `/Users/levy/.codex/skills/ac-processos-escritorio`
+O inventário instalado em `~/.codex/skills/ac-processos-escritorio`
 tem SHA-256 reproduzível
 `aefecda60fec08f59ddca76c537c7ddb51c76d1711559ea71ff199fe3efe1de7`.
 O cálculo usa a lista ordenada de hashes e caminhos relativos da instalação

@@ -6,7 +6,7 @@ Status: preservada, convertida e usada como base historica/didatica
 ## Componentes
 
 1. Prompt original do agente Day.
-2. 11 PDFs originais copiados de `/Users/copetti/Downloads/`.
+2. 11 PDFs originais copiados de `~/Downloads/`.
 3. 11 Markdown gerados com MarkItDown.
 4. Manifestos de preservacao, hash e conversao.
 

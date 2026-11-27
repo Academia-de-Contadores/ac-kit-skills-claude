@@ -4,7 +4,7 @@ Rodada planejada: 2026-09-20. Execução: 2026-09-21 UTC; primeira inspeção co
 
 - Base: `5554ee1bd036dc8f0f828cfb96eb2358ad36fd1c`.
 - Origem: worktree `sem-surto-skill-ready` do repositório Sem Surto.
-- Destino absoluto: `/Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto`.
+- Destino absoluto: `~/.codex/skills/ac-reforma-tributaria-sem-surto`.
 - Inspeção antes da instalação: `ls -la` retornou `No such file or directory`; o diretório pai existia. Nenhum arquivo anterior foi sobrescrito ou removido.
 - Resultado: **instalação PASS; forward test PASS 6/6**. Lifecycle preservado como `candidate`, versão `0.2.0`.
 
@@ -24,10 +24,10 @@ Após o forward test, foram acrescentadas ao `agent.yaml` somente as três refer
 
 ## Validações observadas
 
-Executado com diretório de trabalho `/Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto`, fora da worktree:
+Executado com diretório de trabalho `~/.codex/skills/ac-reforma-tributaria-sem-surto`, fora da worktree:
 
 ```sh
-/Users/levy/.pyenv/versions/3.10.13/bin/python /Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/levy/.codex/skills/ac-reforma-tributaria-sem-surto
+~/.pyenv/versions/3.10.13/bin/python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py ~/.codex/skills/ac-reforma-tributaria-sem-surto
 ```
 
 Saída exata: `Skill is valid!`, exit 0. Repetido após sincronizar o manifesto final, mesmo resultado.

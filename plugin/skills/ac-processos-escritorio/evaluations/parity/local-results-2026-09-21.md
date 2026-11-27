@@ -1,7 +1,7 @@
 <!--
 capture_date: 2026-09-21
 skill: ac-processos-escritorio
-installed_path: /Users/levy/.codex/skills/ac-processos-escritorio
+installed_path: ~/.codex/skills/ac-processos-escritorio
 installed_package_sha256: 8ae4088775c314c8532035a328581131aba4eb25fd5bdc00107bb9c6334fd292
 questions_sha256: cda93c59d7c81cd8355fdde299b01594c8675d2d60dc46e026769d3530e8d3f2
 executor: independent clean-context subagent

@@ -4,7 +4,7 @@ Data da avaliação: 2026-09-21.
 
 ## Escopo e método
 
-Foram lidos integralmente `evaluations/parity/questions.yaml`, `evaluations/rubrics/behavior.md`, a skill instalada `/Users/levy/.codex/skills/ac-fiscal/SKILL.md`, suas três referências (`source-policy.md`, `fiscal-outputs.md`, `approval-policy.md`), o manifesto `agent.yaml`, o índice de Knowledge e os nove arquivos autorizados de `knowledge/live-2026-08-22/`, as seis respostas `/tmp/ac-fiscal-r4-raw/P1.md` a `P6.md` e a baseline congelada `evaluations/parity/gpt-outputs-2026-09-21.md` da worktree `fiscal-skill-ready`.
+Foram lidos integralmente `evaluations/parity/questions.yaml`, `evaluations/rubrics/behavior.md`, a skill instalada `~/.codex/skills/ac-fiscal/SKILL.md`, suas três referências (`source-policy.md`, `fiscal-outputs.md`, `approval-policy.md`), o manifesto `agent.yaml`, o índice de Knowledge e os nove arquivos autorizados de `knowledge/live-2026-08-22/`, as seis respostas `/tmp/ac-fiscal-r4-raw/P1.md` a `P6.md` e a baseline congelada `evaluations/parity/gpt-outputs-2026-09-21.md` da worktree `fiscal-skill-ready`.
 
 Não foram lidas matrizes, resultados ou comparações r1, r2 ou r3. Os nomes desses arquivos aparecem no manifesto, mas seus conteúdos não foram acessados. Nenhum arquivo do repositório foi modificado.
 

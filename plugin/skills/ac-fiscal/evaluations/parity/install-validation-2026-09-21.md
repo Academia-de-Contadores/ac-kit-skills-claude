@@ -3,7 +3,7 @@
 Runtime de origem: `2d57acb710b077e33cbc93bd3ca85c04cd2f2d23`.
 Commit da auditoria de fonte: `04fd08cd26e5bd635e08e19b18298d02ada52c81`.
 Origem: `/Volumes/SSD-500GB-1/chat/Projetos-codex/gptspersonalizados/agent-repos/ac-agente-fiscal/.worktrees/fiscal-skill-ready`.
-Instalação: `/Users/levy/.codex/skills/ac-fiscal`.
+Instalação: `~/.codex/skills/ac-fiscal`.
 Versão/lifecycle conferidos em `agent.yaml`: **0.2.0 candidate**.
 
 ## Inventário e comparação byte a byte
@@ -55,12 +55,12 @@ A contagem de Knowledge corresponde aos dez caminhos de
 | `bash tests/validate-fiscal-skill.test.sh` | exit 0; Fiscal skill validator tests passed |
 | `ruby scripts/validate-fiscal-skill.rb` | exit 0; Fiscal skill package validation passed |
 | `quick_validate.py .` | exit 0; Skill is valid! |
-| `quick_validate.py /Users/levy/.codex/skills/ac-fiscal` | exit 0; Skill is valid! |
+| `quick_validate.py ~/.codex/skills/ac-fiscal` | exit 0; Skill is valid! |
 | `git diff --check` | exit 0; sem saída |
 
 Os dois comandos `quick_validate.py` usaram explicitamente:
-`/Users/levy/.pyenv/versions/3.10.13/bin/python3.10`, com o validador em
-`/Users/levy/.codex/skills/.system/skill-creator/scripts/quick_validate.py`.
+`~/.pyenv/versions/3.10.13/bin/python3.10`, com o validador em
+`~/.codex/skills/.system/skill-creator/scripts/quick_validate.py`.
 
 Os testes estruturais não substituem a avaliação comportamental: P4 falha no
 gate de aprovação imediata da ação exata. Resultado local: **5/6**, sem promoção

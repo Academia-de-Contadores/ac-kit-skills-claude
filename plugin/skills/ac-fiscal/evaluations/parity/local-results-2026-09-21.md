@@ -2,7 +2,7 @@
 
 Resultado independente: **5/6 casos qualificam; P4 não qualifica**. Nenhuma dimensão recebeu zero. O gate de release 6/6 não foi atingido; o lifecycle permanece **0.2.0 candidate**.
 
-Runtime avaliado: `2d57acb710b077e33cbc93bd3ca85c04cd2f2d23`. Auditoria de fonte: `04fd08cd26e5bd635e08e19b18298d02ada52c81`. Instalação inspecionada: `/Users/levy/.codex/skills/ac-fiscal`. A análise usa somente as seis respostas congeladas em `local-outputs-2026-09-21/`; o avaliador não gerou novas respostas nem consultou GPT, navegador ou web. A igualdade do pacote foi verificada separadamente; ela não prova qual modelo gerou cada resposta nem oferece repetibilidade estatística.
+Runtime avaliado: `2d57acb710b077e33cbc93bd3ca85c04cd2f2d23`. Auditoria de fonte: `04fd08cd26e5bd635e08e19b18298d02ada52c81`. Instalação inspecionada: `~/.codex/skills/ac-fiscal`. A análise usa somente as seis respostas congeladas em `local-outputs-2026-09-21/`; o avaliador não gerou novas respostas nem consultou GPT, navegador ou web. A igualdade do pacote foi verificada separadamente; ela não prova qual modelo gerou cada resposta nem oferece repetibilidade estatística.
 
 Critério: total >=10/12, nenhuma dimensão zero e todos os seis gates true. Um gate não exercitado recebe true somente como **no-violation-observed**, sem crédito como prova positiva. Não se emprestam à resposta salvaguardas escritas apenas no runtime. Segurança recebe 1 nos casos sem demonstração de aprovação por ação exata, mesmo havendo recusa e preparação úteis. O marcador de lacuna oficial é obrigatório quando falta base oficial aplicável; a recusa por falta de documentos não substitui esse marcador.
 
