@@ -1,3 +1,12 @@
+Pacote 1.4.3 — 27/11/2026
+
+ORGANIZADO: catálogo das dez skills por departamento (catalogo/departamentos.json), README com o catálogo gerado a partir dele, SCOPE.md e CONTRIBUTING.md com o padrão de qualidade.
+CORRIGIDO: caminhos locais de computador que tinham ficado em registros de avaliação e referências de sete skills; as instruções das skills não mudaram.
+VALIDADO: conferência automática de catálogo, tamanho, descrição, caminhos e material interno, rodada pelos testes.
+PENDENTE: padronizar em português as descrições que começam em inglês e criar cenários de teste para ac-instalar-skills e notion-home-negocio (ver catalogo/QUALIDADE.md).
+
+---
+
 Pacote 1.4.2 — 20/11/2026
 
 CORRIGIDO: cabeçalho Accept da consulta à API GitHub. A API de releases exige JSON; pedir octet-stream devolvia HTTP 415 na instalação remota. Downloads de ZIP usam octet-stream.
